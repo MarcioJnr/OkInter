@@ -9,6 +9,7 @@
     <?php get_header(); ?>
 </head>
 <body>
+<h1 class="display-1">TESTEEeeeee</h1>
     <header>
         <!-- insere o conteudo da navbar aqui -->
         <body class="bg-light">
