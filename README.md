@@ -16,6 +16,7 @@ Project architected and developed by:
     <li>Reinaldo da Silva Nascimento (Developer)</li>
     <li>Caio Brandão da Costa (Developer)</li>
     <li>Iago Wesley</li>
+    <li> Marcio Jr </li>
 </ul> 
 
 ## 💻 TECHNOLOGIES
