@@ -15,6 +15,7 @@ Project architected and developed by:
     <li>Erick Gomes Monteiro (Designer UX/UI)</li>
     <li>Reinaldo da Silva Nascimento (Developer)</li>
     <li>Caio Brandão da Costa (Developer)</li>
+    <li>Iago Wesley</li>
 </ul> 
 
 ## 💻 TECHNOLOGIES
