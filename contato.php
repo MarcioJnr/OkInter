@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_footer(); ?>
-
 <main>
     <div class="container-form" style=" width: 80%; height: 200px; margin: 0 auto; padding: 10px;">
       <h2 class="fw-bold text-center"></h2>
@@ -201,3 +199,5 @@
 
 
   </main>
+
+  <?php get_footer(); ?>
