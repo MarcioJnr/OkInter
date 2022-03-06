@@ -36,7 +36,7 @@
 <div class="rodape container">
             <div class="row marcador ms-5">
                 <div class="marcador col-3">
-                    <img src="teste/logok.png" class="ms-5 mt-5 img-fluid">
+                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/logok.png" class="ms-5 mt-5 img-fluid">
                     <p class="text-center fw-lighter mt-3">Somos uma empresa especializada em oferecer serviços voltados para viagens e programas de estudos no exterior.</p>
                     
                     <p class="text-center fw-lighter mt-3">CNPJ: 23.263.680/0001-31</p>
