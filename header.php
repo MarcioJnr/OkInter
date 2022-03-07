@@ -59,13 +59,13 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse ms-0 bg-light" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Sobre
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Teste</a></li>
                             <li><a class="dropdown-item" href="#">Teste</a></li>
                             <li><a class="dropdown-item" href="#">Teste</a></li>
@@ -75,7 +75,7 @@
                         <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Destinos
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Teste</a></li>
                             <li><a class="dropdown-item" href="#">Teste</a></li>
                               <li>
@@ -88,7 +88,7 @@
                       <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Programas
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="#">Teste</a></li>
                           <li><a class="dropdown-item" href="#">Teste</a></li>
                           <li>
@@ -102,7 +102,7 @@
                       <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Serviços
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="#">Teste</a></li>
                           <li><a class="dropdown-item" href="#">Teste</a></li>
                           <li>
