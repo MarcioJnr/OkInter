@@ -1,97 +1,72 @@
-<style>
+<!-- 
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
         body {
-            
-            margin: 0;
-            padding: 0;
+            font-family: 'Montserrat';
         }
-
-        p {
-            color: #fff;
-            font-size: 14px;
-        }
-        h6 {
-            color: #fff;
-            font-size: 11px;
-        }
-        h2 {
-            color: #fff;
-            font-size: 19px;
-        }
-       
-        .rodape {
-            background-color: #1F1F1F;
-            height: 100%;
-        }
-        footer {
-            width: 100%;
-            background-color: #1F1F1F;
-        }
-
-        img {
-            color: #fff;
-        }
-
     </style>
-<footer>
-<div class="rodape container">
-            <div class="row marcador ms-5">
-                <div class="marcador col-3">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/logok.png" class="ms-5 mt-5 img-fluid">
-                    <p class="text-center fw-lighter mt-3">Somos uma empresa especializada em oferecer serviços voltados para viagens e programas de estudos no exterior.</p>
-                    
-                    <p class="text-center fw-lighter mt-3">CNPJ: 23.263.680/0001-31</p>
-                    <div class="row mb-5">
-                        <div class="col-6 text-center">
-                            <p class="bg-light">.....</p>
-                        </div>
-                        <div class="col-6 text-center">
-                            <p class="bg-light">.....</p>
+    -->
+    <footer style="background-color: #190B2D;"> <br><br>
+        <div class="container">
+            <div class="row mt-0 ">
+                <div class="col-12 col-md-6 col-xl-3 text-center">
+                    <img src="logok.png" alt="" class="mb-4">
+                    <p class="mt-2 text-secondary" >Somos uma empresa especializada em oferecer serviços voltados para viagens e programas de estudos no exterior.</p>
+                    <p class="mb-4 text-secondary">CNPJ: 23.263.680/0001-31</p>
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col-6">
+                                <img src="footer1.png" alt="" style="width: 90%; height: 35px;">
+                            </div>
+                            <div class="col-6">
+                                <img src="footer2.png" alt="" style="width: 90%; height: 35px;">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="marcador col-3">
-                    <h2 class="mt-5 ms-5 mb-4">Contatos</h2>
-                    <p class=" fw-lighter ms-5">Fortaleza: +55 (85) 3182-4212 <br> São Paulo: +55 (11) 3042-4015 contato@okintercambio.com.br</p>
-                    <p class=" fw-lighter ms-5">Segunda a sexta, das 9h às 18h</p>
-                    <p class=" fw-lighter ms-5">Av. Senador Virgílio Távora, 1500, sala 11.13,<br>
+                <div class="col-12 col-md-6 col-xl-3 ps-5">
+                    <h2 class="fw-light text-light fs-4 fw-bolder">Contatos</h2>
+                    <p class="mt-4 text-secondary">Fortaleza +55 (88) 981989887 <br> São Paulo +55 (88) 879887765 <br> contato@okintercambio.com.br</p>
+                    <p class="text-secondary">Segunda a sexta das 9 as 12h</p>
+                    <p class="text-secondary">Av. Senador Virgílio Távora, 1500, sala 11.13,<br>
                         Edifício: The One Tower <br>
                         Aldeota, Fortaleza/CE, Brasil <br>
                         CEP: 60170-251</p>
-                
-                </div>  
-                <div class="marcador col-3">
-                    <h2 class="mt-5 ms-5 mb-4">OK Intercâmbio</h2>
-                    <p class="fw-lighter ms-5">Sobre</p>
-                    <p class="fw-lighter ms-5 mt-4">Destinos</p>
-                    <p class="fw-lighter ms-5 mt-4">Programas</p>
-                    <p class="fw-lighter ms-5 mt-4">Promoções</p>
-                    <p class="fw-lighter ms-5 mt-4">Blogs</p>
                 </div>
-                <div class="marcador col-3">
-                    <h2 class="mt-5 ms-5 mb-4">Redes Sociais</h2>
-                    <div class="row ms-1 mb-5">
-                        <div class="col-6 text-center">
-                            <img src="teste/whatsapp.png" alt="" width="46px" height="46px" class="">
+                <div class="col-12 col-md-6 col-xl-3 ps-5">
+                    <h2 class="fw-light text-light fs-4 fw-bolder">Ok Intercâmbio</h2>
+                    <p class="mt-4 text-secondary">Sobre</p>
+                    <p class="mt-3 text-secondary">Destinos</p>
+                    <p class="mt-3 text-secondary">Programas</p>
+                    <p class="mt-3 text-secondary">Promoções</p>
+                    <p class="mt-3 text-secondary">Blog</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 ps-5">
+                    <h2 class="fw-light text-light fs-4 fw-bolder">Redes sociais</h2>
+                    <div class="row mt-1">
+                        <div class="col-3 col-md-6 col-xl-6">
+                            <a href="">
+                                <img src="facebook.png" alt="" style="width: 36px; height: 36px;" class="mt-5">
+                            </a>
                         </div>
-                        <div class="col-6">
-                            <img src="teste/instagram.png" alt="" width="46px" height="46px" class="">
-                        </div>
-                    </div>
-                    <div class="row ms-1">
-                        <div class="col-6 text-center">
-                            <img src="teste/facebook.png" alt="" width="46px" height="46px" class="">
-                        </div>
-                        <div class="col-6 ">
-                            <img src="teste/youtube.png" alt="" width="50px" height="50px" class="">
-                        </div>
+                        <div class="col-3 col-md-6 col-xl-6">
+                            <a href="">
+                                <img src="whatsapp.png" alt="" style="width: 36px; height: 36px;" class="mt-5">
+                            </a>                        </div>
+                        <div class="col-3 col-md-6 col-xl-6">
+                            <a href="">
+                                <img src="instagram.png" alt="" style="width: 36px; height: 36px;" class="mt-5 ms-1">
+                            </a>                        </div>
+                        <div class="col-3 col-md-6 col-xl-6">
+                            <a href="">
+                                <img src="youtube.png" alt="" style="width: 36px; height: 36px;" class="mt-5">
+                            </a>                        </div>
                     </div>
                 </div>
             </div>
-           
-        </div>
-        <div class="direitos-reservado mb-4">
-            <h6 class="text-uppercase text-center fw-light">Desenvolvido pela Container Digital Júnior ©2022</h6>
             <br>
-        </div>    </footer>
+            <p class="text-center text-secondary mt-5">Desenvolvido pela Container Digital Jr 2022/2023</p><br>
+        </div>
+    </footer>
 </body>
 </html>
