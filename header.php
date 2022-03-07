@@ -50,85 +50,80 @@
   <header>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light text-uppercase  navbar-light bg-light"
-      style="width: 80%; margin: 0 auto; height: 80px;">
+  <nav class="navbar navbar-expand-lg navbar-light text-uppercase  navbar-light bg-light" style="width: 80%; margin: 0 auto; height: 80px;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(  );?>/assets/images/logok.png" alt="LOGO" width="100px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          <a class="navbar-brand" href="#">
+            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/logo-laranja.png" alt="LOGO" width="100px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+          </button>
+            <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Sobre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Teste</a></li>
+                            <li><a class="dropdown-item" href="#">Teste</a></li>
+                            <li><a class="dropdown-item" href="#">Teste</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Destinos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Teste</a></li>
+                            <li><a class="dropdown-item" href="#">Teste</a></li>
+                              <li>
+                              <hr class="dropdown-divider">
+                              </li>
+                            <li><a class="dropdown-item" href="#">Teste</a></li>
+                      </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Programas
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Teste</a></li>
+                          <li><a class="dropdown-item" href="#">Teste</a></li>
+                          <li>
+                          <hr class="dropdown-divider">
+                          </li>
+                        <li><a class="dropdown-item" href="#">Teste</a></li>
+                      </ul>
+                  </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sobre
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Serviços
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Teste</a></li>
+                          <li><a class="dropdown-item" href="#">Teste</a></li>
+                          <li>
+                          <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Teste</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item">
+                        <a class="nav-link ms-4" href="#">Promoções</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link ms-4" href="#">Blog</a>
+                   </li>
               </ul>
-
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Destinos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Programas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle ms-4" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Serviços
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link ms-4" href="#">Promoções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ms-4" href="#">Blog</a>
-            </li>
-
-          </ul>
-          <form class="d-flex">
-            <button class="text-black rounded-pill btn btn-warning fw-normal " type="submit"
-              style="width: 150px; height: 45px; ">ORÇAMENTO</button>
-          </form>
+            <form class="d-flex">
+                <button class="text-black rounded-3 btn btn-warning fw-normal " type="submit" style="width: 150px; height: 45px; color: white;">
+                ORÇAMENTO
+                </button>
+            </form>
         </div>
       </div>
     </nav>
