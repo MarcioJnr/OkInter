@@ -10,14 +10,12 @@
         <div class="container">
             <div class="row mt-0 ">
                 <div class="col-12 col-md-6 col-xl-3 text-center">
-                    <img src="logok.png" alt="" class="mb-4">
-                    <p class="mt-2 text-secondary" >Somos uma empresa especializada em oferecer serviços voltados para viagens e programas de estudos no exterior.</p>
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/logok.png">                    <p class="mt-2 text-secondary" >Somos uma empresa especializada em oferecer serviços voltados para viagens e programas de estudos no exterior.</p>
                     <p class="mb-4 text-secondary">CNPJ: 23.263.680/0001-31</p>
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-6">
-                                <img src="footer1.png" alt="" style="width: 90%; height: 35px;">
-                            </div>
+                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/footer1.png">                            </div>
                             <div class="col-6">
                                 <img src="footer2.png" alt="" style="width: 90%; height: 35px;">
                             </div>
