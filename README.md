@@ -1,7 +1,8 @@
 <h1 align="center">
+    <img src="./assets/images/logok.png"/>
 </h1>
 
-<p align="center"><b>⚖ Wordpress theme developed for FasJus, Junior Law Firm at Faculdade Ari de Sá</b>
+<p align="center"><b>⚖ Wordpress theme developed for Ok Intercambio, an exchange agency based at Brazil and Ireland</b>
 <ul align="center">
     <img src="https://img.shields.io/static/v1?label=Status&message=2%&labelColor=%2306121f&style=flat-square&color=%23fc0303">
     <img src="https://img.shields.io/static/v1?label=License&message=GPL-3.0&labelColor=%2306121f&style=flat-square&color=%23e60000">
@@ -10,7 +11,13 @@
 ## 🎲 PROJECT DESCRIPTION
 Project architected and developed by:
 <ul>
-    
+    <li>Jordy Muniz Araújo (Designer UX/UI)</li>
+    <li>Arthur Anthunes Rangel da Silva (Designer UX/UI)</li>
+    <li>Maria Eduarda Ferreira Leandro (Designer UX/UI)</li>
+    <li>Iago Wesley Irineu Costa (Developer)</li>
+    <li>Francisco Márcio da Silva Oliveira Júnior (Developer)</li>
+    <li>Reinaldo da Silva Nascimento (Developer)</li>
+    <li>Caio Brandão da Costa (Developer)</li>
 </ul> 
 
 ## 💻 TECHNOLOGIES
