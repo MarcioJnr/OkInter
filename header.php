@@ -9,7 +9,7 @@
 
     <title><?php bloginfo('name'); ?></title>
 
-    <?php get_header(); ?>
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
