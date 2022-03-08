@@ -1,4 +1,4 @@
-<!-- 
+    <!-- 
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
         body {
@@ -6,6 +6,9 @@
         }
     </style>
     -->
+    <div class="linha bg-warning" style="width: 100%; height: 10px;">
+        &nbsp;
+    </div>
     <footer style="background-color: #190B2D;"> <br><br>
         <div class="container">
             <div class="row mt-0 ">
