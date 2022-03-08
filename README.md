@@ -1,5 +1,4 @@
 <h1 align="center">
-<img src="./assets/images/logo.png"/>
 </h1>
 
 <p align="center"><b>⚖ Wordpress theme developed for FasJus, Junior Law Firm at Faculdade Ari de Sá</b>
@@ -11,10 +10,7 @@
 ## 🎲 PROJECT DESCRIPTION
 Project architected and developed by:
 <ul>
-    <li>Fernando Henrique Sousa Campos (Designer UX/UI)</li>
-    <li>Erick Gomes Monteiro (Designer UX/UI)</li>
-    <li>Reinaldo da Silva Nascimento (Developer)</li>
-    <li>Caio Brandão da Costa (Developer)</li>
+    
 </ul> 
 
 ## 💻 TECHNOLOGIES
