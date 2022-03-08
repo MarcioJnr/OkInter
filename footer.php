@@ -19,7 +19,7 @@
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-6">
-                                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/footer1.png" style="width: 90%; height: 35px;">
+                                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/footer2.png" style="width: 90%; height: 35px;">
                             </div>
                             <div class="col-6">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/images/footer2.png" style="width: 90%; height: 35px;">
