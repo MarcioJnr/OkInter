@@ -72,5 +72,6 @@
                 <p class="text-center text-secondary mt-5">Desenvolvido pela Container Digital Jr 2022/2023</p> <br>
         </div>
     </footer>
+    <?php wp_footer(  ); ?>
 </body>
 </html>

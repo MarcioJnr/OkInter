@@ -1,12 +1,17 @@
 <?php get_header(); ?>
 
+<!-- <style>
+    h1 {
+        font-family: 'eighties';
+    }
+</style> -->
 
 <main>
   <br><br><br><br>
 <div class="container">
         <div class="row ms-4">
             <div class="col-12">
-                <h1 class="text-warning fw-bolder">Nossa equipe</h1>
+                <h1 class="text-warning">Nossa equipe</h1>
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl at leo interdum consequat suscipit blandit. Non cursus turpis cursus neque placerat. Aliquam turpis elementum quisque sed. Leo commodo purus, dignissim semper. Est tortor ut platea nunc porttitor elementum suspendisse hendrerit. Eu faucibus volutpat adipiscing massa, sed diam feugiat. Leo hac tellus est, cras cursus proin condimentum pretium viverra. Turpis iaculis aliquam pellentesque ut. Interdum sodales in ultricies viverra rhoncus, purus dictumst mattis.</p>
             </div>
         </div>
