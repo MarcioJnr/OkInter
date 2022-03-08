@@ -140,7 +140,9 @@
                   <button type="button" class="btn btn-primary" style="width:200px; float: right;" >Enviar</button><br><br><br>
                   </div>
                 </div>
-        </div>
+                <h1 class="text-warning fw-bolder text-center">Certificações</h1>
+
+        </div><br>
     </div>
 
 
