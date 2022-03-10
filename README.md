@@ -4,7 +4,7 @@
 
 <p align="center"><b>⚖ Wordpress theme developed for Ok Intercambio, an exchange agency based at Brazil and Ireland</b>
 <ul align="center">
-    <img src="https://img.shields.io/static/v1?label=Status&message=2%&labelColor=%2306121f&style=flat-square&color=%23fc0303">
+    <img src="https://img.shields.io/static/v1?label=Status&message=20%&labelColor=%2306121f&style=flat-square&color=%23fc0303">
     <img src="https://img.shields.io/static/v1?label=License&message=GPL-3.0&labelColor=%2306121f&style=flat-square&color=%23e60000">
 </ul>
 
@@ -24,7 +24,7 @@ Project architected and developed by:
 
 ### Prototype
 <ul>
-    <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" height="30">
+    <a href="https://www.figma.com/file/mesvqHUw5cc3aQDbBjKK4U/OK-Interc%C3%A2mbios-%7C-Prototipagem?node-id=231%3A2856"><img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" height="30"></a>
 </ul>
 
 ### Front-end
