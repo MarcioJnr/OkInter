@@ -4,44 +4,58 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: eightiesregular;
+    src: url('../fonts/eighties-regular-webfont.woff2') format('woff2'),
+         url('../fonts/eighties-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1, h2, h3, h4 {
-    font-family: 'eightiesregular';
+    font-family: eightiesregular;
     font-style: normal;
     font-weight: 400;
-}
-
-h1 {
-    font-size: 96px;
-    line-height: 80%;
-}
-
-h2 {
-    font-size: 72px;
-    line-height: 40%;
-}
-
-h3 {
-    font-size: 60px;
     line-height: 60%;
 }
 
+h1 {
+    font-size: calc(44px + 16 * ((100vw - 320px) / 1000));
+}
+
+h2 {
+    font-size: calc(36px + 24 * ((100vw - 320px) / 1600));
+}
+
+h3 {
+    font-size: calc(30px + 20 * ((100vw - 320px) / 1600));
+}
+
 h4 {
-    font-size: 48px;
-    line-height: 38%;
+    font-size: calc(24px + 18 * ((100vw - 320px) / 1600));
 }
 
 h5, h6 {
     font-family: 'Manrope';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
+    line-height: 80%;
 }
 
 h5 {
-    font-size: 34px;
-    line-height: 46px;
+    font-size: calc(18px + 12 * ((100vw - 320px) / 1600));
 }
 
 h6 {
-    font-size: 24px;
-    line-height: 33px;
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+}
+
+p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+}
+
+p {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }
