@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    --primary-color: #FF6A2E;
+    --secondary-color: #2756F8;
+    --tertiary-color: #FFB030;
 }
 
 h1, h2, h3, h4 {
@@ -44,4 +48,8 @@ h5 {
 h6 {
     font-size: 24px;
     line-height: 33px;
+}
+
+li {
+    margin-bottom: 0;
 }
