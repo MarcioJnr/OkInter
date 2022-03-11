@@ -15,6 +15,7 @@
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl at leo interdum consequat suscipit blandit. Non cursus turpis cursus neque placerat. Aliquam turpis elementum quisque sed. Leo commodo purus, dignissim semper. Est tortor ut platea nunc porttitor elementum suspendisse hendrerit. Eu faucibus volutpat adipiscing massa, sed diam feugiat. Leo hac tellus est, cras cursus proin condimentum pretium viverra. Turpis iaculis aliquam pellentesque ut. Interdum sodales in ultricies viverra rhoncus, purus dictumst mattis.</p>
             </div>
         </div>
+        
         <div class="row text-center mt-5">
             <div class="col-12 col-md-6 col-xl-3">
             <img src="<?php echo get_template_directory_uri(  );?>/assets/images/team1.jpg" class="rounded-circle border border-5 border-warning mb-3" >
