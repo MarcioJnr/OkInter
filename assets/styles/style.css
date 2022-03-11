@@ -59,3 +59,7 @@ p {
 p {
     font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
 }
+
+hr {
+    border: 1px dashed gray;
+}
