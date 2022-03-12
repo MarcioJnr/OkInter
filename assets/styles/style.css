@@ -67,3 +67,6 @@ p {
 ul {
     list-style: none !important;
 }
+hr {
+    border: 1px dashed gray;
+}
