@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./assets/images/logok.png"/>
+    <img src="./assets/icons/logo.svg"/>
 </h1>
 
 <p align="center"><b>⚖ Wordpress theme developed for Ok Intercambio, an exchange agency based at Brazil and Ireland</b>
@@ -14,10 +14,10 @@ Project architected and developed by:
     <li>Jordy Muniz Araújo (Designer UX/UI)</li>
     <li>Arthur Anthunes Rangel da Silva (Designer UX/UI)</li>
     <li>Maria Eduarda Ferreira Leandro (Designer UX/UI)</li>
-    <li>Iago Wesley Irineu Costa (Developer)</li>
-    <li>Francisco Márcio da Silva Oliveira Júnior (Developer)</li>
-    <li>Reinaldo da Silva Nascimento (Developer)</li>
-    <li>Caio Brandão da Costa (Developer)</li>
+    <li>Iago Wesley Irineu Costa (Front-end Developer)</li>
+    <li>Francisco Márcio da Silva Oliveira Júnior (Front-end Developer)</li>
+    <li>Reinaldo da Silva Nascimento (Front-end Developer)</li>
+    <li>Caio Brandão da Costa (Front-end Developer)</li>
 </ul> 
 
 ## 💻 TECHNOLOGIES
