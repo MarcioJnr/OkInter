@@ -1,11 +1,3 @@
-    <!-- 
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-        body {
-            font-family: 'Montserrat';
-        }
-    </style>
-    -->
     <div class="linha bg-warning" style="width: 100%; height: 10px;">
         &nbsp;
     </div>
@@ -72,6 +64,6 @@
                 <p class="text-center text-secondary mt-5">Desenvolvido pela Container Digital Jr 2022/2023</p> <br>
         </div>
     </footer>
-    <?php wp_footer(  ); ?>
+    <?php wp_footer(); ?>
 </body>
 </html>
