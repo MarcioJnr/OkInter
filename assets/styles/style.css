@@ -28,15 +28,15 @@ h1 {
 }
 
 h2 {
-    font-size: calc(36px + 24 * ((100vw - 320px) / 1600));
+    font-size: calc(36px + 22 * ((100vw - 320px) / 1600));
 }
 
 h3 {
-    font-size: calc(30px + 20 * ((100vw - 320px) / 1600));
+    font-size: calc(30px + 18 * ((100vw - 320px) / 1600));
 }
 
 h4 {
-    font-size: calc(24px + 18 * ((100vw - 320px) / 1600));
+    font-size: calc(24px + 14 * ((100vw - 320px) / 1600));
 }
 
 h5, h6 {
@@ -47,11 +47,11 @@ h5, h6 {
 }
 
 h5 {
-    font-size: calc(18px + 12 * ((100vw - 320px) / 1600));
+    font-size: calc(18px + 8 * ((100vw - 320px) / 1600));
 }
 
 h6 {
-    font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
 }
 
 p {
@@ -61,7 +61,7 @@ p {
 }
 
 p {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
 }
 
 ul {

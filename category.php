@@ -64,7 +64,7 @@
                 <?php if ( $count == 0 ){ $count+=1;} ?>
                 <?php endwhile; else: endif; wp_reset_postdata();?>
                 
-                <div class="posts-pagination mt-5 mb-5">
+                <div class="posts-pagination mt-3 mb-5">
                     <?php $prev_next = paginate_links(array(
                         'prev_text'          => __( '<' ),
                         'next_text'          => __( '>' ),
@@ -94,7 +94,7 @@
             <div class="col-lg-4">
 
                 <!-- SEÇÃO DE CATEGORIAS -->
-                <section class="col-lg-12 dotted pb-3">
+                <section class="col-lg-12 dotted pb-4 section-title">
                     <div class= "mb-4">
                         <h3>Categorias</h3>
                     </div>
@@ -126,17 +126,17 @@
                 </section>
 
                 <!-- SEÇÃO DE NOTICIAS -->
-                <section class="col-lg-12 mt-4 dotted pb-5 section-title">
+                <section class="col-lg-12 mt-5 dotted pb-5 section-title">
                     <h3>Noticias</h3>
                 </section>
 
                 <!-- SEÇÃO TUDO SOBRE INTERCAMBIO -->
-                <section class="col-lg-12 mt-4 dotted pb-5">
+                <section class="col-lg-12 mt-5 dotted section-title pb-5">
                     <h3>Tudo sobre intercâmbio</h3>
                 </section>
 
                 <!-- VIDEOS RECOMENDADOS -->
-                <section class="col-lg-12 mt-4 dotted pb-5 mb-5">
+                <section class="col-lg-12 mt-5 dotted pb-5 mb-5 section-title">
                     <h3>Vídeos recomendados</h3>
                 </section>
             </div>
