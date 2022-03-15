@@ -9,6 +9,9 @@
     .cor-empresa {
         color: #FF6A2E;
     }
+    .fonte {
+        font-size: 12px;
+    }
 </style>
 <br><br><br><br><br><br><br>
 <main>
@@ -103,6 +106,48 @@
         </div>
     </div>
     </div>
+    <div class="container-fluid" style="background-color: #FFB030;">
+        <div class="container ">
+            <div class="row">
+                <h3 class="text-center text-xl-center cor-missao mt-5 mb-5">Impacto da empresa</h3>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector.svg">
+                    <h4 class="text-center text-xl-center cor-missao mt-5 mb-3">+ 7</h4>
+                    <p class="mb-5">Anos de experiência</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector (2).svg">
+                    <h4 class="text-center text-xl-center cor-missao mt-5 mb-3">+ 2600</h4>
+                    <p class="mb-5">Sonhos realizados</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector (1).svg">
+                    <h4 class="text-center text-xl-center cor-missao mt-5 mmb-3">+ 100</h4>
+                    <p class="mb-5">Cidades pelo mundo</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center ">
+                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector (3).svg">
+                    <h4 class="text-center text-xl-center cor-missao mt-5 mb-3">+ 100</h4>
+                    <p class="mb-5">Escolas parceiras</p>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <h3 class="text-center text-xl-center cor-empresa mt-5 mb-3">Certificações</h3>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-6 text-center text-xl-end">
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/certific1.png" class="mb-3" >
+            </div>
+            <div class="col-12 col-md-6 col-xl-6 text-center text-xl-start">
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/certific2.png" class="mb-3" >
+            </div>
+        </div>
+
+        <h3 class="text-center text-xl-center cor-empresa mt-4 mb-3">Instituições Parceiras</h3>
+        <p class="fonte text-center text-xl-center fw-bolder mb-3">Proporcionam a experiência internacional para você</p>
+        <div class="row">
+                    
+        </div>
 </main>
 
 <?php get_footer(); ?>
