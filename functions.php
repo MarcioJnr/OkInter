@@ -23,6 +23,8 @@
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
         }
+      
+        wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 

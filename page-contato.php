@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main>
+  <H1> TEste <
   <h1 class=" text-center display-1">VOU REFAZER RESPONSIVO</h1>
     <div class="container-form" style=" width: 80%; height: 200px; margin: 0 auto; padding: 10px;">
       <h2 class="fw-bold text-center"></h2>

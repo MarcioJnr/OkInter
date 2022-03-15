@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    --primary-color: #FF6A2E;
+    --secondary-color: #2756F8;
+    --tertiary-color: #FFB030;
 }
 
 @font-face {
@@ -58,4 +62,11 @@ p {
 
 p {
     font-size: calc(14px + 6 * ((100vw - 320px) / 1600));
+}
+
+ul {
+    list-style: none !important;
+}
+hr {
+    border: 1px dashed gray;
 }

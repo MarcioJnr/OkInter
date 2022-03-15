@@ -1,11 +1,3 @@
-    <!-- 
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-        body {
-            font-family: 'Montserrat';
-        }
-    </style>
-    -->
     <div class="linha bg-warning" style="width: 100%; height: 10px;">
         &nbsp;
     </div>
@@ -28,7 +20,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 ps-5">
-                    <h2 class="fw-light text-light fs-4 fw-bolder">Contatos</h2>
+                    <h2 class="fw-light text-light fs-4">Contatos</h2>
                     <p class="mt-4 text-secondary">Fortaleza +55 (88) 981989887 <br> São Paulo +55 (88) 879887765 <br> contato@okintercambio.com.br</p>
                     <p class="text-secondary">Segunda a sexta das 9 as 12h</p>
                     <p class="text-secondary">Av. Senador Virgílio Távora, 1500, sala 11.13,<br>
@@ -37,7 +29,7 @@
                         CEP: 60170-251</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 ps-5">
-                    <h2 class="fw-light text-light fs-4 fw-bolder">Ok Intercâmbio</h2>
+                    <h2 class="fw-light text-light fs-4">Ok Intercâmbio</h2>
                     <p class="mt-4 text-secondary">Sobre</p>
                     <p class="mt-3 text-secondary">Destinos</p>
                     <p class="mt-3 text-secondary">Programas</p>
@@ -45,7 +37,7 @@
                     <p class="mt-3 text-secondary">Blog</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 ps-5">
-                    <h2 class="fw-light text-light fs-4 fw-bolder">Redes sociais</h2>
+                    <h2 class="fw-light text-light fs-4">Redes sociais</h2>
                     <div class="row mt-1">
                         <div class="col-3 col-md-6 col-xl-6">
                             <a href="">
@@ -72,6 +64,6 @@
                 <p class="text-center text-secondary mt-5">Desenvolvido pela Container Digital Jr 2022/2023</p> <br>
         </div>
     </footer>
-    <?php wp_footer(  ); ?>
+    <?php wp_footer(); ?>
 </body>
 </html>
