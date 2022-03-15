@@ -18,6 +18,11 @@
         wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css');
         wp_enqueue_style('manrope', 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap', array(), '1.0.0', 'all');
         wp_enqueue_style('style', get_template_directory_uri().'/assets/styles/style.css', array(),'1.0.0', 'all');
+
+        if ( is_category() == true ) {
+            // só vai carregar se estiver em uma das categorias do blog
+            wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
+        }
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -29,5 +34,32 @@
     }
 
     add_action('wp_enqueue_scripts', 'script_files');
+
+    ///////////////////////utils
+    /*
+    add_filter( 'manage_post_posts_columns', 'smashing_post_columns' );
+    function smashing_post_columns( $columns ) {
+    
+    
+        $columns = array(
+        'cb' => $columns['cb'],
+        'image' => __( 'Image' ),
+        'title' => __( 'Title' ),
+        'categories' => __('Categories'),
+        'author' => __('Author'),
+        'tags' => __('Tags'),
+        'date' => __('Date'),
+        'price' => __( 'Price', 'smashing' ),
+        'area' => __( 'Area', 'smashing' ),
+        );
+    
+    
+    return $columns;
+    }
+    */
+    function wpse_the_category_list( $categories, $post_id ) {
+        return array_slice( $categories, 0, 4, true );
+      }
+      add_filter( 'the_category_list', 'wpse_the_category_list', 10, 4 );
 ?>
 
