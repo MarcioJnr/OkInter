@@ -61,7 +61,16 @@
     */
     function wpse_the_category_list( $categories, $post_id ) {
         return array_slice( $categories, 0, 4, true );
-      }
-      add_filter( 'the_category_list', 'wpse_the_category_list', 10, 4 );
+    }
+    add_filter( 'the_category_list', 'wpse_the_category_list', 10, 4 );
+
+    //php the_SVG('nomedoarquivo')
+    define("IMGPATH", get_bloginfo("template_url") . "/assets/images/");
+    define("SVGPATH", IMGPATH . "/svg/");
+    require_once(get_template_directory().'/app/utils/get-svg.php');
+
+
+    ///////////////CUSTOM POSTS TYPES
+    require_once(get_template_directory().'/app/cpt/membros-cpt.php');
 ?>
 
