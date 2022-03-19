@@ -54,7 +54,7 @@ h6 {
     font-size: calc(16px + 8 * ((100vw - 320px) / 1600));
 }
 
-p {
+a, p {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;

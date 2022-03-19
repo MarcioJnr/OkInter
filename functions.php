@@ -27,6 +27,8 @@
         wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', false, null, false); 
         wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js', array('jquery'));
         wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js', array('popper'));
+        wp_enqueue_script('header', get_template_directory_uri() . '/assets/scripts/header.js');
+
     }
 
     add_action('wp_enqueue_scripts', 'script_files');
