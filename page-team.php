@@ -1,18 +1,13 @@
 <?php get_header(); ?>
 
-<!-- <style>
-    h1 {
-        font-family: 'eighties';
-    }
-</style> -->
 
 <main>
   <br><br><br><br>
-<div class="container">
+<div class="container p-5">
         <div class="row ms-4">
             <div class="col-12">
-                <h2 class="text-warning">Nossa equipe</h2>
-                <p class="mt-4">A equipe da OK Intercâmbio conta com profissionais especializados no segmento de viagem e com uma vasta experiência internacional para assim cumprir com responsabilidade uma assessoria completa e segura para o seu intercâmbio.  Com o advento das tecnologias, o atendimento pode ser 100% online, não importa onde você esteja, nós estaremos sempre conectados para que seu atendimento seja garantido no seu conforto. </p>
+                <h2 class="text-center text-xl-start">Nossa equipe</h2>
+                <p class="mt-4 text-center text-xl-start">A equipe da OK Intercâmbio conta com profissionais especializados no segmento de viagem e com uma vasta experiência internacional para assim cumprir com responsabilidade uma assessoria completa e segura para o seu intercâmbio.  Com o advento das tecnologias, o atendimento pode ser 100% online, não importa onde você esteja, nós estaremos sempre conectados para que seu atendimento seja garantido no seu conforto. </p>
             </div>
         </div>
 </div>
@@ -85,12 +80,12 @@
         </div>
         
 </div>
-    <div class="container">
+    <div class="container p-5">
         <hr size="1" class="linha-tracejada">
         <br><br>
         <div class="row ms-4">
             <div class="col-12">
-                <h2 class="text-warning">Trabalhe conosco</h2>
+                <h2 class="text-center text-xl-start">Trabalhe conosco</h2>
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl at leo interdum consequat suscipit blandit. Non cursus turpis cursus neque placerat. Aliquam turpis elementum quisque sed. Leo commodo purus, dignissim semper. Est tortor ut platea nunc porttitor elementum suspendisse hendrerit. Eu faucibus volutpat adipiscing massa, sed diam feugiat. Leo hac tellus est, cras cursus proin condimentum pretium viverra. Turpis iaculis aliquam pellentesque ut. Interdum sodales in ultricies viverra rhoncus, purus dictumst mattis.</p>
             </div>
             <div class="row mt-4">
@@ -132,12 +127,12 @@
                 </div>
                 </div>
                 
-                <h2 class="text-warning text-center">Certificações</h2><br><br><br>
+                <h2 class="text-center">Certificações</h2><br><br><br>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-xl-6 text-end">
+                    <div class="col-12 col-md-6 col-xl-6 text-center text-xl-end">
                         <img src="<?php echo get_template_directory_uri(  );?>/assets/images/certific1.png" class="mb-3" >
                     </div>
-                    <div class="col-12 col-md-6 col-xl-6 text-start">
+                    <div class="col-12 col-md-6 col-xl-6 text-center text-xl-start">
                     <img src="<?php echo get_template_directory_uri(  );?>/assets/images/certific2.png" class="mb-3" >
                     </div>
                     
