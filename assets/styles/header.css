@@ -3,6 +3,20 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  padding-bottom: 2%;
+}
+
+header div div #social .social-icon a svg path {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+header div div #social .social-icon a:hover svg path {
+  fill: var(--primary-color);
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 header nav div #orcamento-button {
@@ -19,19 +33,103 @@ header nav div #orcamento-button:hover {
   transition: 500ms;
 }
 
-header nav div #navbarSupportedContent ul .nav-item .active {
-  color: var(--primary-color) !important;
+header nav div #navbarSupportedContent ul .nav-item .dropdown-menu {
+  display: none;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.9;
 }
 
-@media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-  }
-  .navbar .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-  .navbar .nav-item .dropdown-menu {
-    margin-top: 0;
-  }
+header nav div #navbarSupportedContent ul .nav-item .dropdown-menu div ul li a p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: black;
+}
+
+header nav div #navbarSupportedContent ul .nav-item .dropdown-menu div ul li .dropdown-menu {
+  top: 0;
+  left: 180%;
+  display: none;
+}
+
+header nav div #navbarSupportedContent ul .nav-item .nav-link {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+header nav div #navbarSupportedContent ul .nav-item svg {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+header nav div #navbarSupportedContent ul .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+header nav div #navbarSupportedContent ul .nav-item:hover .nav-link {
+  color: var(--primary-color);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+header nav div #navbarSupportedContent ul .nav-item:hover .nav-link svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+header nav div #navbarSupportedContent ul .nav-item:hover .nav-link svg path {
+  fill: var(--primary-color);
+}
+
+header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0 20px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul {
+  padding-left: 10px !important;
+}
+
+header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li a {
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li a svg {
+  width: 14px;
+  height: 14px;
 }
 /*# sourceMappingURL=header.css.map */
