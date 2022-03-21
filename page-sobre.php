@@ -106,7 +106,7 @@
                 </p>
             </div>
             <div class="col-12 col-xl-6">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4 ms-3">
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4 ms-1">
             </div>
                        
         </div>
