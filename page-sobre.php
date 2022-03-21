@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <style>
+    .cor-viajando-com-ok {
+        color: #FFB030;
+    }
     .cor-valor {
         background-color: #7B39E9;
     }
@@ -15,7 +18,7 @@
 </style>
 <br><br><br><br><br><br><br>
 <main>
-    <div class="container p-5">
+    <div class="container">
         <div class="row">
             <div class="col-12 col-xl-6">
                 <h3 class="text-center text-xl-start cor-empresa">A empresa</h3>
@@ -39,10 +42,10 @@
                 <img src="<?php echo get_template_directory_uri(  );?>/assets/images/berlim.jpg" class="mt-5">
             </div>
         </div>
-    </div>
+    </div><br><br>
     <div class="container-fluid" style="background-color: #FFB030;">
-        <div class="container p-5">
-            <div class="row">
+        <div class="container">
+            <div class="row p-5">
                 <div class="col-12 col-md-6 col-xl-6">
                     <h3 class="text-center text-xl-center mb-5 cor-missao">Missão</h3>
                     <p class="text-center text-xl-start">
@@ -58,8 +61,8 @@
             </div>
         </div>
         <div class="container">
-        <h3 class="text-center cor-missao">Valores</h3>
-        <div class="row p-5">
+        <h3 class="text-center cor-missao">Valores</h3><br>
+        <div class="row ">
             <div class="col-12 col-md-4 col-xl-4 ">
                 <h6 class="cor-valor text-center mb-4 p-3 text-light rounded-3">Ética</h6>
             </div>
@@ -89,21 +92,25 @@
             </div>
         </div>
         </div>
+        <div>
+            <br><br>
+        </div>
     </div>
-    <div class="container-fluid mt-2" style="background-color: #7B39E9;">
-    <div class="container p-5">
+    <div class="container-fluid" style="background-color: #7B39E9;">
+    <div class="container"><br>
         <div class="row">
             <div class="col-12 col-xl-6">
-                <h3 class="text-center text-xl-start mt-5 cor-empresa">Viajando com a <br><br>OK Intercâmbio</h3>
+                <h3 class="text-center text-xl-start mt-5 cor-viajando-com-ok">Viajando com a <br><br>OK Intercâmbio</h3>
                 <p class="mt-5 text-center text-xl-start text-light">
                 Desde 2015 atuando no segmento de Intercâmbio, a OK Intercâmbio vem se destacando na indústria de Educação Internacional pelo alto nível na qualidade dos serviços oferecidos aos seus clientes, além de um suporte em excelência já comprovada pelos nossos estudantes nos quatro cantos do mundo.
                 </p>
             </div>
             <div class="col-12 col-xl-6">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4">
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4 ms-3">
             </div>
                        
         </div>
+        <br><br>
     </div>
     </div>
     <div class="container-fluid" style="background-color: #FFB030;">
