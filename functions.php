@@ -23,6 +23,10 @@
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
         }
+        if ( is_page('team') == true ) {
+            // só vai carregar se estiver em uma das categorias do blog
+            wp_enqueue_style('team', get_template_directory_uri() . '/assets/styles/team.css');
+        }
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
     }

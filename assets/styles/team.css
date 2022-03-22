@@ -1,0 +1,37 @@
+.member-thumb{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid orange;
+}
+
+.post-frame{
+    justify-content: center;
+}
+
+@media screen and (max-width:1199px) {
+    .post-frame{
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .member-thumb{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .member-thumb{
+        width: 250px;
+        height: 250px;
+    }
+    .post-frame{
+        justify-content: center;
+    }
+}
+
+
