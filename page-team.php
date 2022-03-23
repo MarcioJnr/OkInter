@@ -6,44 +6,14 @@
         <div class="row ms-4">
             <div class="col-12">
                 <h2 class="text-center text-xl-start">Conheça o nosso time</h2>
-                <p class="mt-4 text-center text-xl-start">Viajar com uma agência que conta com um time de apaixonados por viagens e especialistas 
+                <p class="mt-4 text-xl-start">Viajar com uma agência que conta com um time de apaixonados por viagens e especialistas 
                     em educação Internacional faz toda a diferença. Nós sabemos e oferecemos tudo que você precisa para ter uma viagem tranquila.
                 </p>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row text-center mt-4">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/neutton.png" style="width: 200px; height: 200px;" class="mb-3">
-                <p class="fw-bold">Nome Sobrenome</p>
-                <p class="mb-4">Cargo</p>
-            </div>
-        </div>
-        <div class="row text-center mt-5">
-            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/team1.jpg" class="rounded-circle border border-5 border-warning mb-3" >
-                <p class="fw-bold">Nome Sobrenome</p>
-                <p class="mb-4">Cargo</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/team1.jpg" class="rounded-circle border border-5 border-warning mb-3" >
-                <p class="fw-bold">Nome Sobrenome</p>
-                <p class="mb-4">Cargo</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/team1.jpg" class="rounded-circle border border-5 border-warning mb-3" >
-                <p class="fw-bold">Nome Sobrenome</p>
-                <p class="mb-4">Cargo</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/team1.jpg" class="rounded-circle border border-5 border-warning mb-3" >
-                <p class="fw-bold">Nome Sobrenome</p>
-                <p class="mb-4">Cargo</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
+    <!-- TIME DA OK INTERCAMBIO -->
+    <section class="container mt-4">
         <div class="row">
             <?php
                 #mostrar os membros criados pelo admin
@@ -55,8 +25,8 @@
                 $membros_query = new WP_Query($args);
                 if($membros_query->have_posts()) : while ($membros_query->have_posts()) : $membros_query->the_post();
             ?>
-            <div class="d-flex flex-wrap mb-5">
-                <div class="post-frame col-md-4 col-sm-12 col-12 d-flex align-items-center">
+            <div class="d-flex flex-wrap t-card">
+                <div class="post-frame col-xl-3 col-md-4 col-sm-12 col-12 d-flex align-items-center">
                     <img class="member-thumb" <?php if(!has_post_thumbnail( $post->ID )){
                         echo "no-thumbnail";
                         }?>" 
@@ -71,16 +41,16 @@
                         alt="Noticia"
                     >
                 </div>
-                <div class="col-md-8 col-sm-12 d-flex align-items-center">
+                <div class="col-xl-9 col-md-8 col-sm-12 d-flex align-items-center t-box" style="text-align:justify;">
                     <div>
-                        <h5 class="fw-bold"><?php the_title();?></h5>
+                        <h5 class="fw-bold t-title"><?php the_title();?></h5>
                         <p><?php the_content();?></p>
                     </div>
                 </div>
             </div>
             <?php endwhile; else: endif; wp_reset_postdata();?>
         </div>
-    </div>
+    </section>
     <div class="container">
         <hr size="1" class="linha-tracejada">
         <div class="row">

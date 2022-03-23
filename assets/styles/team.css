@@ -1,19 +1,28 @@
 .member-thumb{
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     overflow: hidden;
     border-radius: 50%;
-    border: 2px solid orange;
+    border: 3px solid orange;
 }
 
 .post-frame{
     justify-content: center;
 }
+.t-card{
+    margin: 2.5rem 0 2.5rem 0;
+}
+.t-box{
+    padding-left: 1.5rem;
+}
 
 @media screen and (max-width:1199px) {
     .post-frame{
         justify-content: start;
+    }
+    .t-box{
+        padding-left: 0;
     }
 }
 
@@ -31,6 +40,12 @@
     }
     .post-frame{
         justify-content: center;
+    }
+    .t-box{
+        margin-top: 2rem;
+    }
+    .t-title{
+        text-align: center;
     }
 }
 
