@@ -5,16 +5,16 @@
         <div class="container">
             <div class="row mt-0 ">
                 <div class="col-12 col-md-6 col-xl-3 text-center">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/logok.png">                    
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/logo-footer.svg">                    
                 <p class="mt-2 text-secondary">Somos uma empresa especializada em oferecer serviços voltados para viagens e programas de estudos no exterior.</p>
                     <p class="mb-4 text-secondary">CNPJ: 23.263.680/0001-31</p>
                     <div class="container">
                         <div class="row mb-5">
                             <div class="col-6">
-                                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/footer2.png" style="width: 90%; height: 35px;">
+                                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/cadastur.svg" style="width: 90%; height: 35px;">
                             </div>
                             <div class="col-6">
-                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/footer2.png" style="width: 90%; height: 35px;">
+                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/embratur.svg" style="width: 90%; height: 35px;">
                             </div>
                         </div>
                     </div>
@@ -41,27 +41,27 @@
                     <div class="row mt-1">
                         <div class="col-3 col-md-6 col-xl-6">
                             <a href="">
-                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/facebook.png" style="width: 36px; height: 36px;" class="mt-5">                            </a>
+                            <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/facebook.svg" style="width: 46px; height: 46px;" class="mt-5">                            </a>
                         </div>
                         <div class="col-3 col-md-6 col-xl-6">
                             <a href="">
-                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/whatsapp.png" style="width: 36px; height: 36px;" class="mt-5">
+                            <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/whatsapp.svg" style="width: 46px; height: 46px;" class="mt-5">
                             </a>                        
                         </div>
                         <div class="col-3 col-md-6 col-xl-6">
                             <a href="">
-                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/instagram.png" style="width: 36px; height: 36px;" class="mt-5 ms-1">
+                            <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/instagram.svg" style="width: 46px; height: 46px;" class="mt-5 ms-1">
                             </a>                        
                         </div>
                         <div class="col-3 col-md-6 col-xl-6">
                             <a href="">
-                            <img src="<?php echo get_template_directory_uri(  );?>/assets/images/youtube.png" style="width: 36px; height: 36px;" class="mt-5">
+                            <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/youtube.svg" style="width: 46px; height: 46px;" class="mt-5">
                             </a>                       
                         </div>
                     </div>
                 </div>
             </div>
-                <p class="text-center text-secondary mt-5">Desenvolvido pela Container Digital Jr 2022/2023</p> <br>
+                <p class="text-center text-secondary mt-5" style="text-transform: uppercase;">Desenvolvido pela Container Digital Júnior ©2022</p> <br>
         </div>
     </footer>
     <?php wp_footer(); ?>

@@ -26,8 +26,8 @@
           Agora se você deseja receber um orçamento de intercâmbio é só clicar aqui. Mas se você deseja falar sobre outros assuntos, é só preencher o formulário ao lado.
           </p><br>
         </div>
-        <div class="col-12 col-md-6 col-xl-6">
-          <h3>Plugin WPforms</h3>
+        <div class="col-12 col-md-6 col-xl-6 form">
+          <?php echo do_shortcode( '[contact-form-7 id="25" title="form contato"]');?>
         </div>
       </div>
       <br><br><br><br>
