@@ -6,6 +6,8 @@ header {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   padding-bottom: 2%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 header div div #social .social-icon a svg path {
