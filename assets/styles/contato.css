@@ -1,3 +1,99 @@
-.button-enviar {
-    background-color: red;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+a {
+    color: #FF6A2E;
+    text-decoration: none;
+}
+
+.cor-valor {
+    background-color: #7B39E9;
+}
+.cor-missao {
+    color: #7B39E9;
+}
+.cor-empresa {
+    color: #FF6A2E;
+}
+.fonte {
+    font-size: 12px;
+}
+
+.btn-enviar {
+    background-color: #FF6A2E;
+    color: white;
+    width: 190px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+input, textarea {
+    border-radius: 8px;
+}
+
+
+#nome {
+    width: 55%;
+    float: left;
+    line-height: 30px;
+}
+
+#nome input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#tel {
+    width: 40%;
+    float: right;
+    line-height: 30px;
+    
+}
+
+#tel input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#email {
+    margin-top: 20px;
+    line-height: 30px;
+    width: 100%;
+}
+
+#mensagem {
+    line-height: 30px;
+    width: 100%;
+}
+
+
+#email input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#mensagem textarea {
+    padding-left: 12px;
+    height: 100px;
+    width: 100%;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+

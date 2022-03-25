@@ -89,43 +89,10 @@
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl at leo interdum consequat suscipit blandit. Non cursus turpis cursus neque placerat. Aliquam turpis elementum quisque sed. Leo commodo purus, dignissim semper. Est tortor ut platea nunc porttitor elementum suspendisse hendrerit. Eu faucibus volutpat adipiscing massa, sed diam feugiat. Leo hac tellus est, cras cursus proin condimentum pretium viverra. Turpis iaculis aliquam pellentesque ut. Interdum sodales in ultricies viverra rhoncus, purus dictumst mattis.</p>
             </div>
             <div class="row mt-4">
-                <div class="col-12 col-md-4 col-xl-4">
-                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                    <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="">  
-                </div>
-                <div class="col-12 col-md-4 col-xl-4">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
-                </div>
-                <div class="col-12 col-md-4 col-xl-4">
-                    <label for="exampleFormControlInput1" class="form-label">Número</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="(88) 9 81118673">
+                <div class="col-12 col-md-12 col-xl-12 form">
+                    <?php echo do_shortcode( '[contact-form-7 id="26" title="form trabalhe"]');?>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4 col-xl-4">
-                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                    <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="">  
-                </div>
-                <div class="col-12 col-md-4 col-xl-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
-                </div>
-                <div class="col-12 col-md-4 col-xl-5">
-                    <label for="exampleFormControlInput1" class="form-label">Número</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="(88) 9 81118673">
-                    <br>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-md-6 col-xl-6 ">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl integer odio interdum netus eu arcu et duis. Cursus purus, ornare lacus diam magna sed. </p><br>
-                  </div>
-                  <div class="col-12 col-md-6 col-xl-6 text-center">
-                  <button type="button" class="btn" style="width:200px; float: right; color: white; background-color: #FF6A2E;"> Enviar</button><br><br><br><br>
-                  </div>
-                  
-                </div>
-                </div>
                 
                 <h2 class="text-center">Certificações</h2><br><br><br>
                 <div class="row">
