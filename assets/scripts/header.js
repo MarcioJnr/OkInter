@@ -60,3 +60,14 @@ $('#dropend-link-5').mouseover(() => {
 }).mouseleave(() => {
     $('#dropend-menu-5').css('display', 'none');
 });
+
+//Efeito de rolagem, se quiser usar só descomentar :D
+
+// $(window).scroll(function () { 
+//     let posWin = $(window).scrollTop();
+//     if (posWin != 0) {
+//         $('header').css('background', '#000');
+//     } else {
+//         $('header').css('background', 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)');
+//     }
+// });
