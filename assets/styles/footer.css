@@ -1,0 +1,73 @@
+#top-footer-detail {
+  display: block !important;
+  height: 8px !important;
+}
+
+footer {
+  background-color: var(--footer-color);
+  color: white;
+}
+
+footer .container #content #about {
+  width: 30%;
+}
+
+footer .container #content #about #offers img {
+  width: 40%;
+}
+
+footer .container #content #contact {
+  width: 20%;
+}
+
+footer .container #content #nav {
+  width: 18%;
+}
+
+footer .container #content #nav div p a {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+footer .container #content #nav div p a:hover {
+  color: var(--primary-color) !important;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+footer .container #content #social-footer {
+  width: 25%;
+}
+
+footer .container #content #social-footer div .row .col svg {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container #content #social-footer div .row .col svg path {
+  width: 100%;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+footer .container #content #social-footer div .row .col:hover svg path {
+  fill: var(--primary-color);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+@media (max-width: 992px) {
+  footer .container #content #about, footer .container #content #contact, footer .container #content #nav, footer .container #content #social-footer {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
