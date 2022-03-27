@@ -35,6 +35,8 @@
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
+
+        wp_enqueue_style('swiperstyle', get_template_directory_uri() . '/assets/styles/swiper-bundle.min.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -46,6 +48,8 @@
 
         wp_enqueue_script('header', get_template_directory_uri() . '/assets/scripts/header.js', array(), '1.0.0', 'all');
 
+        wp_enqueue_script( 'swiperjsbundle', get_template_directory_uri() . '/assets/scripts/swiper-bundle.min.js', array(), '8.0.7', true );
+		wp_enqueue_script( 'swiperinit', get_template_directory_uri() . '/assets/scripts/swiper-init.js', array(), '8.0.7', true );
     }
 
     add_action('wp_enqueue_scripts', 'script_files');
@@ -85,5 +89,6 @@
 
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
+    require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
 ?>
 

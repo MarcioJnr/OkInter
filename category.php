@@ -37,7 +37,7 @@
                                         echo get_template_directory_uri()."/assets/images/ret larg 2.jpg";
                                     }?>
                                 " 
-                                alt="Noticia"
+                                alt="<?php the_title();?>"
                             >
                             <!--FALTA FUNÇÕES PRA LIMITAR QUANTIDADE DE LETRAS E ADICIONAR RETICENCIAS-->
                             <div class="post-info"> 

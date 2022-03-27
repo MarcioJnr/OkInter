@@ -38,7 +38,7 @@
                                 echo get_template_directory_uri()."/assets/images/ret larg 2.jpg";
                             }?>
                         " 
-                        alt="Noticia"
+                        alt="<?php the_title();?>"
                     >
                 </div>
                 <div class="col-xl-9 col-md-8 col-sm-12 d-flex align-items-center t-box" style="text-align:justify;">
