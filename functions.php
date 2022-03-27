@@ -28,6 +28,10 @@
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('page contato', get_template_directory_uri() . '/assets/styles/contato.css');
         }
+        if ( is_page('equipe') == true ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('equipe', get_template_directory_uri() . '/assets/styles/team.css');
+        }
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
