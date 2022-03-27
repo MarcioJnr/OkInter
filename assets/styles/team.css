@@ -1,0 +1,50 @@
+h2{
+    color: var(--primary-color);
+}
+
+.member-thumb{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid orange;
+}
+
+.post-frame{
+    justify-content: center;
+}
+.t-card{
+    margin: 2.5rem 0 2.5rem 0;
+}
+.t-box{
+    padding-left: 1.5rem;
+}
+
+@media screen and (max-width:1199px) {
+    .post-frame{
+        justify-content: start;
+    }
+    .t-box{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .member-thumb{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .post-frame{
+        justify-content: center;
+    }
+    .t-box{
+        margin-top: 2rem;
+    }
+    .t-title{
+        text-align: center;
+    }
+}
