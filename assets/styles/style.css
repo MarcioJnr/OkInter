@@ -6,6 +6,7 @@
     --primary-color: #FF6A2E;
     --secondary-color: #2756F8;
     --tertiary-color: #FFB030;
+    --footer-color: #1F1F1F;
 }
 
 @font-face {
@@ -61,6 +62,7 @@ a, p {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
+    text-decoration: none;
 }
 
 p {
