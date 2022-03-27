@@ -23,12 +23,19 @@
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
         }
+        
+        if (is_page('contato')) {
+            // só vai carregar se estiver em uma das categorias do blog
+            wp_enqueue_style('page contato', get_template_directory_uri() . '/assets/styles/contato.css');
+        }
+
         if ( is_page('team') == true ) {
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('team', get_template_directory_uri() . '/assets/styles/team.css');
         }
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
+        wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -37,6 +44,8 @@
         wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.6.0.js', false, null, false); 
         wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js', array('jquery'));
         wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js', array('popper'));
+
+        wp_enqueue_script('header', get_template_directory_uri() . '/assets/scripts/header.js', array(), '1.0.0', 'all');
     }
 
     add_action('wp_enqueue_scripts', 'script_files');
