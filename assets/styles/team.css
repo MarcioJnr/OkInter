@@ -1,3 +1,7 @@
+h2{
+    color: var(--primary-color);
+}
+
 .member-thumb{
     width: 250px;
     height: 250px;
@@ -34,10 +38,6 @@
 }
 
 @media screen and (max-width:767px) {
-    .member-thumb{
-        width: 250px;
-        height: 250px;
-    }
     .post-frame{
         justify-content: center;
     }
