@@ -36,6 +36,11 @@
             // só vai carregar se estiver na page team
             wp_enqueue_style('sobre', get_template_directory_uri() . '/assets/styles/sobre.css');
         }
+        if ( is_front_page() ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('home', get_template_directory_uri() . '/assets/styles/front-page.css');
+        }
+      
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
@@ -94,5 +99,12 @@
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
     require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
+    require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
+
+    //Filtro para excerpt nao ultrapassar o tamanho e quebrar layout
+    function wpdocs_custom_excerpt_length( $length ) {
+        return 20;
+    }
+    add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 ?>
 
