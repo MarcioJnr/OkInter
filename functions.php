@@ -46,6 +46,8 @@
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
 
         wp_enqueue_style('swiperstyle', get_template_directory_uri() . '/assets/styles/swiper-bundle.min.css');
+
+        wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -106,5 +108,10 @@
         return 20;
     }
     add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+    function includeFile($fileName, $variables) {
+        extract($variables);
+        include($fileName);
+    }
 ?>
 
