@@ -14,7 +14,16 @@
     }
 </style>
 <main>
-    <div class="container">
+    <?php 
+        #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
+        includeFile('components/banner.php', 
+            array(
+                'title'=>'Sobre a OK', 
+                'imagem'=>'berlim.jpg',
+            )
+        ); 
+    ?>
+    <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-xl-6">
                 <h3 class="text-center text-xl-start cor-empresa">A empresa</h3>
