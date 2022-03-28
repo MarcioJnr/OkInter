@@ -5,6 +5,15 @@
     - Respons col sm md
     - Style (focar primeiro nos posts)
     -->
+    <?php 
+        #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
+        includeFile('components/banner.php', 
+            array(
+                'title'=>'Blog', 
+                'imagem'=>'berlim.jpg',
+            )
+        ); 
+    ?>
     <div class="container mt-5">
         <div class="row">
 

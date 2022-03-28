@@ -1,7 +1,14 @@
 <?php get_header(); ?>
-
-<br><br><br><br><br><br><br>
 <main>
+    <?php 
+        #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
+        includeFile('components/banner.php', 
+            array(
+                'title'=>'Contato', 
+                'imagem'=>'berlim.jpg',
+            )
+        ); 
+    ?>
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 col-xl-6">
