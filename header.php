@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="nav-item social-icon mt-2">
-                        <a class="nav-link p-0" href="" target="_blank">
+                        <a class="nav-link p-0" href="https://api.whatsapp.com/send?phone=5585992442233&text=Ol%C3%A1%2C%20quero%20realizar%20meu%20sonho%20de%20viajar%20e%20estudar%20no%20exterior!" target="_blank">
                             <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_306_5081)">
                             <path d="M22.5043 4.8241C19.5125 0.199066 13.4044 -1.17594 8.6674 1.69908C4.05511 4.5741 2.55924 10.8241 5.55099 15.4492L5.80031 15.8242L4.80305 19.5742L8.54275 18.5742L8.91672 18.8242C10.5373 19.6992 12.2824 20.1992 14.0276 20.1992C15.8975 20.1992 17.7673 19.6992 19.3879 18.6992C24.0002 15.6992 25.3714 9.57414 22.5043 4.8241ZM19.8865 14.4492C19.3879 15.1992 18.7646 15.6992 17.892 15.8242C17.3934 15.8242 16.7701 16.0742 14.2769 15.0742C12.1578 14.0742 10.4126 12.4492 9.16603 10.5741C8.41809 9.69914 8.04412 8.57413 7.91947 7.44912C7.91947 6.44911 8.29344 5.57411 8.91672 4.9491C9.16603 4.6991 9.41534 4.5741 9.66466 4.5741H10.2879C10.5373 4.5741 10.7866 4.5741 10.9112 5.0741C11.1605 5.69911 11.7838 7.19912 11.7838 7.32412C11.9085 7.44912 11.9085 7.69912 11.7838 7.82412C11.9085 8.07413 11.7838 8.32413 11.6592 8.44913C11.5345 8.57413 11.4098 8.82413 11.2852 8.94913C11.0359 9.07413 10.9112 9.32414 11.0359 9.57414C11.5345 10.3241 12.1578 11.0741 12.7811 11.6992C13.529 12.3242 14.2769 12.8242 15.1495 13.1992C15.3989 13.3242 15.6482 13.3242 15.7728 13.0742C15.8975 12.8242 16.5208 12.1992 16.7701 11.9492C17.0194 11.6992 17.144 11.6992 17.3934 11.8242L19.3879 12.8242C19.6372 12.9492 19.8865 13.0742 20.0111 13.1992C20.1358 13.5742 20.1358 14.0742 19.8865 14.4492Z" fill="white"/>
@@ -110,13 +110,19 @@
 
         <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-dark p-0">
             <div class="container-fluid p-0">
-                <a class="d-flex justify-content-center navbar-brand m-0" href="#">
-                    <img class="w-50" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo.svg"
-                        alt="Ok Intercambio Logo">
+                <a id="logo" class="d-flex justify-content-center align-items-center navbar-brand m-0" href="#">
+                    <img id="logo-img" class="w-50" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo.svg"
+                        alt="Ok Intercambio Logo"/>
+
+                    <img id="chevron-img" class="w-100 align-self-start my-auto" src="<?php echo get_template_directory_uri(); ?>/assets/icons/chevron-right.svg"/>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-0 d-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggle-button">
+                    <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="menu">
+                        <path d="M8 36H40C41.1 36 42 35.1 42 34C42 32.9 41.1 32 40 32H8C6.9 32 6 32.9 6 34C6 35.1 6.9 36 8 36ZM8 26H40C41.1 26 42 25.1 42 24C42 22.9 41.1 22 40 22H8C6.9 22 6 22.9 6 24C6 25.1 6.9 26 8 26ZM6 14C6 15.1 6.9 16 8 16H40C41.1 16 42 15.1 42 14C42 12.9 41.1 12 40 12H8C6.9 12 6 12.9 6 14Z" fill="#FF6A2E"/>
+                        </svg>
+                    </span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -131,7 +137,7 @@
                             </a>
                             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                                 <div class="d-flex dropdown-content">
-                                    <h5>Sobre nós</h5>
+                                    <h5 class="d-none d-lg-flex">Sobre nós</h5>
                                     <ul>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/sobre">A empresa</a></li>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/team">Equipe</a></li>
@@ -152,7 +158,7 @@
 
                             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                                 <div class="d-flex dropdown-content">
-                                    <h5>Destinos</h5>
+                                    <h5 class="d-none d-lg-flex">Destinos</h5>
                                     <ul>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/canada">Canadá</a></li>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/alemanha">Alemanha</a></li>
@@ -183,10 +189,10 @@
 
                             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                                 <div class="d-flex dropdown-content">
-                                    <a href="<?php echo get_home_url(); ?>/programas"><h5>Nossos <br> Programas</h5></a>
+                                    <a href="<?php echo get_home_url(); ?>/programas"><h5 class="d-none d-lg-flex">Nossos <br> Programas</h5></a>
                                     <ul>
                                         <li class="dropdown-item dropend" id="dropend-link-1">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus p-0" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Estudo e trabalho</p>
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +316,7 @@
 
                             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                                 <div class="d-flex dropdown-content">
-                                    <a href="/servicos"><h5>Serviços</h5></a>
+                                    <a href="/servicos"><h5 class="d-none d-lg-flex">Serviços</h5></a>
                                     <ul>
                                         <li><a class="dropdown-item" href="#">Viagem</a></li>
                                         <li><a class="dropdown-item" href="#">Hospedagem</a></li>
@@ -329,8 +335,8 @@
                             <a class="nav-link" href="<?php echo get_home_url(); ?>/blog">BLOG</a>
                         </li>
 
-                        <li class="nav-item d-flex d-lg-none w-100">
-                            <button id="orcamento-button" type="button" class="w-75 btn">ORÇAMENTO</button>
+                        <li class="nav-item d-flex d-lg-none vw-75 justify-content-center">
+                            <button class="btn w-100" id="orcamento-button" type="button" class=" btn">ORÇAMENTO</button>
                         </li>
                     </ul>
                 </div>

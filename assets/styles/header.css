@@ -21,6 +21,10 @@ header div div #social .social-icon a:hover svg path {
   transition: 500ms;
 }
 
+header nav div .navbar-toggler {
+  display: none !important;
+}
+
 header nav div #orcamento-button {
   background-color: var(--primary-color) !important;
   color: white !important;
@@ -69,27 +73,6 @@ header nav div #navbarSupportedContent ul .nav-item svg {
   transition: 300ms;
 }
 
-header nav div #navbarSupportedContent ul .nav-item:hover .dropdown-menu {
-  display: block;
-}
-
-header nav div #navbarSupportedContent ul .nav-item:hover .nav-link {
-  color: var(--primary-color);
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-header nav div #navbarSupportedContent ul .nav-item:hover .nav-link svg {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-header nav div #navbarSupportedContent ul .nav-item:hover .nav-link svg path {
-  fill: var(--primary-color);
-}
-
 header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -133,5 +116,134 @@ header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li
 header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li a svg {
   width: 14px;
   height: 14px;
+}
+
+@media (max-width: 992px) {
+  header nav {
+    margin-top: 5%;
+  }
+  header nav div #logo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    height: 20vw;
+  }
+  header nav div .navbar-toggler {
+    display: block !important;
+  }
+  header nav div .navbar-toggler span {
+    background-image: none !important;
+  }
+  header nav div .navbar-toggler:focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  header nav div #navbarSupportedContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav div #navbarSupportedContent ul .nav-item .dropdown-menu {
+    display: none;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  header nav div #navbarSupportedContent ul .nav-item .dropdown-menu .dropdown-content .accordion-title {
+    display: none !important;
+  }
+  header nav div #navbarSupportedContent ul .nav-item .dropdown-menu .dropdown-content ul .dropend #navbarDropdownPlus {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav div #navbarSupportedContent ul .nav-item .nav-link {
+    color: black;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  header nav div #navbarSupportedContent ul .nav-item svg {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  header nav div #navbarSupportedContent ul .nav-item svg path {
+    fill: black;
+  }
+  header nav div #navbarSupportedContent ul .nav-item:has(.show) .dropdown-menu {
+    display: block;
+  }
+  header nav div #navbarSupportedContent ul .nav-item:focus .nav-link {
+    color: var(--primary-color);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  header nav div #navbarSupportedContent ul .nav-item:focus .nav-link svg {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  header nav div #navbarSupportedContent ul .nav-item:focus .nav-link svg path {
+    fill: var(--primary-color);
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul {
+    padding-left: 10px !important;
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li a {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li a svg {
+    width: 14px;
+    height: 14px;
+  }
 }
 /*# sourceMappingURL=header.css.map */
