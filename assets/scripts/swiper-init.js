@@ -64,3 +64,40 @@ var swiper = new Swiper('.swiper-depoimentos', {
     clickable:true,
   },
 });
+
+
+//PACOTES
+var swiper = new Swiper('.swiper-pacotes', {
+  observer: true,
+  observeParents: true,
+  setWrapperSize:true,
+  centeredSlides: false,
+  loop:true,
+  slidesPerView: 5,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction:false,
+  },
+  breakpoints: {
+    1199: {
+      slidesPerView: 5,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+    575: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+  },
+});
