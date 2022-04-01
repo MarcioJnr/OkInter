@@ -102,7 +102,8 @@
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
     require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
     require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
-
+    require_once(get_template_directory().'/app/cpt/pacotes-cpt.php');
+    
     //Filtro para excerpt nao ultrapassar o tamanho e quebrar layout
     function wpdocs_custom_excerpt_length( $length ) {
         return 20;
