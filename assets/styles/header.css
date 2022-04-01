@@ -73,6 +73,10 @@ header nav div #navbarSupportedContent ul .nav-item svg {
   transition: 300ms;
 }
 
+header nav div #navbarSupportedContent ul .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
 header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -146,6 +150,19 @@ header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li
         -ms-flex-pack: center;
             justify-content: center;
   }
+  header nav div #navbarSupportedContent ul .nav-item a {
+    font-weight: 700 !important;
+  }
+  header nav div #navbarSupportedContent ul .nav-item a.show {
+    color: var(--primary-color);
+  }
+  header nav div #navbarSupportedContent ul .nav-item a.show svg {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  header nav div #navbarSupportedContent ul .nav-item a.show svg path {
+    fill: var(--primary-color);
+  }
   header nav div #navbarSupportedContent ul .nav-item .dropdown-menu {
     display: none;
     left: 0;
@@ -177,23 +194,6 @@ header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li
   }
   header nav div #navbarSupportedContent ul .nav-item svg path {
     fill: black;
-  }
-  header nav div #navbarSupportedContent ul .nav-item:has(.show) .dropdown-menu {
-    display: block;
-  }
-  header nav div #navbarSupportedContent ul .nav-item:focus .nav-link {
-    color: var(--primary-color);
-    -webkit-transition: 300ms;
-    transition: 300ms;
-  }
-  header nav div #navbarSupportedContent ul .nav-item:focus .nav-link svg {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: 300ms;
-    transition: 300ms;
-  }
-  header nav div #navbarSupportedContent ul .nav-item:focus .nav-link svg path {
-    fill: var(--primary-color);
   }
   header nav div #navbarSupportedContent ul .dropdown-menu {
     display: -webkit-box;

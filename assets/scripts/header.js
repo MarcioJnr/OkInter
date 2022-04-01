@@ -32,6 +32,13 @@ $(document).ready(() => {
             $('#dropend-menu-5').css('display', 'none');
         });
     } else {
+        $('.nav-link').click(() => {
+            if(!$('.nav-link').hasClass('show')) {
+                $('.dropdown-menu').css('display', 'none');
+            } else {
+                $('.dropdown .show').css('display', 'block');
+            }
+        })
     }
 });
 
