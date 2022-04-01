@@ -28,19 +28,21 @@
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('page contato', get_template_directory_uri() . '/assets/styles/contato.css');
         }
-        if ( is_page('equipe') == true ) {
+        if (is_page('equipe') == true ) {
             // só vai carregar se estiver na page team
             wp_enqueue_style('equipe', get_template_directory_uri() . '/assets/styles/team.css');
         }
-        if ( is_page('sobre') == true ) {
+        if (is_page('sobre') == true ) {
             // só vai carregar se estiver na page team
             wp_enqueue_style('sobre', get_template_directory_uri() . '/assets/styles/sobre.css');
         }
+
         if ( is_front_page() ) {
             // só vai carregar se estiver na page team
             wp_enqueue_style('home', get_template_directory_uri() . '/assets/styles/front-page.css');
         }
       
+
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');

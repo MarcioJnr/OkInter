@@ -134,7 +134,7 @@
                                     <h5>Sobre nós</h5>
                                     <ul>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/sobre">A empresa</a></li>
-                                        <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/team">Equipe</a></li>
+                                        <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/equipe">Equipe</a></li>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/contato">Contato</a></li>
                                     </ul>
                                 </div>
