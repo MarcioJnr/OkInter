@@ -28,9 +28,26 @@
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('page contato', get_template_directory_uri() . '/assets/styles/contato.css');
         }
+        if ( is_page('equipe') == true ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('equipe', get_template_directory_uri() . '/assets/styles/team.css');
+        }
+        if ( is_page('sobre') == true ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('sobre', get_template_directory_uri() . '/assets/styles/sobre.css');
+        }
+        if ( is_front_page() ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('home', get_template_directory_uri() . '/assets/styles/front-page.css');
+        }
+      
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
+
+        wp_enqueue_style('swiperstyle', get_template_directory_uri() . '/assets/styles/swiper-bundle.min.css');
+
+        wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -42,6 +59,8 @@
 
         wp_enqueue_script('header', get_template_directory_uri() . '/assets/scripts/header.js', array(), '1.0.0', 'all');
 
+        wp_enqueue_script( 'swiperjsbundle', get_template_directory_uri() . '/assets/scripts/swiper-bundle.min.js', array(), '8.0.7', true );
+		wp_enqueue_script( 'swiperinit', get_template_directory_uri() . '/assets/scripts/swiper-init.js', array(), '8.0.7', true );
     }
 
     add_action('wp_enqueue_scripts', 'script_files');
@@ -81,5 +100,18 @@
 
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
+    require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
+    require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
+
+    //Filtro para excerpt nao ultrapassar o tamanho e quebrar layout
+    function wpdocs_custom_excerpt_length( $length ) {
+        return 20;
+    }
+    add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+    function includeFile($fileName, $variables) {
+        extract($variables);
+        include($fileName);
+    }
 ?>
 

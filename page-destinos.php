@@ -24,7 +24,15 @@
   
 
 </style>
-
+<?php 
+    #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
+    includeFile('components/banner.php', 
+        array(
+            'title'=>'Destinos', 
+            'imagem'=>'berlim.jpg',
+        )
+    ); 
+?>
 <div class="container justify-content-center" >
   <div class="row mt-4  mx-5">
     <div class="col-12 col-md-6">

@@ -12,13 +12,18 @@
     .cor-empresa {
         color: #FF6A2E;
     }
-    .fonte {
-        font-size: 12px;
-    }
 </style>
-<br><br><br><br><br><br><br>
 <main>
-    <div class="container">
+    <?php 
+        #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
+        includeFile('components/banner.php', 
+            array(
+                'title'=>'Sobre a OK', 
+                'imagem'=>'berlim.jpg',
+            )
+        ); 
+    ?>
+    <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-xl-6">
                 <h3 class="text-center text-xl-start cor-empresa">A empresa</h3>
@@ -97,21 +102,21 @@
         </div>
     </div>
     <div class="container-fluid" style="background-color: #7B39E9;">
-    <div class="container"><br>
-        <div class="row">
-            <div class="col-12 col-xl-6">
-                <h3 class="text-center text-xl-start mt-5 cor-viajando-com-ok">Viajando com a <br><br>OK Intercâmbio</h3>
-                <p class="mt-5 text-center text-xl-start text-light">
-                Desde 2015 atuando no segmento de Intercâmbio, a OK Intercâmbio vem se destacando na indústria de Educação Internacional pelo alto nível na qualidade dos serviços oferecidos aos seus clientes, além de um suporte em excelência já comprovada pelos nossos estudantes nos quatro cantos do mundo.
-                </p>
+        <div class="container"><br>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <h3 class="text-center text-xl-start mt-5 cor-viajando-com-ok">Viajando com a <br><br>OK Intercâmbio</h3>
+                    <p class="mt-5 text-center text-xl-start text-light">
+                    Desde 2015 atuando no segmento de Intercâmbio, a OK Intercâmbio vem se destacando na indústria de Educação Internacional pelo alto nível na qualidade dos serviços oferecidos aos seus clientes, além de um suporte em excelência já comprovada pelos nossos estudantes nos quatro cantos do mundo.
+                    </p>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4 ms-1">
+                </div>
+                        
             </div>
-            <div class="col-12 col-xl-6">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4 ms-1">
-            </div>
-                       
+            <br><br>
         </div>
-        <br><br>
-    </div>
     </div>
     <div class="container-fluid" style="background-color: #FFB030;">
         <div class="container ">
@@ -140,7 +145,8 @@
             </div>        
         </div>
     </div>
-    <h3 class="text-center text-xl-center cor-empresa mt-5 mb-3">Certificações</h3>
+    <div class="container">
+        <h3 class="text-center text-xl-center cor-empresa mt-5 mb-3">Certificações</h3>
         <div class="row">
             <div class="col-12 col-md-6 col-xl-6 text-center text-xl-end">
                 <img src="<?php echo get_template_directory_uri(  );?>/assets/images/certific1.png" class="mb-3" >
@@ -149,12 +155,51 @@
                 <img src="<?php echo get_template_directory_uri(  );?>/assets/images/certific2.png" class="mb-3" >
             </div>
         </div>
+    </div>
 
-        <h3 class="text-center text-xl-center cor-empresa mt-4 mb-3">Instituições Parceiras</h3>
-        <p class="fonte text-center text-xl-center fw-bolder mb-3">Proporcionam a experiência internacional para você</p>
-        <div class="row">
-                    
+
+    <!-- PARCEIROS DA OK INTERCAMBIO -->
+    <section class="container">
+        <div>
+            <h3 class="text-center text-xl-center cor-empresa mt-4 mb-3">Instituições Parceiras</h3>
+            <p class="text-center text-xl-center fw-bolder mb-3">Proporcionam a experiência internacional para você</p>
         </div>
+        <div class="swiper swiper-parceiros mt-5">
+            <div class="swiper-wrapper">
+                <?php
+                    #mostrar os parceiros criados pelo admin
+                    $args = array (
+                    'post_type' => 'parceiro',
+                    'orderby' => 'title',
+                    'order' => 'ASC'
+                    );
+                    $membros_query = new WP_Query($args);
+                    if($membros_query->have_posts()) : while ($membros_query->have_posts()) : $membros_query->the_post();
+                ?>
+                <div class="swiper-slide">
+                    <div class="post-frame col-12 d-flex justify-content-center">
+                        <img class="parceiro-thumb" <?php if(!has_post_thumbnail( $post->ID )){
+                            echo "no-thumbnail";
+                            }?>" 
+                            src="<?php if(has_post_thumbnail( $post->ID )){
+                                echo get_the_post_thumbnail_url($post->ID);
+                                }
+                                else{
+                                    //alterar a imagem para um placeholder feito
+                                    echo get_template_directory_uri()."/assets/images/ret larg 2.jpg";
+                                }?>
+                            " 
+                            alt="<?php the_title();?>"
+                        >
+                    </div>
+                </div>
+                <?php endwhile; else: endif; wp_reset_postdata();?>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="gradiente"></div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>
