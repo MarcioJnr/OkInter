@@ -48,3 +48,130 @@ h2{
         text-align: center;
     }
 }
+
+
+/* CSS do formulário */
+
+input, textarea {
+    border-radius: 8px;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+@media (min-width: 992px) {
+    #name {
+        width: 35%;
+        float: left;
+        line-height: 30px;
+    }
+    #email {
+        width: 42%;
+        float: left;
+        line-height: 30px;
+    }
+    #telefone {
+        width: 23%;
+        float: right;
+        line-height: 30px;
+    }
+    #campo4 {
+        margin-top: 20px;
+        width: 35%;
+        float: left;
+        line-height: 30px;
+    }
+    #campo5 {
+        margin-top: 20px;
+        width: 26.7%;
+        float: left;
+        line-height: 30px;
+    }
+    #campo6 {
+        margin-top: 20px;
+        width: 38%;
+        float: right;
+        line-height: 30px;
+    }
+    #texto {
+        width: 80%;
+        float: left;
+        line-height: 30px;
+    }
+    #btn {
+        width: 20%;
+        float: left;
+        line-height: 30px;
+    }
+    
+}
+
+#name input {
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+
+#email input {
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+
+#telefone input {
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#campo4 input {
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#campo5 input {
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#campo6 input {
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#texto {
+    margin-top: 20px;
+    float: left;
+}
+
+#btn {
+    margin-top: 20px;
+    float: right;
+    background-color: #FF6A2E;
+    color: white;
+    width: 190px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
+}
