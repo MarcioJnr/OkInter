@@ -39,6 +39,14 @@ $(document).ready(() => {
                 $('.dropdown .show').css('display', 'block');
             }
         })
+
+        $('.dropend').click(() => {
+            if(!$('.dropend .dropdown').hasClass('show')) {
+                $('.dropend .dropdown-menu').css('display', 'none');
+            } else {
+                $('.dropend .show').css('display', 'block');
+            }
+        })
     }
 });
 

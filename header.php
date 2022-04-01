@@ -166,7 +166,7 @@
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
                                         <li><a class="dropdown-item" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
                                         <li><a class="dropdown-item d-flex align-items-center" href="<?php echo get_home_url(); ?>/destinos" style="color: #FF6A2E;">
-                                                Mais
+                                                Ver mais
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="#FF6A2E"/>
@@ -191,16 +191,21 @@
                                 <div class="d-flex dropdown-content">
                                     <a href="<?php echo get_home_url(); ?>/programas"><h5 class="d-none d-lg-flex">Nossos <br> Programas</h5></a>
                                     <ul>
-                                        <li class="dropdown-item dropend" id="dropend-link-1">
+                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-1">
                                             <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Estudo e trabalho</p>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
                                                 <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
                                                 </svg>
+
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
+                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
+                                                </svg>
+
                                             </a>
 
-                                            <div class="dropdown-menu shadow" data-popper-placement="right-start" id="dropend-menu-1">
+                                            <div class="dropdown-menu shadow border-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-1">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises <br>ofertados</h5>
                                                     <ul>
@@ -213,16 +218,20 @@
                                             </div>
                                         </li>
 
-                                        <li class="dropdown-item dropend" id="dropend-link-2">
-                                            <a class="dropdown-item d-flex justify-content-between align-items-center p-0" href="#">
+                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-2">
+                                            <a class="dropdown d-flex justify-content-between align-items-center p-0" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Idiomas</p>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
                                                 <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
+                                                </svg>
+
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
+                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
                                                 </svg>
                                             </a>
 
-                                            <div class="dropdown-menu shadow" data-popper-placement="right-start" id="dropend-menu-2">
+                                            <div class="dropdown-menu shadow border-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-2">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises <br>ofertados</h5>
                                                     <ul>
@@ -235,16 +244,20 @@
                                             </div>
                                         </li>
 
-                                        <li class="dropdown-item dropend" id="dropend-link-3">
-                                            <a class="dropdown-item d-flex justify-content-between align-items-center p-0" href="#">
+                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-3">
+                                            <a class="dropdown d-flex justify-content-between align-items-center p-0" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Universidade no<br>Exterior</p>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
                                                 <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
+                                                </svg>
+
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
+                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
                                                 </svg>
                                             </a>
 
-                                            <div class="dropdown-menu shadow" data-popper-placement="right-start" id="dropend-menu-3">
+                                            <div class="dropdown-menu shadow border-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-3">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises <br>ofertados</h5>
                                                     <ul>
@@ -257,16 +270,20 @@
                                             </div>
                                         </li>
 
-                                        <li class="dropdown-item dropend" id="dropend-link-4">
-                                            <a class="dropdown-item d-flex justify-content-between align-items-center p-0" href="#">
+                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-4">
+                                            <a class="dropdown d-flex justify-content-between align-items-center p-0" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Intercâmbio em<br>Família</p>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
                                                 <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
+                                                </svg>
+
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
+                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
                                                 </svg>
                                             </a>
 
-                                            <div class="dropdown-menu shadow" data-popper-placement="right-start" id="dropend-menu-4">
+                                            <div class="dropdown-menu shadow border-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-4">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises <br>ofertados</h5>
                                                     <ul>
@@ -279,16 +296,20 @@
                                             </div>
                                         </li>
 
-                                        <li class="dropdown-item dropend" id="dropend-link-5">
-                                            <a class="dropdown-item d-flex justify-content-between align-items-center p-0" href="#">
+                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-5">
+                                            <a class="dropdown d-flex justify-content-between align-items-center p-0" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Business English</p>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
                                                 <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
+                                                </svg>
+
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
+                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
                                                 </svg>
                                             </a>
 
-                                            <div class="dropdown-menu shadow" data-popper-placement="right-start" id="dropend-menu-">
+                                            <div class="dropdown-menu shadow border-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises <br>ofertados</h5>
                                                     <ul>
