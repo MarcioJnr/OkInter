@@ -1,7 +1,7 @@
 h2{
     color: var(--primary-color);
 }
-
+/*DEPOIMENTOS--------------------------------------------------------------------------*/
 .depoimento-thumb{
     width: 120px;
     height: 120px;
@@ -54,7 +54,7 @@ h2{
     text-align: justify;
 }
 
-.swiper-slide-active{
+.swiper-depoimentos .swiper-slide-active{
     transform: translateY(-2rem) scale(1.1)!important;
     transition: all 1s;
 }
@@ -64,7 +64,7 @@ h2{
 }
 
 @media screen and (max-width:767px) {
-    .swiper-slide-active{
+    .swiper-depoimentos .swiper-slide-active{
         transform: translateY(-2rem)!important;
         transition: all 1s;
     }
@@ -76,4 +76,74 @@ h2{
 .swiper-slide-prev{
     transform: translateY(0rem)!important;
     transition: all 1s;
+}
+
+
+/*PACOTES--------------------------------------------------------------------------*/
+
+.pacote-thumb{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 3px;
+    background-color: white;
+    position: absolute;
+    transform: translateY(-5rem);
+}
+
+.swiper-pacotes .swiper-slide{
+    padding-top: 6rem;
+    height: auto;
+}
+
+.pacote-info{
+    margin: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 7.5rem 2rem 1rem 2rem;
+    min-height: 240px;
+    height: 100%;
+}
+
+.pais-pacote{
+    color: var(--purple-color);
+}
+
+.cidade-pacote{
+    color: var(--primary-color);
+}
+
+.duracao-pacote{
+    font-weight: 700;
+}
+
+.valor-pacote{
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:1199px) {
+    .pacote-info{
+        min-height: 270px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .pacote-info{
+        min-height: 240px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .pacote-info{
+        min-height: 215px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .pacote-info{
+        min-height: 265px;
+    }
 }
