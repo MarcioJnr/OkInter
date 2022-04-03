@@ -71,7 +71,7 @@ var swiper = new Swiper('.swiper-pacotes', {
   observer: true,
   observeParents: true,
   setWrapperSize:true,
-  centeredSlides: false,
+  centeredSlides: true,
   loop:true,
   slidesPerView: 5,
   spaceBetween: 0,

@@ -90,11 +90,12 @@ h2{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 3px;
     background-color: white;
     position: absolute;
-    transform: translateY(-7.5rem);
+    transform: translateY(-5rem);
 }
 
 .swiper-pacotes .swiper-slide{
-    padding-top: 7.5rem;
+    padding-top: 6rem;
+    height: auto;
 }
 
 .pacote-info{
@@ -102,15 +103,26 @@ h2{
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10px;
-    padding: 4.5rem 2rem 1rem 2rem;
+    padding: 7.5rem 2rem 1rem 2rem;
     min-height: 240px;
+    height: 100%;
 }
 
-/*
 .pais-pacote{
-
+    color: var(--purple-color);
 }
-*/
+
+.cidade-pacote{
+    color: var(--primary-color);
+}
+
+.duracao-pacote{
+    font-weight: 700;
+}
+
+.valor-pacote{
+    color: var(--primary-color);
+}
 
 @media screen and (max-width:1199px) {
     .pacote-info{
