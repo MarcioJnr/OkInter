@@ -131,4 +131,42 @@ function create_programapacote_tax() {
 
 }
 add_action( 'init', 'create_programapacote_tax' );
+
+
+
+// Register Taxonomy Promocaopacote
+function create_promocaopacote_tax() {
+
+	$labels = array(
+		'name'              => _x( 'Pacotes em promoção ', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Promocao pacote', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Promocaopacotes', 'textdomain' ),
+		'all_items'         => __( 'All Promocaopacotes', 'textdomain' ),
+		'parent_item'       => __( 'Parent Promocaopacote', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Promocaopacote:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Promocaopacote', 'textdomain' ),
+		'update_item'       => __( 'Update Promocaopacote', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Promocaopacote', 'textdomain' ),
+		'new_item_name'     => __( 'New Promocaopacote Name', 'textdomain' ),
+		'menu_name'         => __( 'Promoção', 'textdomain' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'description' => __( 'tax para saber se um pacote está ou não da promoção', 'textdomain' ),
+		'hierarchical' => true,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'show_in_nav_menus' => true,
+		'show_tagcloud' => true,
+		'show_in_quick_edit' => true,
+		'show_admin_column' => false,
+		'show_in_rest' => true,
+		'query_var' => 'promocaopacote',
+	);
+	register_taxonomy( 'promocaopacote', array('pacote', 'pacotes'), $args );
+
+}
+add_action( 'init', 'create_promocaopacote_tax' );
 ?>
