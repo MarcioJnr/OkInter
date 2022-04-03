@@ -7,6 +7,7 @@
     --secondary-color: #2756F8;
     --tertiary-color: #FFB030;
     --footer-color: #1F1F1F;
+    --purple-color: #7B39E9;
 }
 
 @font-face {
@@ -63,6 +64,7 @@ a, p {
     font-style: normal;
     font-weight: 500;
     text-decoration: none;
+    margin-bottom: 0;
 }
 
 p {
