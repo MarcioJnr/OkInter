@@ -136,41 +136,35 @@
     <div class="container mb-5 px-0" id="depositions">
         <div id="testimonial-carousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item">
-                    <?php 
-                        includeFile('components/card-testimonial.php', 
-                            array(
-                                'directory'=>get_template_directory_uri().'/assets/images/testimonial-vera.png',
-                                'person'=>'Vera Almeida',
-                                'text'=>'“Tirou todas as minhas dúvidas e me deu todo o suporte necessário. Obrigado de coração.”'
-                            )
-                        ); 
-                    ?>
-                </div>
+                <?php 
+                    $args = array (
+                        'post_type' => 'depoimento',
+                        'orderby' => 'title',
+                        'order' => 'ASC'
+                    );
+                    $testimonial_query = new WP_Query($args);
+                    $counter = 0;
 
-                <div class="carousel-item active">
-                    <?php 
-                        includeFile('components/card-testimonial.php', 
-                            array(
-                                'directory'=>get_template_directory_uri().'/assets/images/testimonial-vera.png',
-                                'person'=>'Vera Almeida',
-                                'text'=>'“Tirou todas as minhas dúvidas e me deu todo o suporte necessário. Obrigado de coração.”'
-                            )
-                        ); 
-                    ?>
-                </div>
-
-                <div class="carousel-item">
-                    <?php 
-                        includeFile('components/card-testimonial.php', 
-                            array(
-                                'directory'=>get_template_directory_uri().'/assets/images/testimonial-vera.png',
-                                'person'=>'Vera Almeida',
-                                'text'=>'“Tirou todas as minhas dúvidas e me deu todo o suporte necessário. Obrigado de coração.”'
-                            )
-                        ); 
-                    ?>
-                </div>
+                    if($testimonial_query->have_posts()) : 
+                        while ($testimonial_query->have_posts()) : $testimonial_query->the_post();
+                            if($counter == 0) :
+                                echo '<div class="carousel-item active" data-bs-interval="4000">';
+                            else :
+                                echo '<div class="carousel-item" data-bs-interval="4000">';
+                            endif;
+                            
+                            includeFile('components/card-testimonial.php', 
+                                array(
+                                    'directory'=>get_the_post_thumbnail_url($post->ID),
+                                    'person'=>get_the_title($post->ID),
+                                    'text'=>get_the_excerpt($post->ID)
+                                )
+                            ); 
+                            echo '</div>';
+                            $counter++;
+                        endwhile;
+                    endif;
+                ?>
             </div>
 
             <div class="d-flex justify-content-end" id="control-buttons">
@@ -185,41 +179,21 @@
         </div>
 
         <div class="row d-none d-lg-flex justify-content-between">
-            <div class="col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-testimonial.php', 
-                        array(
-                            'directory'=>get_template_directory_uri().'/assets/images/testimonial-vera.png',
-                            'person'=>'Vera Almeida',
-                            'text'=>'“Tirou todas as minhas dúvidas e me deu todo o suporte necessário. Obrigado de coração.”'
-                        )
-                    ); 
-                ?>
-            </div>
-
-            <div class="col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-testimonial.php', 
-                        array(
-                            'directory'=>get_template_directory_uri().'/assets/images/testimonial-vera.png',
-                            'person'=>'Vera Almeida',
-                            'text'=>'“Tirou todas as minhas dúvidas e me deu todo o suporte necessário. Obrigado de coração.”'
-                        )
-                    ); 
-                ?>
-            </div>
-
-            <div class="col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-testimonial.php', 
-                        array(
-                            'directory'=>get_template_directory_uri().'/assets/images/testimonial-vera.png',
-                            'person'=>'Vera Almeida',
-                            'text'=>'“Tirou todas as minhas dúvidas e me deu todo o suporte necessário. Obrigado de coração.”'
-                        )
-                    ); 
-                ?>
-            </div>
+            <?php 
+                if($testimonial_query->have_posts()) : 
+                    while ($testimonial_query->have_posts()) : $testimonial_query->the_post();
+                        echo '<div class="col-lg-4 px-0">';
+                        includeFile('components/card-testimonial.php', 
+                            array(
+                                'directory'=>get_the_post_thumbnail_url($post->ID),
+                                'person'=>get_the_title($post->ID),
+                                'text'=>get_the_excerpt($post->ID)
+                            )
+                        ); 
+                        echo '</div>';
+                    endwhile;
+                endif;
+            ?>
         </div>
     </div>
 </main>

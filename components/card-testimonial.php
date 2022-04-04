@@ -1,6 +1,8 @@
 <div class="card-testimonial border-0 p-0">
     <div class="person-profile-testimonial d-flex flex-column align-items-center">
-        <img class="person-img mb-2" src="<?php echo $directory ?>"/>
+        <span class="circle-img mb-2">
+            <img class="person-img" src="<?php echo $directory ?>"/>
+        </span>
 
         <h6 class="fw-bold"><?php echo $person ?></h6>
 
@@ -14,6 +16,6 @@
     </div>
     
     <p class="testimonial-text text-center shadow rounded-3 d-flex align-items-center mx-3 my-4 px-3 fw-light">
-        <?php echo $text ?>
+        <?php echo '"'.$text.'"' ?>
     </p>
 </div>
