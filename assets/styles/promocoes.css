@@ -1,0 +1,50 @@
+h4{
+    margin-bottom: 0;
+}
+.pacote-thumb{
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 6px 6px 16px 0px #0000004D;
+    border-radius: 8px;
+}
+
+.pacote-info{
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 16px 0px #0000004D;
+    border-radius: 0px 10px 10px 0;
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.valor-pacote{
+    color: var(--primary-color);
+}
+
+.saber-mais{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.nav-pages{
+    margin-top: 4rem;
+}
+
+.nav-pages a{
+    color: white;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+@media screen and (max-width:767px) {
+    .pacote-info{
+        transform: translateY(-0.3rem);
+        margin: 0rem auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
