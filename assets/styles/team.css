@@ -67,34 +67,35 @@ textarea:focus, input:focus {
         float: left;
         line-height: 30px;
     }
-    #email {
+    #estado {
         width: 42%;
         float: left;
         line-height: 30px;
-    }
-    #telefone {
+    } 
+    #cidade {
         width: 23%;
         float: right;
         line-height: 30px;
-    }
-    #campo4 {
+    }   
+    #email {
         margin-top: 20px;
         width: 35%;
         float: left;
         line-height: 30px;
     }
-    #campo5 {
+    #numero {
         margin-top: 20px;
         width: 26.7%;
         float: left;
         line-height: 30px;
     }
-    #campo6 {
+    #curriculo {
         margin-top: 20px;
         width: 38%;
         float: right;
         line-height: 30px;
-    }
+        line-height: 31px;
+}
     #texto {
         width: 80%;
         float: left;

@@ -14,7 +14,6 @@
     }
 </style>
 <main>
-<<<<<<< Updated upstream
     <?php 
         #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
         includeFile('components/banner.php', 
@@ -25,10 +24,6 @@
         ); 
     ?>
     <div class="container mt-5">
-=======
-    <br><br><br><br><br><br><br><br><br><br>
-    <div class="container">
->>>>>>> Stashed changes
         <div class="row">
             <div class="col-12 col-xl-6">
                 <h3 class="text-center text-xl-start cor-empresa">A empresa</h3>
