@@ -1,0 +1,26 @@
+.card-testimonial .person-profile-testimonial {
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
+}
+
+.card-testimonial .person-profile-testimonial .person-img {
+  width: 20%;
+}
+
+.card-testimonial .testimonial-text {
+  height: 50vw;
+}
+
+@media (min-width: 992px) {
+  .card-testimonial .person-profile-testimonial {
+    -webkit-transform: translateY(75%);
+            transform: translateY(75%);
+  }
+  .card-testimonial .person-profile-testimonial .person-img {
+    width: 20%;
+  }
+  .card-testimonial .testimonial-text {
+    height: 18vw;
+  }
+}
+/*# sourceMappingURL=card-testimonial.css.map */

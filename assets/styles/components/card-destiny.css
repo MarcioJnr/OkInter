@@ -1,0 +1,33 @@
+.card {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img {
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.card .card-text-background {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-backdrop-filter: opacity(0.2);
+          backdrop-filter: opacity(0.2);
+}
+
+.card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+  main .container .row .col-5 .card {
+    height: 18.5vw;
+  }
+}
+/*# sourceMappingURL=card-destiny.css.map */

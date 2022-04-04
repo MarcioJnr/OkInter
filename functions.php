@@ -52,7 +52,10 @@
 
         wp_enqueue_style('swiperstyle', get_template_directory_uri() . '/assets/styles/swiper-bundle.min.css');
 
+        //estilos dos componentes
         wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
+        wp_enqueue_style('card-destiny', get_template_directory_uri() . '/assets/styles/components/card-destiny.css');
+        wp_enqueue_style('card-testimonial', get_template_directory_uri() . '/assets/styles/components/card-testimonial.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
