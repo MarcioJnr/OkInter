@@ -150,7 +150,7 @@
                             if($counter == 0) :
                                 echo '<div class="carousel-item active" data-bs-interval="4000">';
                             else :
-                                echo '<div class="carousel-item" data-bs-interval="4000">';
+                                echo '<div class="carousel-item">';
                             endif;
                             
                             includeFile('components/card-testimonial.php', 
