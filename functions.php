@@ -108,6 +108,7 @@
 
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
+    require_once(get_template_directory().'/app/cpt/paises-cpt.php');
     require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
     require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
 
