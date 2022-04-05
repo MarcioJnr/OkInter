@@ -80,17 +80,20 @@ var swiper = new Swiper('.swiper-pacotes', {
     disableOnInteraction:false,
   },
   breakpoints: {
-    1199: {
-      slidesPerView: 5,
-    },
-    991: {
+    1400:{
       slidesPerView: 4,
     },
-    767: {
+    1199: {
       slidesPerView: 3,
     },
-    575: {
+    991: {
+      slidesPerView: 3,
+    },
+    767: {
       slidesPerView: 2,
+    },
+    575: {
+      slidesPerView: 1,
     },
     0: {
       slidesPerView: 1,
