@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <?php 
-    #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
     includeFile('components/banner.php', 
         array(
             'title'=>'Destinos', 

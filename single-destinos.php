@@ -25,16 +25,15 @@
 
 </style>
 <?php 
-    #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
     includeFile('components/banner.php', 
         array(
-            'title'=>'Destinos', 
+            'title'=>'Alemanha', 
             'imagem'=>'berlim.jpg',
         )
     ); 
 ?>
-<div class="container justify-content-center" >
-  <div class="row mt-4  mx-5">
+<main class="container py-5" >
+  <div class="row mt-4 mx-5">
     <div class="col-12 col-md-6">
       <h2 class="orange">Sobre</h2>
       <p class="mt-5">A República Federal da Alemanha está situada no coração da Europa e é um país cosmopolita, democrático, com uma grande tradição e um presente vibrante.  País da Europa Ocidental conta com uma paisagem de florestas, rios, serras e praias do Mar do Norte. Tem mais de 2 milénios de história. Berlim, a capital, alberga espaços de arte e de vida noturna, a Porta de Brandeburgo e muitos locais relacionados com a Segunda Guerra Mundial. Munique, é conhecida pela Oktoberfest e pelas cervejarias,
@@ -60,7 +59,7 @@
       </div>
     </div>
   </div>  
-</div>
+</main>
 
 <div class="container-fluid text-center">
   <div class="row  mt-5 bg-warning  justify-content-center text-center">
