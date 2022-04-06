@@ -1,29 +1,5 @@
 <?php get_header(); ?>
 
-<style>
-
-  .orange{
-   color: #FF6A2E; 
-  }
-
-  .purple{
-   color: #7B39E9; 
-  }
-
-  .button{
-    width: 160px;
-    height: 48px;
-    color: white;
-  }
-
-  .button2{
-    width: 232px;
-    height: 48px;
-    color: white;
-  }
-  
-
-</style>
 <main>
   <?php 
         #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
@@ -34,90 +10,129 @@
             )
         ); 
   ?>
-  <div class="container-fluid" >
-    <div class="row gx-0 mb-5">
-      <h1 class="orange text-center my-5">Promoções da Semana</h1>
-      <div class="col-12 col-xl-8">
-          <img src="<?php echo get_template_directory_uri(  );?>/assets/images/toronto.svg">
+  <div class="container" >
+    <div class="row my-5">
+      <div class="col-12 col-md-6 mb-4">
+        <h2 class="orange">Aproveite sua viagem</h2>
+        <h2 class="mb-5">com tranquilidade</h2>
+        <p>A OK Intercâmbio trabalha com serviços e planos de cobertura moldados às
+           suas necessidades e exigências, os quais oferecem ao viajante todo apoio 
+           necessário com centrais 24 horas para atendê-lo em qualquer parte do mundo.</p>
       </div>
-      <div class="col-12 col-xl-4 bg-light text-center ">
-              <h2 class="orange pt-3">Toronto</h2>
-              <h6 class="pb-5">Business English</h6>
-                <ul class="pb-5 text-start">
-                  <li class="mb-2">4 Semanas de Curso de Inglês</li>
-                  <li class="mb-2">12h semanais</li>
-                  <li class="mb-2">Taxa de Matrícula</li>
-                  <li class="mb-2">Material didático</li>
-                  <li class="mb-2">Homestay - Pensão completa</li>
-                  <li class="mb-2">Atividades extras</li>
-                  <li class="mb-2">Suporte OK Intercâmbio</li>
-                </ul>
-              <h3 class="orange"> R$ 10.000,00</h3>
-              <h3 class="orange"> em até 12x</h3>
-              <button type="button" class="btn btn-warning button2 mt-5">SABER MAIS</button>
+      <div class="col-12 col-md-6 text-center">
+        <h1>VIDEO</h1>
       </div>
     </div>
-    <div class="row gx-0 mb-5">
-      <div class="col-12 col-xl-8">
-          <img src="<?php echo get_template_directory_uri(  );?>/assets/images/buenosAires.svg">
-      </div>
-      <div class="col-12 col-xl-4 bg-light text-center ">
-              <h2 class="orange pt-3">Buenos Aires</h2>
-              <h6 class="pb-5">Intercâmbio em Família</h6>
-                <ul class="pb-5 text-start">
-                  <li class="mb-2">Lorem ipsum dolor </li>
-                  <li class="mb-2">Magna at faucibus in gravida commodo.</li>
-                  <li class="mb-2">In velit quisque morbi</li>
-                  <li class="mb-2">Suspendisse aenean</li>
-                  <li class="mb-2">Magna at faucibus.</li>
-                  <li class="mb-2">In velit quisque morbi volutpat blandit.</li>
-                </ul>
-              <h3 class="orange pt-2"> R$ 10.000,00</h3>
-              <h3 class="orange"> em até 12x</h3>
-              <button type="button" class="btn btn-warning button2 mt-5">SABER MAIS</button>
-      </div>
-    </div>
-    <div class="row gx-0 mb-5">
-      <div class="col-12 col-xl-8">
-          <img src="<?php echo get_template_directory_uri(  );?>/assets/images/barcelona.svg">
-      </div>
-      <div class="col-12 col-xl-4 bg-light text-center ">
-              <h2 class="orange pt-3">Barcelona</h2>
-              <h6 class="pb-5">Universidade no exterior</h6>
-                <ul class="pb-5 text-start">
-                  <li class="mb-2">Lorem ipsum dolor </li>
-                  <li class="mb-2">Magna at faucibus in gravida commodo.</li>
-                  <li class="mb-2">In velit quisque morbi</li>
-                  <li class="mb-2">Suspendisse aenean</li>
-                  <li class="mb-2">Magna at faucibus.</li>
-                  <li class="mb-2">In velit quisque morbi volutpat blandit.</li>
-                </ul>
-              <h3 class="orange pt-2"> R$ 10.000,00</h3>
-              <h3 class="orange"> em até 12x</h3>
-              <button type="button" class="btn btn-warning button2 mt-5">SABER MAIS</button>
-      </div>
-    </div>
-    <div class="row gx-0 mb-5">
-      <div class="col-12 col-xl-8">
-          <img src="<?php echo get_template_directory_uri(  );?>/assets/images/londres.svg">
-      </div>
-      <div class="col-12 col-xl-4 bg-light text-center ">
-              <h2 class="orange pt-3">Londres</h2>
-              <h6 class="pb-5">Universidade no exterior</h6>
-                <ul class="pb-5 text-start">
-                  <li class="mb-2">Lorem ipsum dolor </li>
-                  <li class="mb-2">Magna at faucibus in gravida commodo.</li>
-                  <li class="mb-2">In velit quisque morbi</li>
-                  <li class="mb-2">Suspendisse aenean</li>
-                  <li class="mb-2">Magna at faucibus.</li>
-                  <li class="mb-2">In velit quisque morbi volutpat blandit.</li>
-                </ul>
-              <h3 class="orange pt-2"> R$ 10.000,00</h3>
-              <h3 class="orange"> em até 12x</h3>
-              <button type="button" class="btn btn-warning button2 mt-5">SABER MAIS</button>
-      </div>
-    </div>    
   </div>
+  <div class="container-fluid" style="background-color: #FFB030;">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-md-4 col-xl-4 ">
+              <h3 class="text-center cor-missao">Passagens Áereas</h3>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 ">
+              <h3 class="text-center cor-grafite">Seguro</h3>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 ">
+              <h3 class="text-center cor-grafite">Translado</h3>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="<?php echo get_template_directory_uri(  );?>/assets/images/servicos-passagens-1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?php echo get_template_directory_uri(  );?>/assets/images/servicos-passagens-1.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?php echo get_template_directory_uri(  );?>/assets/images/servicos-passagens-1.png" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 mt-3">
+            <p class="mb-4">
+            Para cada destino, várias opções de cias aéreas. Conhecemos todas e estamos 
+            preparados para te ajudar a escolher as melhores opções.  A OK Intercâmbio 
+            garante aos clientes suporte quanto à reserva de passagens aéreas.
+            </p>
+            <p>
+            Nosso compromisso é tranquilizar quanto às escolhas da cia aéreas e datas dos 
+            voos mais adequadas às necessidades de cada um. Também trabalhamos com 
+            alterações de datas, tanto de ida como de volta.  A viagem é sua, mas o trabalho 
+            é nosso!
+            </p><br><br>
+            <button type="button" class="btn cor-botao cor-texto">Realizar Cotação</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="background-color: #7B39E9;">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12 col-md-4 col-xl-4 ">
+              <h3 class="text-center cor-missao">Passagens Áereas</h3>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 ">
+              <h3 class="text-center cor-grafite">Seguro</h3>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4 ">
+              <h3 class="text-center cor-grafite">Translado</h3>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="<?php echo get_template_directory_uri(  );?>/assets/images/servicos-passagens-1.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?php echo get_template_directory_uri(  );?>/assets/images/servicos-passagens-1.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?php echo get_template_directory_uri(  );?>/assets/images/servicos-passagens-1.png" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 mt-3">
+            <p class="mb-4">
+            Para cada destino, várias opções de cias aéreas. Conhecemos todas e estamos 
+            preparados para te ajudar a escolher as melhores opções.  A OK Intercâmbio 
+            garante aos clientes suporte quanto à reserva de passagens aéreas.
+            </p>
+            <p>
+            Nosso compromisso é tranquilizar quanto às escolhas da cia aéreas e datas dos 
+            voos mais adequadas às necessidades de cada um. Também trabalhamos com 
+            alterações de datas, tanto de ida como de volta.  A viagem é sua, mas o trabalho 
+            é nosso!
+            </p><br><br>
+            <button type="button" class="btn cor-botao cor-texto">Realizar Cotação</button>
+          </div>
+        </div>
+    </div>
+  </div>    
+
 </main>
 
 <?php get_footer(); ?>

@@ -36,6 +36,11 @@
             // só vai carregar se estiver na page sobre
             wp_enqueue_style('sobre', get_template_directory_uri() . '/assets/styles/sobre.css');
         }
+        if (is_page('servicos') == true ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('servicos', get_template_directory_uri() . '/assets/styles/servicos.css');
+        }
+
 
         if(is_page('destinos')) {
             // só vai carregar se estiver na page destinos
