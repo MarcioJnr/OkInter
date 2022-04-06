@@ -12,6 +12,7 @@
                 <?php
                     $args = array(
                         'post_type' => 'pacote',
+                        'posts_per_page' => -1,
                         'tax_query' => array(
                             array(
                                 'taxonomy' => 'promocaopacote',
@@ -140,6 +141,7 @@
                     */
                     $args = array (
                     'post_type' => 'depoimento',
+                    'posts_per_page' => -1,
                     );
                     $depoimentos_query = new WP_Query($args);
                     if($depoimentos_query->have_posts()) : while ($depoimentos_query->have_posts()) : $depoimentos_query->the_post();
