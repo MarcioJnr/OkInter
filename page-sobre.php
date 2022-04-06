@@ -25,20 +25,21 @@
     ?>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12 col-xl-6">
-                <h3 class="text-center text-xl-start cor-empresa">A empresa</h3>
+            <div class="col-12 col-md-12 col-xl-6">
+                <h3 class="text-center text-xl-start cor-empresa mt-5">A empresa</h3>
                 <p class="mt-5 text-center text-xl-start">
                     A OK Intercâmbio é uma agência de viagem especializada em estudos no exterior. O atendimento é ágil e 100% online para todo o Brasil, e também presencial através dos nossos escritórios físicos, localizados nas Cidades de Fortaleza (Ceará)  e Dublin na Irlanda.
                     <br><br> Nós acreditamos na importância da vivência internacional para a formação de uma bagagem pessoal e profissional, e por este motivo, cada detalhe é pensado em prol dos nosso clientes, desde a seleção das instituições e empresas parceiras, como também a qualificação e capacitação de cada colaborador da empresa. 
                     Portanto, há a garantia dos melhores profissionais no planejamento e realização de cada sonho.
                 </p>
             </div>
-            <div class="col-12 col-xl-6 text-center">
-                <h3 class="text-center text-xl-start cor-empresa">Galeria</h3>
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/img1-galeria.png" class="mt-4 text-center ">
+            <div class="col-12 col-md-12 col-xl-6 text-center">
+                <h3 class="text-center text-xl-start cor-empresa mb-4 mt-5">Galeria</h3>
+                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/img1-galeria.png">
             </div>
                        
         </div>
+
         <div class="row">
             <div class="col-6 col-md-6 col-xl-3">
                 <img src="<?php echo get_template_directory_uri(  );?>/assets/images/img2-galeria.png" class="" >
@@ -57,9 +58,9 @@
                 <img src="<?php echo get_template_directory_uri(  );?>/assets/images/img10-galeria.png" class="mt-3">
                 <img src="<?php echo get_template_directory_uri(  );?>/assets/images/img11-galeria.png" class="mt-3">
             </div>
-            
-
         </div>
+
+        
 
     </div><br><br><br><br>
     <div class="container-fluid" style="background-color: #FFB030;">
