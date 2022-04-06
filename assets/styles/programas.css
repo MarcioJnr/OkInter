@@ -1,0 +1,34 @@
+.cor-viajando-com-ok {
+    color: #FFB030;
+}
+.cor-valor {
+    background-color: #7B39E9;
+}
+.cor-missao {
+    color: #7B39E9;
+}
+.cor-empresa {
+    color: #FF6A2E;
+}
+
+.circle{
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+
+.vector{
+    margin-top: 8%;
+    margin-left: 8% ;
+    position: relative;
+    bottom: 0;
+}
+
+.container-dentro{
+    top: 50%;
+    position: absolute;
+}
+
+.container-fora{
+    position: relative;
+}
