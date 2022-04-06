@@ -375,7 +375,7 @@
                 <p class="text-center text-xl-start fw-bolder mb-5">Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
             </div>
             <div class="col-12 col-md-6 col-xl-6">
-                <?php echo do_shortcode('[contact-form-7 id="29" title="form orcamento"]');?>
+                <?php echo do_shortcode('[contact-form-7 id="14" title="Formulario orçamento"]');?>
             </div>
         </div>
     </div>

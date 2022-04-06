@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 a {
     color: #FF6A2E;
     text-decoration: none;
@@ -30,6 +25,13 @@ a {
     border-radius: 5px;
     text-transform: uppercase;
     box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+@media (max-width:762px) {
+    .btn-enviar {
+        width: 100%;
+    }
 }
 
 input, textarea {
@@ -67,12 +69,13 @@ input, textarea {
 }
 
 #email {
-    margin-top: 20px;
+    margin-top:5px;
     line-height: 30px;
     width: 100%;
 }
 
 #mensagem {
+    margin-top:5px;
     line-height: 30px;
     width: 100%;
 }

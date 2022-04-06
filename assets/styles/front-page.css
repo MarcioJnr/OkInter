@@ -363,3 +363,124 @@ h2{
     font-size: 15px;
     line-height: 16px;
 }
+
+
+
+
+.btn-enviar {
+    background-color: #FF6A2E;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+@media (max-width:762px) {
+    .btn-enviar {
+        width: 100%;
+    }
+}
+
+input {
+    border-radius: 8px;
+}
+
+
+#orc-nome {
+    width: 100%;
+}
+
+#orc-nome input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#orc-email {
+    float: left;
+    width: 48%;
+}
+
+
+#orc-email input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#orc-tel {
+    width: 48%;
+    float: right;
+    
+}
+
+#orc-tel input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#orc-cidade {
+    float: left;
+    width: 48%;
+}
+
+
+#orc-cidade input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#orc-estado {
+    width: 48%;
+    float: right;
+    
+}
+
+#orc-estado input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#orc-destino {
+    float: left;
+    width: 48%;
+}
+
+
+#orc-destino input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#orc-duracao {
+    width: 48%;
+    float: right;
+    
+}
+
+#orc-duracao input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}

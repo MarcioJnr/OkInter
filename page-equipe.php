@@ -12,7 +12,7 @@
         ); 
     ?>
     <div class="container">
-        <div class="row ms-4">
+        <div class="row mt-5">
             <div class="col-12">
                 <h2 class="text-center text-md-start">Conheça o nosso time</h2>
                 <p class="mt-4 text-xl-start">Viajar com uma agência que conta com um time de apaixonados por viagens e especialistas 
@@ -66,12 +66,14 @@
         <div class="row">
             <div class="col-12">
                 <h2 class="text-center text-md-start">Trabalhe conosco</h2>
-                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl at leo interdum consequat suscipit blandit. Non cursus turpis cursus neque placerat. Aliquam turpis elementum quisque sed. Leo commodo purus, dignissim semper. Est tortor ut platea nunc porttitor elementum suspendisse hendrerit. Eu faucibus volutpat adipiscing massa, sed diam feugiat. Leo hac tellus est, cras cursus proin condimentum pretium viverra. Turpis iaculis aliquam pellentesque ut. Interdum sodales in ultricies viverra rhoncus, purus dictumst mattis.</p>
+                <p class="mt-4">Faça parte de uma empresa dinâmica, jovem e focada na realização de sonhos dos brasileiros que buscam uma vivência internacional através do Intercâmbio Cultural.  A OK Intercâmbio é uma agência de viagens especializada em estudos no exterior. O atendimento é ágil e 100% online para todo o Brasil, e também presencial através dos nossos escritórios físicos, localizados nas Cidades de São Paulo (SP), Fortaleza (CE)  e Dublin (Irlanda).</p>
             </div>
+            <div class="container">
             <div class="row mt-4">
-                <div class="col-12 col-md-12 col-xl-12 form">
-                    <?php echo do_shortcode('[contact-form-7 id="26" title="form trabalhe"]');?>
+                <div class="col-12 form">
+                    <?php echo do_shortcode('[contact-form-7 id="13" title="Formulário equipe"]');?>
                 </div>
+            </div>
             </div>
             <div class="mt-4">
                 <h2 class="text-center">Certificações</h2><br><br><br>
