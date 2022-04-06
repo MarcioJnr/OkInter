@@ -110,7 +110,7 @@
 
         <nav class="d-flex justify-content-between navbar navbar-expand-lg navbar-dark p-0">
             <div class="container-fluid p-0">
-                <a id="logo" class="d-flex justify-content-center align-items-center navbar-brand m-0" href="#">
+                <a id="logo" class="d-flex justify-content-center align-items-center navbar-brand m-0" href="/okintercambio">
                     <img id="logo-img" class="w-50 ps-4" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo.svg"
                         alt="Ok Intercambio Logo"/>
 
@@ -140,7 +140,7 @@
                                     <h5 class="d-none d-lg-flex">Sobre nós</h5>
                                     <ul>
                                         <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/sobre">A empresa</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/team">Equipe</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/equipe">Equipe</a></li>
                                         <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/contato">Contato</a></li>
                                     </ul>
                                 </div>
@@ -160,11 +160,11 @@
                                 <div class="d-flex dropdown-content">
                                     <h5 class="d-none d-lg-flex">Destinos</h5>
                                     <ul>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/canada">Canadá</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/alemanha">Alemanha</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/inglaterra">Inglaterra</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/canada">Canadá</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/alemanha">Alemanha</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/inglaterra">Inglaterra</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/espanha">Espanha</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/irlanda">Irlanda</a></li>
                                         <li><a class="dropdown-item px-5 d-flex align-items-center" href="<?php echo get_home_url(); ?>/destinos" style="color: #FF6A2E;">
                                                 Ver mais
 
@@ -339,10 +339,10 @@
                                 <div class="d-flex dropdown-content">
                                     <a href="/servicos"><h5 class="d-none d-lg-flex">Serviços</h5></a>
                                     <ul>
-                                        <li><a class="dropdown-item px-4" href="#">Viagem</a></li>
-                                        <li><a class="dropdown-item px-4" href="#">Hospedagem</a></li>
-                                        <li><a class="dropdown-item px-4" href="#">Visto</a></li>
-                                        <li><a class="dropdown-item px-4" href="#">Moeda</a></li>
+                                        <li><a class="dropdown-item px-4" href="/viagem">Viagem</a></li>
+                                        <li><a class="dropdown-item px-4" href="/hospedagem">Hospedagem</a></li>
+                                        <li><a class="dropdown-item px-4" href="/visto">Visto</a></li>
+                                        <li><a class="dropdown-item px-4" href="/moeda">Moeda</a></li>
                                     </ul>
                                 </div>
                             </div>
