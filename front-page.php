@@ -1,6 +1,74 @@
 <?php get_header(); ?>
 
 <main>
+    <!--SEÇÃO CAROUSEL -->
+    <section>
+        <div class="swiper swiper-banner">
+            <div class="swiper-wrapper">
+                <?php
+                    $args = array(
+                        'post_type' => 'banner',
+                        'posts_per_page' => -1,
+                    );
+                    $banner_query = new WP_Query($args);
+                    if($banner_query->have_posts()) : while ($banner_query->have_posts()) : $banner_query->the_post();
+                ?>
+                <div class="swiper-slide">
+                    <div class="banner-frame col-12 d-flex justify-content-center">
+                        <img class="banner-thumb w-100" <?php if(!has_post_thumbnail( $post->ID )){
+                            echo "no-thumbnail";
+                            }?>
+                            src="<?php if(has_post_thumbnail( $post->ID )){
+                                echo get_the_post_thumbnail_url($post->ID);
+                                }
+                                else{
+                                    //alterar a imagem para um placeholder feito
+                                    echo get_template_directory_uri()."/assets/images/ret larg 2.jpg";
+                                }?>
+                            " 
+                            alt="<?php the_title();?>"
+                        >
+                    </div>
+                    <div class="container">
+                        <div class="banner-info">
+                            <div class="teste">
+                                <div>
+                                    <h1 class="b-title">
+                                        <?php the_title();?>
+                                    </h1>
+
+                                    
+                                    <?php 
+                                        $subtitle = get_field('subtitle');
+                                        if($subtitle){
+                                            echo '<h5 class=" b-subtitle">'.$subtitle.'</h5>';
+                                        }
+                                    ?>
+
+                                    <div>
+                                        <?php 
+                                            $textocta = get_field('textocta');
+                                            $linkcta = get_field('linkcta');
+                                            if($textocta){
+                                                echo '<a href="'.$linkcta.'"><button class="call-to-action ">'.$textocta.'</button></a>';
+                                            }
+                                        ?>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; else: endif; wp_reset_postdata();?>
+            </div>
+            <div class="container">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
     <!--SEÇÃO PACOTES -->
     <section class="container">
         <div>
@@ -114,7 +182,7 @@
                 </div>
                 <?php endwhile; else: endif; wp_reset_postdata();?>
             </div>
-            <div class="swiper-pagination mt-5"></div>
+            <div class="swiper-pagination mt-5"></div> 
         </div>
     </section>
 

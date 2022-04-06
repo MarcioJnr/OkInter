@@ -104,3 +104,28 @@ var swiper = new Swiper('.swiper-pacotes', {
     clickable:true,
   },
 });
+
+
+//BANNER
+var swiper = new Swiper('.swiper-banner', {
+  effect: 'fade',
+  speed: 800,
+  fadeEffect: {
+    crossFade: false
+  },
+  observer: true,
+  observeParents: true,
+  setWrapperSize:true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    enabled: true,
+    delay: 3000,
+    disableOnInteraction:false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
