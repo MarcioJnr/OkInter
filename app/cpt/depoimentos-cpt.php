@@ -57,3 +57,41 @@ function create_depoimento_cpt() {
 }
 add_action( 'init', 'create_depoimento_cpt', 0 );
 ?>
+
+<?php
+// Register Taxonomy pais depoimento
+function create_paisdepoimento_tax() {
+	$labels = array(
+		'name'              => _x( 'paises', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'pais', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Pesquisar países', 'textdomain' ),
+		'all_items'         => __( 'Todos os países', 'textdomain' ),
+		'parent_item'       => __( 'Pais de país', 'textdomain' ),
+		'parent_item_colon' => __( 'Pais de país:', 'textdomain' ),
+		'edit_item'         => __( 'Editar país', 'textdomain' ),
+		'update_item'       => __( 'Atualizar país', 'textdomain' ),
+		'add_new_item'      => __( 'Adicionar novo país', 'textdomain' ),
+		'new_item_name'     => __( 'Adicionar novo nome de país', 'textdomain' ),
+		'menu_name'         => __( 'País', 'textdomain' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'description' => __( '', 'textdomain' ),
+		'hierarchical' => true,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'show_in_nav_menus' => true,
+		'show_tagcloud' => true,
+		'show_in_quick_edit' => true,
+		'show_admin_column' => false,
+		'show_in_rest' => true,
+		'query_var' => '$pais',
+	);
+
+	register_taxonomy( 'pais', array('depoimento', 'galeria'), $args );
+
+}
+add_action( 'init', 'create_paisdepoimento_tax' );
+?>

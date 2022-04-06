@@ -1,0 +1,30 @@
+.container .d-flex aside .swiper-destinos-galeria .swiper-wrapper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+#cities {
+  background-color: var(--tertiary-color);
+}
+
+#cities .row h2 {
+  color: var(--quartenary-color);
+}
+
+#cities button {
+  background-color: var(--quartenary-color);
+  color: white;
+}
+
+#cities button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+#life-cost {
+  background-color: var(--quartenary-color);
+}
+
+#life-cost h2 {
+  color: var(--tertiary-color);
+}
+/*# sourceMappingURL=destino.css.map */

@@ -13,6 +13,7 @@
 .banner img{
     min-height: 18rem;
     object-fit: cover;
+    object-position: center;
 }
 
 .filtro{

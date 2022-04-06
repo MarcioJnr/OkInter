@@ -1,0 +1,13 @@
+main .container .row .col-5 {
+  width: 43.5vw !important;
+}
+
+@media (min-width: 992px) {
+  main .container .row .col-5 {
+    width: 18.5vw !important;
+  }
+  main .container .carousel {
+    top: -5vw;
+  }
+}
+/*# sourceMappingURL=destinos.css.map */

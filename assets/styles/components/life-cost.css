@@ -1,0 +1,10 @@
+.container svg {
+  margin: 3vw;
+  height: 15vw;
+  width: 15vw;
+}
+
+.container svg path {
+  fill: var(--tertiary-color);
+}
+/*# sourceMappingURL=life-cost.css.map */

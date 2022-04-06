@@ -25,16 +25,25 @@
         }
 
         if (is_page('contato')) {
-            // só vai carregar se estiver em uma das categorias do blog
-            wp_enqueue_style('page contato', get_template_directory_uri() . '/assets/styles/contato.css');
+            // só vai carregar se estiver na page contato
+            wp_enqueue_style('contato', get_template_directory_uri() . '/assets/styles/contato.css');
         }
-        if (is_page('equipe') == true ) {
-            // só vai carregar se estiver na page team
+        if (is_page('equipe')) {
+            // só vai carregar se estiver na page equipe
             wp_enqueue_style('equipe', get_template_directory_uri() . '/assets/styles/team.css');
         }
-        if (is_page('sobre') == true ) {
-            // só vai carregar se estiver na page team
+        if (is_page('sobre')) {
+            // só vai carregar se estiver na page sobre
             wp_enqueue_style('sobre', get_template_directory_uri() . '/assets/styles/sobre.css');
+        }
+
+        if(is_page('destinos')) {
+            // só vai carregar se estiver na page destinos
+            wp_enqueue_style('destinos', get_template_directory_uri() . '/assets/styles/destinos.css');
+        }
+        
+        if(is_singular('destino')) {
+            wp_enqueue_style('destino', get_template_directory_uri() . '/assets/styles/singles/destino.css');
         }
 
         if ( is_front_page() ) {
@@ -52,7 +61,12 @@
 
         wp_enqueue_style('swiperstyle', get_template_directory_uri() . '/assets/styles/swiper-bundle.min.css');
 
+        //estilos dos componentes
         wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
+        wp_enqueue_style('card-destiny', get_template_directory_uri() . '/assets/styles/components/card-destiny.css');
+        wp_enqueue_style('card-testimonial', get_template_directory_uri() . '/assets/styles/components/card-testimonial.css');
+        wp_enqueue_style('galery-destiny', get_template_directory_uri() . '/assets/styles/components/galery-destiny.css');
+        wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -105,6 +119,8 @@
 
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
+    require_once(get_template_directory().'/app/cpt/destinos-cpt.php');
+    require_once(get_template_directory().'/app/cpt/destinos-galery-cpt.php');
     require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
     require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
     require_once(get_template_directory().'/app/cpt/pacotes-cpt.php');

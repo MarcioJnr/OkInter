@@ -1,0 +1,38 @@
+.card-testimonial .person-profile-testimonial {
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
+}
+
+.card-testimonial .person-profile-testimonial .circle-img {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  overflow: hidden;
+}
+
+.card-testimonial .person-profile-testimonial .circle-img .person-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-testimonial .testimonial-text {
+  height: 50vw;
+}
+
+@media (min-width: 992px) {
+  .card-testimonial .person-profile-testimonial {
+    -webkit-transform: translateY(75%);
+            transform: translateY(75%);
+  }
+  .card-testimonial .person-profile-testimonial .circle-img {
+    width: 6vw;
+    height: 6vw;
+  }
+  .card-testimonial .testimonial-text {
+    height: 18vw;
+  }
+}
+/*# sourceMappingURL=card-testimonial.css.map */
