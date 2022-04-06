@@ -309,6 +309,35 @@ h2{
 
 }
 
+.img-aviao img{
+    width: 100%;
+}
+
+.titulo-viajem, .paragrafo1, .paragrafo2 {
+    color: white;
+}
+
+.paragrafo2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.paragrafo1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.servicos {
+    color: #FFB030;
+}
+
+
 #btn-promocoes {
     align-items: center;
     justify-content: center;
@@ -364,7 +393,16 @@ h2{
     line-height: 16px;
 }
 
-
+.programas-destinos {
+    height: 45px;
+    letter-spacing: 1.25px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
+}
 
 
 .btn-enviar {
@@ -379,7 +417,7 @@ h2{
     margin-top: 10px;
 }
 
-@media (max-width:762px) {
+@media (max-width:462px) {
     .btn-enviar {
         width: 100%;
     }
