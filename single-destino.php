@@ -23,56 +23,68 @@
 ?>
 
 <div class="container py-5">
-  <div class="row ">
-    <div class="col col-lg-6 text-center">
+  <div class="row d-lg-flex">
+    <div class="col col-lg-6 text-center text-lg-start">
       <h2 class="mb-3">Sobre</h2>
       <?php echo get_the_content($post->ID); ?>
 
-      <h2 class="mb-3 text-center">Detalhes</h2>
-      <p class="text-start" id="details"><?php echo get_the_excerpt($post->ID); ?></p>
+      <h2 class="mb-3 mt-4 ">Detalhes</h2>
+      <p class="text-start mb-4" id="details"><?php echo get_the_excerpt($post->ID); ?></p>
     </div>
 
-    <aside class="col col-lg-6 text-center">
-      <h2 class="mb-3">Galeria</h2>
-      <div class="swiper swiper-destinos-galeria">
-        <div class="swiper-wrapper">
-          
-          <div class="swiper-slide">
-            
-              <?php
-                $args = array (
-                    'post_type' => 'galeria',
-                    'orderby' => 'title',
-                    'order' => 'ASC',
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'pais',
-                            'field' => 'slug',
-                            'terms' => get_the_title($post->ID)
+    <aside class="col col-lg-6 text-center text-lg-start">
+      <h2 class="mb-3 ">Galeria</h2>
+
+      <div id="testimonial-carousel" class="carousel slide d-block" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <?php 
+                  $args = array (
+                  'post_type' => 'galeria',
+                  'orderby' => 'title',
+                  'order' => 'ASC',
+                  'tax_query' => array(
+                      array(
+                          'taxonomy' => 'pais',
+                          'field' => 'slug',
+                          'terms' => get_the_title($post->ID)
                         )
                     )
                 );
                 $fotos_query = new WP_Query($args);
-              
-              if($fotos_query->have_posts()) : 
-                includeFile('components/galery-destiny.php',
-                    array(
-                        'img1'=>get_the_post_thumbnail_url($post->ID), 
-                        'img2'=>get_the_post_thumbnail_url($post->ID),
-                        'img3'=>get_the_post_thumbnail_url($post->ID)
-                    )
-                ); 
-              endif;
+                $counter=0;
+
+                if($fotos_query->have_posts()) : 
+                  if($counter == 0) :
+                      echo '<div class="carousel-item active">';
+                  else :
+                      echo '<div class="carousel-item">';
+                  endif;
+
+                  includeFile('components/galery-destiny.php',
+                      array(
+                          'img1'=>get_the_post_thumbnail_url($post->ID), 
+                          'img2'=>get_the_post_thumbnail_url($post->ID),
+                          'img3'=>get_the_post_thumbnail_url($post->ID)
+                      )
+                  ); 
+
+                  $counter=$counter+1;
+
+                  echo '</div>';
+                endif;
               ?>
-            
           </div>
-        <div class="swiper-pagination"></div>
-        
+
+          <div class="d-flex justify-content-end" id="control-buttons">
+              <button class="btn shadow-none" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/chevron-left" alt="Slide anterior">
+              </button>
+
+              <button class="btn shadow-none" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/chevron-right" alt="Próximo slide">
+              </button>
+          </div>
       </div>
-      <?php 
-          // print_r($fotos_query->found_posts);
-          // print_r($post->);
-        ?>
     </aside>
   </div>
 </div>
