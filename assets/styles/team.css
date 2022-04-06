@@ -52,7 +52,7 @@ h2{
 
 /* CSS do formulário */
 
-input, textarea {
+input, textarea, select {
     border-radius: 8px;
 }
 
@@ -62,114 +62,97 @@ textarea:focus, input:focus {
 }
 
 @media (min-width: 992px) {
-    #name {
-        width: 35%;
+    #equipe-nome {
+        width: 50%;
         float: left;
-        line-height: 30px;
     }
-    #estado {
-        width: 42%;
+    #equipe-estado {
+        width: 25%;
         float: left;
-        line-height: 30px;
     } 
-    #cidade {
-        width: 23%;
+    #equipe-cidade {
+        width: 25%;
         float: right;
-        line-height: 30px;
     }   
-    #email {
+    #equipe-email {
         margin-top: 20px;
-        width: 35%;
+        width: 40%;
         float: left;
-        line-height: 30px;
     }
-    #numero {
+    #equipe-tel {
         margin-top: 20px;
-        width: 26.7%;
-        float: left;
-        line-height: 30px;
-    }
-    #curriculo {
-        margin-top: 20px;
-        width: 38%;
-        float: right;
-        line-height: 30px;
-        line-height: 31px;
-}
-    #texto {
-        width: 80%;
-        float: left;
-        line-height: 30px;
-    }
-    #btn {
         width: 20%;
         float: left;
-        line-height: 30px;
+    } 
+    #equipe-curriculo {
+        margin-top: 20px;
+        width: 20%;
+        float: left;
+    } 
+    .btn-enviar {
+        float: right;
     }
-    
+
 }
 
-#name input {
-    padding-left: 12px;
-    width: 98%;
-    height: 40px;
-    line-height: 22px;
-    border: 1px solid rgba(25, 20, 18, 0.6);
-}
-
-
-#email input {
-    padding-left: 12px;
-    width: 98%;
-    height: 40px;
-    line-height: 22px;
-    border: 1px solid rgba(25, 20, 18, 0.6);
-}
-
-
-#telefone input {
-    padding-left: 12px;
-    width: 98%;
-    height: 40px;
-    line-height: 22px;
-    border: 1px solid rgba(25, 20, 18, 0.6);
-}
-
-#campo4 input {
-    padding-left: 12px;
-    width: 98%;
-    height: 40px;
-    line-height: 22px;
-    border: 1px solid rgba(25, 20, 18, 0.6);
-}
-
-#campo5 input {
-    padding-left: 12px;
-    width: 98%;
-    height: 40px;
-    line-height: 22px;
-    border: 1px solid rgba(25, 20, 18, 0.6);
-}
-
-#campo6 input {
-    padding-left: 12px;
-    width: 98%;
-    height: 40px;
-    line-height: 22px;
-    border: 1px solid rgba(25, 20, 18, 0.6);
-}
-
-#texto {
-    margin-top: 20px;
+#equipe-nome input {
     float: left;
+    padding-left: 12px;
+    width: 99%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
 }
 
-#btn {
-    margin-top: 20px;
-    float: right;
+#equipe-estado input {
+    width: 98%;
+    height: 40px;
+    padding-left: 12px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#equipe-cidade input {
+    padding-left: 12px;
+    width: 99%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#equipe-email input {
+    float: left;
+    padding-left: 12px;
+    width: 98%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#equipe-tel input {
+    width: 98%;
+    height: 40px;
+    padding-left: 12px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#equipe-curriculo input {
+    text-align: center;
+    justify-content: center;
+    width: 99%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+
+
+.btn-enviar {
+    margin-top: 40px;
     background-color: #FF6A2E;
     color: white;
-    width: 190px;
+    width: 180px;
     height: 40px;
     border: none;
     border-radius: 5px;
