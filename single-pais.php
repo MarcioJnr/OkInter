@@ -25,6 +25,19 @@
 
 </style>
 <?php 
+    $args = array (
+        'post_type' => 'pais',
+        'orderby' => 'title',
+        'order' => 'ASC',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'cidade',
+                'field' => 'slug',
+                'terms' => 'pais'
+            )
+        )
+    );
+    $pais_query = new WP_Query($args);
     includeFile('components/banner.php', 
         array(
             'title'=>'Alemanha', 

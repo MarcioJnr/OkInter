@@ -15,77 +15,35 @@
 
     <div class="container mb-5" id="destinations">
         <div class="row gap-3">
-            <div class="col-5 col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-destiny.php', 
+            <?php 
+                $args = array (
+                    'post_type' => 'pais',
+                    'orderby' => 'title',
+                    'order' => 'ASC',
+                    'tax_query' => array(
                         array(
-                            'href'=>'/africa-do-sul', 
-                            'directory'=>get_template_directory_uri().'/assets/images/berlim.jpg',
-                            'destinyName'=>'Africa do Sul'
+                            'taxonomy' => 'cidade',
+                            'field' => 'slug',
+                            'terms' => 'pais'
                         )
-                    ); 
-                ?>
-            </div>
+                    )
+                );
+                $pais_query = new WP_Query($args);
 
-            <div class="col-5 col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-destiny.php', 
-                        array(
-                            'href'=>'/africa-do-sul', 
-                            'directory'=>get_template_directory_uri().'/assets/images/berlim.jpg',
-                            'destinyName'=>'Africa do Sul'
-                        )
-                    ); 
-                ?>
-            </div>
-
-            <div class="col-5 col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-destiny.php', 
-                        array(
-                            'href'=>'/africa-do-sul', 
-                            'directory'=>get_template_directory_uri().'/assets/images/berlim.jpg',
-                            'destinyName'=>'Africa do Sul'
-                        )
-                    ); 
-                ?>
-            </div>
-
-            <div class="col-5 col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-destiny.php', 
-                        array(
-                            'href'=>'/africa-do-sul', 
-                            'directory'=>get_template_directory_uri().'/assets/images/berlim.jpg',
-                            'destinyName'=>'Africa do Sul'
-                        )
-                    ); 
-                ?>
-            </div>
-
-            <div class="col-5 col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-destiny.php', 
-                        array(
-                            'href'=>'/africa-do-sul', 
-                            'directory'=>get_template_directory_uri().'/assets/images/berlim.jpg',
-                            'destinyName'=>'Africa do Sul'
-                        )
-                    ); 
-                ?>
-            </div>
-
-            <div class="col-5 col-lg-4 px-0">
-                <?php 
-                    includeFile('components/card-destiny.php', 
-                        array(
-                            'href'=>'/africa-do-sul', 
-                            'directory'=>get_template_directory_uri().'/assets/images/berlim.jpg',
-                            'destinyName'=>'Africa do Sul'
-                        )
-                    ); 
-                ?>
-            </div>
+                if($pais_query->have_posts()) : 
+                    while ($pais_query->have_posts()) : $pais_query->the_post();
+                        echo '<div class="col-5 col-lg-4 px-0">';
+                            includeFile('components/card-destiny.php', 
+                                array(
+                                    'href'=>get_permalink($post->ID),
+                                    'directoryUrl'=>get_the_post_thumbnail_url($post->ID),
+                                    'destinyName'=>get_the_title($post->ID)
+                                )
+                            ); 
+                        echo '</div>';
+                    endwhile;
+                endif;
+            ?>
         </div>
     </div>
 
