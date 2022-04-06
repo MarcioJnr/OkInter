@@ -41,7 +41,7 @@
                                     <?php 
                                         $subtitle = get_field('subtitle');
                                         if($subtitle){
-                                            echo '<h5 class="mt-4 b-subtitle">'.$subtitle.'</h5>';
+                                            echo '<h5 class=" b-subtitle">'.$subtitle.'</h5>';
                                         }
                                     ?>
 
@@ -50,7 +50,7 @@
                                             $textocta = get_field('textocta');
                                             $linkcta = get_field('linkcta');
                                             if($textocta){
-                                                echo '<a href="'.$linkcta.'"><button class="call-to-action mt-4">'.$textocta.'</button></a>';
+                                                echo '<a href="'.$linkcta.'"><button class="call-to-action ">'.$textocta.'</button></a>';
                                             }
                                         ?>
                                     </div>
