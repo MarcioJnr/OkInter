@@ -64,3 +64,61 @@ var swiper = new Swiper('.swiper-depoimentos', {
     clickable:true,
   },
 });
+
+var swiper = new Swiper('.swiper-destinos-galeria', {
+  observer: true,
+  observeParents: true,
+  setWrapperSize:true,
+  centeredSlides: true,
+  loop:true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction:false,
+  },
+  breakpoints: {
+    991: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 1,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+  },
+});
+
+var swiper = new Swiper('.swiper-custo-de-vida', {
+  observer: true,
+  observeParents: true,
+  setWrapperSize:true,
+  centeredSlides: true,
+  loop:true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction:false,
+  },
+  breakpoints: {
+    991: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 1,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+  },
+});

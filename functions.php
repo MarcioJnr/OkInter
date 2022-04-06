@@ -41,6 +41,10 @@
             // só vai carregar se estiver na page destinos
             wp_enqueue_style('destinos', get_template_directory_uri() . '/assets/styles/destinos.css');
         }
+        
+        if(is_singular('destino')) {
+            wp_enqueue_style('destino', get_template_directory_uri() . '/assets/styles/singles/destino.css');
+        }
 
         if ( is_front_page() ) {
             // só vai carregar se estiver na page team
@@ -56,6 +60,8 @@
         wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
         wp_enqueue_style('card-destiny', get_template_directory_uri() . '/assets/styles/components/card-destiny.css');
         wp_enqueue_style('card-testimonial', get_template_directory_uri() . '/assets/styles/components/card-testimonial.css');
+        wp_enqueue_style('galery-destiny', get_template_directory_uri() . '/assets/styles/components/galery-destiny.css');
+        wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
@@ -108,7 +114,8 @@
 
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
-    require_once(get_template_directory().'/app/cpt/paises-cpt.php');
+    require_once(get_template_directory().'/app/cpt/destinos-cpt.php');
+    require_once(get_template_directory().'/app/cpt/destinos-galery-cpt.php');
     require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
     require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
 
