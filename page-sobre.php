@@ -126,7 +126,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-xl-6">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/viajem.svg" class="mt-4 ms-1">
+                    <iframe class="mt-4 ms-1" width="560" height="315" src="https://www.youtube.com/embed/H6sLqrbA-ew?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                         
             </div>
@@ -138,22 +138,22 @@
             <div class="row">
                 <h3 class="text-center text-xl-center cor-missao mt-5 mb-5">Impacto da empresa</h3>
                 <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector.svg">
+                    <img class="w-25" src="<?php echo get_template_directory_uri(  );?>/assets/icons/selo.svg">
                     <h4 class="text-center text-xl-center cor-missao mt-5 mb-3">+ 7</h4>
                     <p class="mb-5">Anos de experiência</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector (2).svg">
+                    <img class="w-25" src="<?php echo get_template_directory_uri(  );?>/assets/icons/bag.svg">
                     <h4 class="text-center text-xl-center cor-missao mt-5 mb-3">+ 2600</h4>
                     <p class="mb-5">Sonhos realizados</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector (1).svg">
+                    <img class="w-25" src="<?php echo get_template_directory_uri(  );?>/assets/icons/map.svg">
                     <h4 class="text-center text-xl-center cor-missao mt-5 mmb-3">+ 100</h4>
                     <p class="mb-5">Cidades pelo mundo</p>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center ">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/Vector (3).svg">
+                    <img class="w-25" src="<?php echo get_template_directory_uri(  );?>/assets/icons/education.svg">
                     <h4 class="text-center text-xl-center cor-missao mt-5 mb-3">+ 100</h4>
                     <p class="mb-5">Escolas parceiras</p>
                 </div>
