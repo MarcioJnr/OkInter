@@ -6,7 +6,7 @@
   background-color: var(--tertiary-color);
 }
 
-#cities .row h2 {
+#cities h2 {
   color: var(--quartenary-color);
 }
 
