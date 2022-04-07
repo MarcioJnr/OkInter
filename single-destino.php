@@ -234,7 +234,7 @@
 
 <div class="container-fluid bg-warning text-center">
   <h1 class="pt-5 pb-4 purple">Programas disponíveis</h1>
-  <div class="container ">
+  <div class="container">
     <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-xl-3 bg-light pt-5 mx-4 mb-5">
             <h2 class="orange pb-4">Idiomas</h2>
@@ -286,20 +286,53 @@
 <div class="container-fluid mt-5 text-center">
   <h1 class="orange mb-4">Depoimentos</h1>
   <h6 class="mb-5">Nossos clientes falam</h6>
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-xl-3 bg-light">
-        <img src="<?php echo get_template_directory_uri(  );?>/assets/images/daniel.png" style="width: 137px; height: 137px;" class="mb-3">
-        <h6>Alana Rodrigues</h6>
+  <div id="testimonial-carousel" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <?php 
+            $args = array (
+                'post_type' => 'depoimento',
+                'posts_per_page' => 3,
+            );
+            $testimonial_query = new WP_Query($args);
+            $counter = 0;
+
+            if($testimonial_query->have_posts()) : 
+                while ($testimonial_query->have_posts()) : $testimonial_query->the_post();
+                    if($counter == 0) :
+                        echo '<div class="carousel-item active">';
+                    else :
+                        echo '<div class="carousel-item">';
+                    endif;
+
+                    includeFile('components/card-testimonial.php', 
+                        array(
+                            'directory'=>get_the_post_thumbnail_url($post->ID),
+                            'person'=>get_the_title($post->ID),
+                            'text'=>get_the_excerpt($post->ID)
+                        )
+                    ); 
+
+                    $counter=$counter+1;
+
+                    echo '</div>';
+                endwhile;
+            
+            else :
+                echo '<h1>Nada</h1>';
+            endif;
+        ?>
     </div>
-    <div class="col-12 col-md-6 col-xl-4">
-      <img src="<?php echo get_template_directory_uri(  );?>/assets/images/daniel.png" style="width: 137px; height: 137px;" class="mb-3">
-      <h6>Vera Almeida</h6>
+
+    <div class="d-flex justify-content-end" id="control-buttons">
+        <button class="btn shadow-none" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/chevron-left" alt="Slide anterior">
+        </button>
+
+        <button class="btn shadow-none" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/chevron-right" alt="Próximo slide">
+        </button>
     </div>
-    <div class="col-12 col-md-6 col-xl-3">
-      <img src="<?php echo get_template_directory_uri(  );?>/assets/images/daniel.png" style="width: 137px; height: 137px;" class="mb-3">
-      <h6>Vanessa Freitas</h6>  
-    </div>
-  </div>
+</div>
 </div>  
 
 <script>
