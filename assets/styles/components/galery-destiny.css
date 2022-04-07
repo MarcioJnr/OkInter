@@ -1,7 +1,29 @@
-.container #galery {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+#galery {
+  width: 100%;
+  height: 90vw;
+}
+
+#galery .w-50 {
+  width: 50%;
+  overflow: hidden;
+}
+
+#galery .w-50 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#galery .w-50 img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (min-width: 992px) {
+  #galery {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=galery-destiny.css.map */

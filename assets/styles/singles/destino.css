@@ -6,7 +6,7 @@
   background-color: var(--tertiary-color);
 }
 
-#cities .row h2 {
+#cities h2 {
   color: var(--quartenary-color);
 }
 
@@ -26,5 +26,10 @@
 
 #life-cost h2 {
   color: var(--tertiary-color);
+}
+
+#life-cost #swiper-pagination-custo-de-vida {
+  position: relative;
+  top: 5vw !important;
 }
 /*# sourceMappingURL=destino.css.map */
