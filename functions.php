@@ -39,6 +39,9 @@
         if (is_page('servicos') == true ) {
             // só vai carregar se estiver na page team
             wp_enqueue_style('servicos', get_template_directory_uri() . '/assets/styles/servicos.css');
+        }if (is_page('programas') == true ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('programas', get_template_directory_uri() . '/assets/styles/programas.css');
         }
 
 
