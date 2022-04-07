@@ -127,10 +127,55 @@
     <button type="button" class="btn button my-5 w-50">Orçamento</button>
   </div>
 
-  <div class="row pt-5" id="life-cost">
-    <h2 class="text-center">Custo de Vida</h2>
-    <h6 class="mb-5 text-white">Despesas básicas e essenciais</h6>
-    <div class="swiper swiper-custo-de-vida">
+  <div class="row py-5" id="life-cost">
+    <div class="container">
+      <h2 class="text-center">Custo de Vida</h2>
+      <h6 class="mb-3 text-white">Despesas básicas e essenciais</h6>
+      <div class="row d-none d-lg-flex">
+        <div class="col-4">
+          <?php includeFile('components/life-cost.php', array(
+            'iconName'=>'map-pointer',
+            'name'=>'Capital',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
+          )) ?>
+
+          <?php includeFile('components/life-cost.php', array(
+            'iconName'=>'world',
+            'name'=>'Língua Oficial',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
+          )) ?>
+        </div>
+
+        <div class="col-4">
+          <?php includeFile('components/life-cost.php', array(
+            'iconName'=>'cash',
+            'name'=>'Moeda',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
+          )) ?>
+
+          <?php includeFile('components/life-cost.php', array(
+            'iconName'=>'territory',
+            'name'=>'Território',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
+          )) ?>
+        </div>
+
+        <div class="col-4">
+          <?php includeFile('components/life-cost.php', array(
+            'iconName'=>'clock',
+            'name'=>'Fuso Horário',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
+          )) ?>
+
+          <?php includeFile('components/life-cost.php', array(
+            'iconName'=>'plug',
+            'name'=>'Voltagem',
+            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
+          )) ?>
+        </div>
+      </div>
+
+      <div class="swiper swiper-custo-de-vida d-lg-none">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <?php includeFile('components/life-cost.php', array(
@@ -181,12 +226,13 @@
           </div>
         </div>
 
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination " id="swiper-pagination-custo-de-vida"></div>
       </div>
+    </div>
   </div>
 </div>
 
-<div class="container-fluid mt-5 bg-warning text-center">
+<div class="container-fluid bg-warning text-center">
   <h1 class="pt-5 pb-4 purple">Programas disponíveis</h1>
   <div class="container ">
     <div class="row justify-content-center">
