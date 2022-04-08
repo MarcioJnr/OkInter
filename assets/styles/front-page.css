@@ -99,7 +99,33 @@ h2{
     margin-bottom: 1rem;
 }
 
+.swiper-pacotes .pacote-info::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #ffc86e;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease-out;
+}
+
+.pacote-info:hover .cidade-pacote,
+.pacote-info:hover .valor-pacote {
+    color: white;
+}
+
+.swiper-pacotes .pacote-info:hover::before {
+    transform: scale(45);
+}
+
 .pacote-info{
+    position: relative;
+    overflow: hidden;
     margin: auto;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -216,8 +242,19 @@ h2{
     font-size:72px;
     line-height:3.5rem;
     text-transform: uppercase;
+    animation: fadeIn 2s;
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 .b-subtitle{
     color:whitesmoke; 
     font-weight: 700;
@@ -521,4 +558,17 @@ input {
 textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
+}
+
+.call-to-action{
+    transition: all .2s;
+}
+
+.call-to-action:hover {
+    transform: translateY(2px);
+    background-color: #e45e29 ;
+}
+
+.call-to-action:active {
+    transform: translateY(4px);
 }

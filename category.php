@@ -54,17 +54,19 @@
                                     <p style="margin-bottom:0"><?php the_category(', ');?></p>
                                     
                                 </div>
-                                <div class="blog-title col-12">
-                                    <h6 style="font-weight: 500; line-height: inherit;">
-                                        <?php 
-                                            if (strlen($post->post_title) > 45) {
-                                                echo substr(the_title($before = '', $after = '', FALSE), 0, 50) . '...'; } 
-                                                else {
-                                                the_title();
-                                            } 
-                                        ?>
-                                    </h6>
-                                </div>
+                                <a href="<?php echo $post->guid;?>" class="col-12">
+                                    <div class="blog-title col-12">
+                                        <h6 style="font-weight: 500; line-height: inherit;">
+                                            <?php 
+                                                if (strlen($post->post_title) > 45) {
+                                                    echo substr(the_title($before = '', $after = '', FALSE), 0, 50) . '...'; } 
+                                                    else {
+                                                    the_title();
+                                                } 
+                                            ?>
+                                        </h6>
+                                    </div>
+                                </a>
                             </div> 
                         </div>
                     </a>
@@ -137,11 +139,65 @@
                 <!-- SEÇÃO DE NOTICIAS -->
                 <section class="col-lg-12 mt-5 dotted pb-5 section-title">
                     <h3>Noticias</h3>
+                    <div>
+                        <?php
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 3,
+                                'category_name' => 'noticias'
+                            );
+                            $relate_query = new WP_Query($args);
+                            if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
+                        ?>
+
+                        <div class="related-posts-confira">
+                        
+                            <a href="<?php echo $post->guid;?>">
+                                
+                                <div class="col-12 mt-3 posts-confira-title">
+                                    <p style="font-weight: 500; line-height: inherit;">
+                                        •
+                                        <?php                             
+                                            the_title();                   
+                                        ?>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <?php endwhile; else: endif; wp_reset_postdata();?>
+                    </div>
                 </section>
 
                 <!-- SEÇÃO TUDO SOBRE INTERCAMBIO -->
                 <section class="col-lg-12 mt-5 dotted section-title pb-5">
                     <h3>Tudo sobre intercâmbio</h3>
+                    <div>
+                        <?php
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 3,
+                                'category_name' => 'intercambio'
+                            );
+                            $relate_query = new WP_Query($args);
+                            if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
+                        ?>
+
+                        <div class="related-posts-confira">
+                        
+                            <a href="<?php echo $post->guid;?>">
+                                
+                                <div class="col-12 mt-3 posts-confira-title">
+                                    <p style="font-weight: 500; line-height: inherit;">
+                                        •
+                                        <?php                             
+                                            the_title();                   
+                                        ?>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <?php endwhile; else: endif; wp_reset_postdata();?>
+                    </div>
                 </section>
 
                 <!-- VIDEOS RECOMENDADOS -->
