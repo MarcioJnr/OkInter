@@ -174,7 +174,7 @@
 
 
     <!-- PARCEIROS DA OK INTERCAMBIO -->
-    <section class="container">
+    <section class="container mb-5">
         <div>
             <h3 class="text-center text-xl-center cor-empresa mt-4 mb-3">Instituições Parceiras</h3>
             <p class="text-center text-xl-center fw-bolder mb-3">Proporcionam a experiência internacional para você</p>

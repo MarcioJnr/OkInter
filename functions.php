@@ -19,7 +19,7 @@
         wp_enqueue_style('manrope', 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap', array(), '1.0.0', 'all');
         wp_enqueue_style('style', get_template_directory_uri().'/assets/styles/style.css', array(),'1.0.0', 'all');
 
-        if ( is_category() == true ) {
+        if ( is_category() == true || is_single()) {
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
         }
@@ -64,9 +64,14 @@
             wp_enqueue_style('promocoes', get_template_directory_uri() . '/assets/styles/promocoes.css');
         }
 
+
         if ( is_page('resultados-da-busca') ) {
             // só vai carregar se estiver na page team
             wp_enqueue_style('resultadosDaBusca', get_template_directory_uri() . '/assets/styles/resultados-da-busca.css');
+
+        if ( is_page('search') ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('search', get_template_directory_uri() . '/assets/styles/search.css');
         }
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
