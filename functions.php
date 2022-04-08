@@ -63,6 +63,11 @@
             // só vai carregar se estiver na page team
             wp_enqueue_style('promocoes', get_template_directory_uri() . '/assets/styles/promocoes.css');
         }
+
+        if ( is_page('resultados-da-busca') ) {
+            // só vai carregar se estiver na page team
+            wp_enqueue_style('resultadosDaBusca', get_template_directory_uri() . '/assets/styles/resultados-da-busca.css');
+        }
       
         wp_enqueue_style('header', get_template_directory_uri().'/assets/styles/header.css', array(),'1.0.0', 'all');
         wp_enqueue_style('footer', get_template_directory_uri().'/assets/styles/footer.css', array(),'1.0.0', 'all');
@@ -75,6 +80,7 @@
         wp_enqueue_style('card-testimonial', get_template_directory_uri() . '/assets/styles/components/card-testimonial.css');
         wp_enqueue_style('galery-destiny', get_template_directory_uri() . '/assets/styles/components/galery-destiny.css');
         wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
+        wp_enqueue_style('post-search-result', get_template_directory_uri() . '/assets/styles/components/post-search-result.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
