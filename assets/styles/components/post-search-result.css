@@ -1,0 +1,29 @@
+.post .thumb-section .thumb img {
+  width: 90vw;
+  height: 90vw;
+  border-radius: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px 0px -1px var(--primary-color);
+          box-shadow: 10px 10px 0px -1px var(--primary-color);
+}
+
+.post .info-section a#link-view-more button {
+  background-color: var(--primary-color);
+}
+
+.post .info-section #link-view-more:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
+@media (min-width: 992px) {
+  .post .thumb-section .thumb img {
+    width: 20vw !important;
+    height: 20vw !important;
+  }
+  .post .info-section a button {
+    background-color: var(--primary-color);
+  }
+}
+/*# sourceMappingURL=post-search-result.css.map */
