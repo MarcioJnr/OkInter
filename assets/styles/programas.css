@@ -24,11 +24,11 @@
     bottom: 0;
 }
 
-.container-dentro{
-    top: 50%;
-    position: absolute;
+#section-high-school {
+    background-color: var(--quartenary-color);
 }
 
-.container-fora{
-    position: relative;
+#section-high-school .container {
+    top: 50%;
+    left: 0;
 }

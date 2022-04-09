@@ -18,8 +18,9 @@
         já têm programas específicos para quem se formou no exterior.</p>
         <div class="row text-center">
             <div class="col-12 col-md-4 col-xl-4 mt-5">
-                <img class="circle" src="<?php echo get_template_directory_uri(  );?>/assets/images/Ellipse.svg">
-                <img class="vector mb-3" src="<?php echo get_template_directory_uri(  );?>/assets/images/programas-mercado.svg">
+                <div class="icon-background d-flex justify-content-center align-items-center" >
+                    <img class="mb-0 rounded-circle p-3" style="background-color: #FF6A2E" src="<?php echo get_template_directory_uri(  );?>/assets/icons/programas-mercado.svg">
+                </div>
                 <h6 class="my-5">Mercado de Trabalho</h6>
                 <p class="mb-2">A internacionalização é uma peça chave do</p>
                 <p class="mb-2">mundo educacional, profissional e</p>
@@ -28,8 +29,9 @@
                 <p class="mb-2">em ambiente internacional.</p>
             </div>
             <div class="col-12 col-md-4 col-xl-4 mt-5">
-                <img class="circle" src="<?php echo get_template_directory_uri(  );?>/assets/images/Ellipse.svg">
-                <img class="vector mb-3" src="<?php echo get_template_directory_uri(  );?>/assets/images/programas-mundo.svg">
+                <div class="icon-background d-flex justify-content-center align-items-center" >
+                    <img class="mb-0 rounded-circle p-3" style="background-color: #FF6A2E" src="<?php echo get_template_directory_uri(  );?>/assets/icons/programas-mundo.svg">
+                </div>
                 <h6 class="ms-3 my-5">Imersão Cultural</h6>
                 <p class="mb-2">As instituições de ensino no exterior</p>
                 <p class="mb-2">recebem estudantes de diversas parte do</p>
@@ -38,8 +40,9 @@
                 <p class="mb-2">pessoas incríveis. Legal não?</p>
             </div>
             <div class="col-12 col-md-4 col-xl-4 mt-5">
-                <img class="circle" src="<?php echo get_template_directory_uri(  );?>/assets/images/Ellipse.svg">
-                <img class="vector mb-3" src="<?php echo get_template_directory_uri(  );?>/assets/images/programas-ideia.svg">
+                <div class="icon-background d-flex justify-content-center align-items-center" >
+                    <img class="mb-0 rounded-circle p-3" style="background-color: #FF6A2E" src="<?php echo get_template_directory_uri(  );?>/assets/icons/programas-ideia.svg">
+                </div>
                 <h6 class="ms-3 my-5">Novas Ideias</h6>
                 <p class="mb-2">Você voltar ao Brasil totalmente renovado e</p>
                 <p class="mb-2">cheio de ideias. A experiência possibilitará</p>
@@ -50,24 +53,43 @@
         </div>
         <div class="row text-center">
             <h3 class="my-5" style="color: #FF6A2E;">Países ofertados</h3>
-            <div class="col-12 col-md-4 col-xl-4 mb-5">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/alemanha-destinos.png">
-                <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Alemanha</h4>
-            </div>
-            <div class="col-12 col-md-4 col-xl-4 mb-5">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/canada-destinos.png">
-                <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Canadá</h4>
-            </div>
-            <div class="col-12 col-md-4 col-xl-4 mb-5">
-                <img src="<?php echo get_template_directory_uri(  );?>/assets/images/portugal-destinos.png">
-                <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Portugal</h4>
-            </div>
+            <?php 
+                $args = array (
+                    'post_type' => 'destino',
+                    'orderby' => 'title',
+                    'order' => 'ASC',
+                    'post_limits' => 3,
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'tipo',
+                            'field' => 'slug',
+                            'terms' => 'universidade'
+                        )
+                    )
+                );
+                $university_query = new WP_Query($args);
+                if($university_query->have_posts()) : 
+                    while ($university_query->have_posts()) : $university_query->the_post();
+                        echo '<div class="col-12 col-md-4 col-xl-4 mb-5">';
+                            includeFile('components/card-destiny.php', 
+                                array(
+                                    'href'=>get_permalink($post->ID),
+                                    'directoryUrl'=>get_the_post_thumbnail_url($post->ID),
+                                    'destinyName'=>get_the_title($post->ID)
+                                )
+                            ); 
+                        echo '</div>';
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+            ?>
         </div>
     </div>
-    <div class="container-fluid container-fora" style="background-color:#7B39E9;">
-        <img class="img-banner"src="<?php echo get_template_directory_uri(  );?>/assets/images/HighSchool.png">
-        <div class="container container-dentro">
-            <h3 class="texttest">High School</h3>
+    <div class="position-relative" id="section-high-school">
+        <img class="img-banner w-100" src="<?php echo get_template_directory_uri();?>/assets/images/HighSchool.png">
+        
+        <div class="container position-absolute">
+            <h3 class="">High School</h3>
         </div>
     </div>    
     <div class="container">
