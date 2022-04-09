@@ -216,7 +216,7 @@
                     </p>
 
                     <a href="<?php echo get_home_url(); ?>/servicos" class="w-100">
-                        <button id="btn-destinos" type="button" class="btn btn-primary mt-3 mb-5 fw-bold text-center">
+                        <button id="btn-destinos" type="button" class="mt-3 mb-5 fw-bold text-center" style="background-color: #FFB030; color: white;">
                             Ver mais
                         </button>
                     </a>
