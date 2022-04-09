@@ -75,7 +75,7 @@
             alterações de datas, tanto de ida como de volta.  A viagem é sua, mas o trabalho 
             é nosso!
             </p><br><br>
-            <button type="button" class="btn cor-botao text-light px-4">Realizar Cotação</button>
+            <button type="button" id="btn-cotacao" class="btn cor-botao text-light px-4" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao">Realizar Cotação</button>
           </div>
         </div>
     </div>
@@ -284,6 +284,23 @@
       <?php echo do_shortcode('[contact-form-7 id="5" title="Formulário de contato"]');?>
       </div>
       
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="staticDropdownCotacao" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog rounded-3 modal-dialog-centered">
+    <div class="modal-content rounded-3 rounded-top">
+      <div class="modal-header">
+            <div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="cor-empresa mt-3 mb-4" style="line-height: ;">Cotação de passagem áeria</h3>
+            </div>
+      </div>
+      <div class="modal-body">
+      <?php echo do_shortcode('[contact-form-7 id="30" title="form cortacao"]');?>
+      </div>
     </div>
   </div>
 </div>
