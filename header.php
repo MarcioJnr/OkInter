@@ -363,10 +363,31 @@
                 </div>
 
                 <div class="d-none d-lg-flex justify-content-center w-25">
-                    <button id="orcamento-button" type="button" class="w-75 btn shadow">ORÇAMENTO</button>
+                    <button type="button" id="orcamento-button" class="w-75 btn shadow" data-bs-toggle="modal" data-bs-target="#staticDropdown">ORÇAMENTO</button>
                 </div>
             </div>
         </nav>
 
         
     </header>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="staticDropdown" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+            <div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="cor-empresa mt-4 mb-4">Faça o orçamento da sua viajem</h3>
+                <p class="fw-bolder">Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
+            </div>
+      </div>
+      <div class="modal-body">
+        <?php echo do_shortcode('[contact-form-7 id="14" title="Formulario orçamento"]');?>
+      </div>
+      
+    </div>
+  </div>
+</div>
