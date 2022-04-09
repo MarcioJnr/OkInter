@@ -104,11 +104,27 @@
                                 <div class="d-flex dropdown-content">
                                     <h5 class="d-none d-lg-flex">Destinos</h5>
                                     <ul>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/canada">Canadá</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/alemanha">Alemanha</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/inglaterra">Inglaterra</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/espanha">Espanha</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/destino/irlanda">Irlanda</a></li>
+                                        <?php 
+                                            $args = array (
+                                                'post_type' => 'destino',
+                                                'orderby' => 'title',
+                                                'order' => 'ASC',
+                                                'post_limits' => 5,
+                                                'tax_query' => array(
+                                                    array(
+                                                        'taxonomy' => 'tipo',
+                                                        'field' => 'slug',
+                                                        'terms' => 'pais'
+                                                    )
+                                                )
+                                            );
+                                            $pais_query = new WP_Query($args);
+                                            if($pais_query->have_posts()) : 
+                                                while ($pais_query->have_posts()) : $pais_query->the_post();
+                                                    echo '<li><a class="dropdown-item px-5" href="' . get_permalink($post->ID) . '">'. get_the_title($post->ID) .'</a></li>';
+                                                endwhile;
+                                            endif;
+                                        ?>
                                         <li><a class="dropdown-item px-5 d-flex align-items-center" href="<?php echo get_home_url(); ?>/destinos" style="color: #FF6A2E;">
                                                 Ver mais
 
@@ -153,10 +169,28 @@
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
                                                     <ul>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/australia">Austrália</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/nova-zelandia">Nova Zelândia</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
+                                                        <?php 
+                                                            $args = array (
+                                                                'post_type' => 'destino',
+                                                                'orderby' => 'title',
+                                                                'order' => 'ASC',
+                                                                'post_limits' => 4,
+                                                                'tax_query' => array(
+                                                                    'relation' => 'AND',
+                                                                    array(
+                                                                        'taxonomy' => 'programapacote',
+                                                                        'field' => 'slug',
+                                                                        'terms' => 'Estudo e trabalho'
+                                                                    ),
+                                                                )
+                                                            );
+                                                            $pais_query = new WP_Query($args);
+                                                            if($pais_query->have_posts()) : 
+                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
+                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
+                                                                endwhile;
+                                                            endif;
+                                                        ?>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -179,10 +213,28 @@
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
                                                     <ul>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/australia">Austrália</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/nova-zelandia">Nova Zelândia</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
+                                                        <?php 
+                                                            $args = array (
+                                                                'post_type' => 'destino',
+                                                                'orderby' => 'title',
+                                                                'order' => 'ASC',
+                                                                'post_limits' => 4,
+                                                                'tax_query' => array(
+                                                                    'relation' => 'AND',
+                                                                    array(
+                                                                        'taxonomy' => 'programapacote',
+                                                                        'field' => 'slug',
+                                                                        'terms' => 'Idiomas'
+                                                                    ),
+                                                                )
+                                                            );
+                                                            $pais_query = new WP_Query($args);
+                                                            if($pais_query->have_posts()) : 
+                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
+                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
+                                                                endwhile;
+                                                            endif;
+                                                        ?>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -205,10 +257,28 @@
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
                                                     <ul>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/australia">Austrália</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/nova-zelandia">Nova Zelândia</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
+                                                        <?php 
+                                                            $args = array (
+                                                                'post_type' => 'destino',
+                                                                'orderby' => 'title',
+                                                                'order' => 'ASC',
+                                                                'post_limits' => 4,
+                                                                'tax_query' => array(
+                                                                    'relation' => 'AND',
+                                                                    array(
+                                                                        'taxonomy' => 'programapacote',
+                                                                        'field' => 'slug',
+                                                                        'terms' => 'Universidade no exterior'
+                                                                    ),
+                                                                )
+                                                            );
+                                                            $pais_query = new WP_Query($args);
+                                                            if($pais_query->have_posts()) : 
+                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
+                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="'.get_permalink($post->ID) . '">'. get_the_title($post->ID) . '</a></li>';
+                                                                endwhile;
+                                                            endif;
+                                                        ?>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -231,10 +301,28 @@
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
                                                     <ul>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/australia">Austrália</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/nova-zelandia">Nova Zelândia</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
+                                                        <?php 
+                                                            $args = array (
+                                                                'post_type' => 'destino',
+                                                                'orderby' => 'title',
+                                                                'order' => 'ASC',
+                                                                'post_limits' => 4,
+                                                                'tax_query' => array(
+                                                                    'relation' => 'AND',
+                                                                    array(
+                                                                        'taxonomy' => 'programapacote',
+                                                                        'field' => 'slug',
+                                                                        'terms' => 'Intercâmbio em família'
+                                                                    ),
+                                                                )
+                                                            );
+                                                            $pais_query = new WP_Query($args);
+                                                            if($pais_query->have_posts()) : 
+                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
+                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="'. get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
+                                                                endwhile;
+                                                            endif;
+                                                        ?>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -257,10 +345,28 @@
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
                                                     <ul>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/irlanda">Irlanda</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/australia">Austrália</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/nova-zelandia">Nova Zelândia</a></li>
-                                                        <li><a class="dropdown-item d-flex justify-content-end px-0" href="<?php echo get_home_url(); ?>/espanha">Espanha</a></li>
+                                                        <?php 
+                                                            $args = array (
+                                                                'post_type' => 'destino',
+                                                                'orderby' => 'title',
+                                                                'order' => 'ASC',
+                                                                'post_limits' => 4,
+                                                                'tax_query' => array(
+                                                                    'relation' => 'AND',
+                                                                    array(
+                                                                        'taxonomy' => 'programapacote',
+                                                                        'field' => 'slug',
+                                                                        'terms' => 'Business English'
+                                                                    ),
+                                                                )
+                                                            );
+                                                            $pais_query = new WP_Query($args);
+                                                            if($pais_query->have_posts()) : 
+                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
+                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
+                                                                endwhile;
+                                                            endif;
+                                                        ?>
                                                     </ul>
                                                 </div>
                                             </div>

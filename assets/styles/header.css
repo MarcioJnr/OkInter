@@ -60,9 +60,13 @@ header nav div #navbarSupportedContent ul .nav-item .dropdown-menu div ul li a p
 
 header nav div #navbarSupportedContent ul .nav-item .dropdown-menu div ul li .dropdown-menu {
   top: 0;
-  left: 175%;
+  left: 32vw;
   display: none;
   background-color: white !important;
+}
+
+header nav div #navbarSupportedContent ul .nav-item .dropdown-menu div ul li .dropdown-menu .dropdown-content {
+  min-width: 30vw;
 }
 
 header nav div #navbarSupportedContent ul .nav-item .dropdown-menu div ul li .dropdown-menu .dropdown-content ul li {

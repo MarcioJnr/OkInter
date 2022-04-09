@@ -127,7 +127,7 @@ function create_programapacote_tax() {
 		'show_in_rest' => true,
 		'query_var' => 'programapacote',
 	);
-	register_taxonomy( 'programapacote', array('pacote', 'pacotes'), $args );
+	register_taxonomy( 'programapacote', array('pacote', 'pacotes', 'destino'), $args );
 
 }
 add_action( 'init', 'create_programapacote_tax' );
