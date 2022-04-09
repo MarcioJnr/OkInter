@@ -74,29 +74,40 @@
         <h1 class="display-4 text-dark text-center" style="font-style: normal; font-weight: 400; font-size: 48px; letter-spacing: 0.02em;">Encontre sua próxima viajem</h1>
 
         <div class="container">
-            <div class="row">
+            <form class="row">
                 <div class="col-12 col-md-5 col-xl-5 justify-content-center">
-                    <select class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
+                    <select id="programa" class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
                         <option selected>PROGRAMAS</option>
-                        <option value="1">Idiomas</option>
-                        <option value="2">Universidades no exterior</option>
-                        <option value="3">Intercâmbio em família</option>
-                        <option value="4">Business English</option>
+                        <option value="Idiomas">Idiomas</option>
+                        <option value="Universidade no exterior">Universidades no exterior</option>
+                        <option value="Intercâmbio em família">Intercâmbio em família</option>
+                        <option value="Business English">Business English</option>
                     </select>
                 </div>
                 <div class="col-12 col-md-5 col-xl-5">
-                    <select class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
+                    <select id="destino" class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
                         <option selected class="fw-bold">DESTINOS</option>
-                        <option value="1">Canadá</option>
-                        <option value="2">Alemanha</option>
-                        <option value="3">Irlanda</option>
-                        <option value="4">Iraque</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Alemanha">Alemanha</option>
+                        <option value="Irlanda">Irlanda</option>
+                        <option value="Iraque">Iraque</option>
                     </select>
                 </div>
                 <div class="col-12 col-md-2 col-xl-2">
-                    <button id="btn-buscar" type="button" class="fw-bold text-center text-md-center text-xl-center">Buscar</button>
+                    <button id="btn-buscar" class="fw-bold text-center text-md-center text-xl-center">Buscar</button>
                 </div>
-            </div>
+            </form>
+
+            <script>
+                $('#btn-buscar').click((e) => { 
+                    var getUrl = window.location;
+                    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+                    var queryPrograma = $("#programa option:selected").val();
+                    var queryDestino = $("#destino option:selected").val();
+                    var encodeParams = encodeURI(`${queryPrograma}][${queryDestino}`)
+                    window.location.href = `${baseUrl}/resultados-da-busca?results=${encodeParams}`
+                });
+            </script>
 
         </div>
     </div>

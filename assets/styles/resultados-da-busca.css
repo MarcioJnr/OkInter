@@ -7,31 +7,36 @@
           filter: brightness(1.1);
 }
 
-#search-result #result-field nav ul.pagination li a, #search-result #result-field nav ul.pagination li span {
+#search-result #result-field nav ul li {
+  width: 9vw;
+  height: 9vw;
+}
+
+#search-result #result-field nav ul li a {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   background-color: #C4C4C4;
   color: white;
 }
 
-#search-result #result-field nav ul.pagination li a svg, #search-result #result-field nav ul.pagination li span svg {
-  width: 2vw;
-  height: 2vw;
-}
-
-#search-result #result-field nav ul.pagination li a svg path, #search-result #result-field nav ul.pagination li span svg path {
-  fill: white;
-}
-
-#search-result #result-field nav ul.pagination li:hover a, #search-result #result-field nav ul.pagination li:hover span {
+#search-result #result-field nav ul .active a {
   background-color: var(--primary-color);
+  border: 0;
 }
 
-#search-result #result-field nav ul.pagination .active a, #search-result #result-field nav ul.pagination .active span {
+#search-result #result-field nav ul li:hover a {
   background-color: var(--primary-color);
 }
 
 @media (min-width: 992px) {
   #search-result #search-field .btn {
     width: 50% !important;
+  }
+  #search-result #result-field nav ul li {
+    width: 3vw;
+    height: 3vw;
   }
 }
 /*# sourceMappingURL=resultados-da-busca.css.map */

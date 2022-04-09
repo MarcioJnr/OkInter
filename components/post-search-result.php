@@ -10,7 +10,7 @@
         <p class="mb-4"><?php echo $description ?></p>
 
         <a href="<?php echo $href ?>" class="w-100" id="link-view-more">
-            <button class="btn text-white shadow w-25 w-lg-50 mb-3">
+            <button class="btn text-white shadow w-50 w-lg-50 mb-3">
                 VER MAIS
             </button>
         </a>
