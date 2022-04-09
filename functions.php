@@ -81,6 +81,7 @@
         wp_enqueue_style('galery-destiny', get_template_directory_uri() . '/assets/styles/components/galery-destiny.css');
         wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
         wp_enqueue_style('post-search-result', get_template_directory_uri() . '/assets/styles/components/post-search-result.css');
+        wp_enqueue_style('search-field', get_template_directory_uri() . '/assets/styles/components/search-field.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
