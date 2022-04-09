@@ -133,3 +133,100 @@ textarea:focus, input:focus {
     outline: 0;
 }
 
+/* model cotaçao */
+
+#nome-cotacao {
+    width: 55%;
+    float: left;
+    line-height: 30px;
+}
+
+#nome-cotacao input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#tel-cotacao {
+    width: 40%;
+    float: right;
+    line-height: 30px;
+    
+}
+
+#tel-cotacao  input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+
+#email-cotacao {
+    float: left;
+    margin-top:5px;
+    line-height: 30px;
+    width: 55%;
+}
+
+#email-cotacao input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#data-cotacao {
+    width: 40%;
+    float: right;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+#data-cotacao  input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+
+#saida-cotacao {
+    float: left;
+    margin-top:5px;
+    line-height: 30px;
+    width: 49%;
+}
+
+#saida-cotacao input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#destino-cotacao {
+    width: 49%;
+    float: right;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+#destino-cotacao  input {
+    padding-left: 12px;
+    width: 100%;
+    height: 40px;
+    line-height: 22px;
+    border: 1px solid rgba(25, 20, 18, 0.6);
+}
+
+#paragrafo-baixo {
+    font-weight: bold;
+    margin-top: 10px;
+}
