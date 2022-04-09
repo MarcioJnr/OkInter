@@ -144,8 +144,10 @@
                     <p class="text-center text-xl-center text-light mt-4">Host</p>    
               </div>
             </div>
-            <button type="button" class="btn btn-warning text-light px-4">Falar com consultor</button>
-          </div>
+
+              <button type="button" id="btn-consultor" class="btn btn-warning text-light px-4" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">Falar com consultor</button>
+          
+            </div>
         </div>
     </div>
   </div>
@@ -267,5 +269,25 @@
     <h1 class="text-center">FORMS</h1>
   </div>
 </main>
+
+
+<div class="modal fade" id="staticDropdownteste" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog rounded-3 modal-dialog-centered">
+    <div class="modal-content rounded-3 rounded-top">
+      <div class="modal-header">
+            <div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="cor-empresa mt-3 mb-4" style="line-height: ;">Falar com o consultor</h3>
+            </div>
+      </div>
+      <div class="modal-body">
+      <?php echo do_shortcode('[contact-form-7 id="5" title="Formulário de contato"]');?>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
 
 <?php get_footer(); ?>
