@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <main>
     <?php 
-        #ALTERE AQUI O TITULO E O NOME DA IMAGEM DO BANNER
         includeFile('components/banner.php', 
             array(
                 'title'=>'Contato', 
@@ -14,10 +13,10 @@
         <div class="col-12 col-md-6 col-xl-6 mt-5">
           <h3 class="mb-4 mt-4 cor-empresa text-center text-md-center text-xl-start">Fale conosco</h3>
           <p class="text-center text-xl-start">
-          A agência OK Intercâmbio é uma empresa especializada em oferecer serviços voltados para programas de estudos no exterior.  Se você deseja uma cotação de passagens aéreas  clica <a href="#">aqui</a>.
+          A agência OK Intercâmbio é uma empresa especializada em oferecer serviços voltados para programas de estudos no exterior.  Se você deseja uma cotação de passagens aéreas clique <a href="#staticDropdownteste" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">aqui</a>.
           </p>
           <p class="text-center text-xl-start">
-          Agora se você deseja receber um orçamento de intercâmbio é só clicar <a href="#">aqui</a>. Mas se você deseja falar sobre outros assuntos, é só preencher o formulário ao lado.
+          Agora se você deseja receber um orçamento de intercâmbio é só clicar <a href="#staticDropdown" data-bs-toggle="modal" data-bs-target="#staticDropdown">aqui</a>. Mas se você deseja falar sobre outros assuntos, é só preencher o formulário ao lado.
           </p><br>
         </div>
         <div class="col-12 col-md-6 col-xl-6 form mt-5">
@@ -34,14 +33,14 @@
           <div class="row">
             <h6 class="text-center fw-bold">Fortaleza, CE</h5> <br>
           <div class="col-12 col-md-6 col-sm-12 text-center">
-              <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-local.svg" class="me-3">Av. Senador Virgílio Távora, 1500, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sala 11.13, 
+              <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/pointer.svg" class="me-3">Av. Senador Virgílio Távora, 1500, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sala 11.13, 
                   Edifício: The One Tower, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aldeota, Fortaleza/CE, Brasil, CEP: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60170-251
               </p>
-              <p class="mt-3 text-xl-start text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-relogio.svg" class="me-3">De segunda à sexta: de 9h à 18h</p>
+              <p class="mt-3 text-xl-start text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/black-clock.svg" class="me-3">De segunda à sexta: de 9h à 18h</p>
           </div>
           <div class="col-12 col-md-6 col-sm-12 text-center">
               <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-tel.svg" class="me-3">+55 (85) 3182-4212</p>
-              <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-email.svg" class="me-3">contato@okintercambio.com.br</p>
+              <p class="mt-3 text-start d-flex"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-email.svg" class="me-3">contato@okintercambio.com.br</p>
             </div>
           </div>
         </div>
@@ -51,13 +50,13 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
           <div class="row">
            <h6 class="text-center fw-bold">São Paulo, SP</h5><br>
           <div class="col-12 col-md-6 col-sm-12 text-start">
-              <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-local.svg" class="me-3">Almeida Santos, 1773, sala 1305, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edifício: VIP Office Jardim Paulista, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;São Paulo/SP, Brasil CEP: 01419-000
+              <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/pointer.svg" class="me-3">Almeida Santos, 1773, sala 1305, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edifício: VIP Office Jardim Paulista, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;São Paulo/SP, Brasil CEP: 01419-000
               </p>  
-              <p class="mt-3 text-xl-start text-md-center"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-relogio.svg" class="me-3">De segunda à sexta: de 9h à 18h</p>
+              <p class="mt-3 text-xl-start text-md-center"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/black-clock.svg" class="me-3">De segunda à sexta: de 9h à 18h</p>
           </div>
           <div class="col-12 col-md-6 col-sm-12 text-start">
               <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-tel.svg" class="me-3">+55 (11) 3042-4015</p>
-              <p class="mt-3 text-start"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-email.svg" class="me-3">contato@okintercambio.com.br</p>
+              <p class="mt-3 text-start d-flex"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-email.svg" class="me-3">contato@okintercambio.com.br</p>
             </div>
           </div>
         </div>
@@ -73,7 +72,7 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
           <h6 class="text-center fw-bold">Dublin</h5>
           <div class="row">
           <div class="col-12 col-md-6 col-sm-12 text-start">
-              <p class="mt-3 text-xl-start text-md-center"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/icone-local.svg" class="me-3">30, Mountjoy Square East, Dublin 1, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ireland
+              <p class="mt-3 text-xl-start text-md-center"><img src="<?php echo get_template_directory_uri( );?>/assets/icons/pointer.svg" class="me-3">30, Mountjoy Square East, Dublin 1, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ireland
               </p>
               
           </div>
@@ -93,4 +92,5 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
     
 </main>
 
+//ADICIONAR MODAL DE PASSAGENS
 <?php get_footer(); ?>
