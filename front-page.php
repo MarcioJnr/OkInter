@@ -230,39 +230,53 @@
         <div class="container">
             <div class="row">
                 <h3 class="mt-5" style="color: #7B39E9;">Destinos</h3>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/irlanda-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
+                <div class="row d-none d-lg-flex">
+                    <?php 
+                        $args = array (
+                            'post_type' => 'destino',
+                            'orderby' => 'title',
+                            'order' => 'ASC',
+                            'post_limits' => 8,
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'tipo',
+                                    'field' => 'slug',
+                                    'terms' => 'pais'
+                                )
+                            )
+                        );
+                        $pais_query = new WP_Query($args);
+                        if($pais_query->have_posts()) : 
+                            while ($pais_query->have_posts()) : $pais_query->the_post();
+                                echo '<div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">';
+                                includeFile('components/card-destiny.php', array(
+                                    'href' => get_permalink($post->ID),
+                                    'directoryUrl'=> get_the_post_thumbnail_url($post->ID),
+                                    'destinyName'=> get_the_title($post->ID),
+                                ));
+                                echo '</div>';
+                            endwhile;
+                        endif;
+                    ?>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/canada-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Canadá</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/alemanha-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Alemanha</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/malta-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Malta</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/irlanda-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/canada-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/alemanha-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/malta-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
+
+                <div class="swiper swiper-destinos d-lg-none">
+                    <div class="swiper-wrapper">
+                        <?php
+                            if($pais_query->have_posts()) : 
+                                while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
+                                    <div class="swiper-slide">
+                                        <a href="<?php echo $href ?>" id="card-destiny" class="border-0 shadow position-relative">
+                                            <img class="rounded-3 w-100" src="<?php echo $directoryUrl ?>" alt="<?php echo $destinyName ?>"/>
+                                            <h3 class="card-text-background position-absolute bottom-0 text-center text-white"><?php echo $destinyName ?></h3>
+                                        </a>
+                                    </div>
+                            <?php 
+                                endwhile; 
+                            endif;
+                        ?>
+                    </div>
+                    <div class="swiper-pagination mt-5"></div>
                 </div>
             </div>
         </div>

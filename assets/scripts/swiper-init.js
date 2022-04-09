@@ -153,3 +153,22 @@ var swiper = new Swiper('.swiper-custo-de-vida', {
     clickable:true,
   },
 });
+
+//DESTINOS
+var swiper = new Swiper('.swiper-destinos', {
+  observer: true,
+  observeParents: true,
+  setWrapperSize:true,
+  centeredSlides: true,
+  loop:true,
+  slidesPerView: 2,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction:false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+  },
+});
