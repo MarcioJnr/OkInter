@@ -74,7 +74,7 @@
         <h1 class="display-4 text-dark text-center" style="font-style: normal; font-weight: 400; font-size: 48px; letter-spacing: 0.02em;">Encontre sua próxima viajem</h1>
 
         <div class="container">
-            <form class="row">
+            <div class="row">
                 <div class="col-12 col-md-5 col-xl-5 justify-content-center">
                     <select id="programa" class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
                         <option selected>PROGRAMAS</option>
@@ -96,7 +96,7 @@
                 <div class="col-12 col-md-2 col-xl-2">
                     <button id="btn-buscar" class="fw-bold text-center text-md-center text-xl-center">Buscar</button>
                 </div>
-            </form>
+            </div>
 
             <script>
                 $('#btn-buscar').click((e) => { 
@@ -105,7 +105,7 @@
                     var queryPrograma = $("#programa option:selected").val();
                     var queryDestino = $("#destino option:selected").val();
                     var encodeParams = encodeURI(`${queryPrograma}][${queryDestino}`)
-                    window.location.href = `${baseUrl}/resultados-da-busca?results=${encodeParams}`
+                    window.location.href = `${baseUrl}/resultados-da-busca?results=${encodeParams}` 
                 });
             </script>
 
