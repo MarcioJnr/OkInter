@@ -33,6 +33,49 @@
     margin-left: 2%;
 }
 
+#thumb-text {
+    background-color: var(--quartenary-color);
+    top: 75%;
+    padding: 2%;
+    border-radius: 0 0 10px 0;
+}
+
+.carousel-thumbnail{
+    border: 2px solid white;
+}
+
+#btn-cotacao {
+    background-color: var(--quartenary-color);
+}
+
+#btn-cotacao:hover {
+    filter: brightness(1.1);
+}
+
+#btn-hospedagem {
+    background-color: var(--primary-color);
+}
+
+#btn-hospedagem:hover {
+    filter: brightness(1.1);
+}
+
+.tab-servico-1 {
+    color: #1f1f1f62 !important;
+}
+
+.tab-servico-2 {
+    color: #ffffff62 !important;
+}
+
+a.active .tab-servico-1 {
+    color: var(--quartenary-color) !important;
+}
+
+a.active .tab-servico-2 {
+    color: var(--primary-color) !important;
+}
+
 @media(min-width: 375px){
     .linha3, .linha5, .linha6{
         display: none;
@@ -229,4 +272,38 @@ textarea:focus, input:focus {
 #paragrafo-baixo {
     font-weight: bold;
     margin-top: 10px;
+}
+
+#card-destiny {
+    overflow: hidden;
+    position: relative;
+}
+
+#card-destiny{
+    overflow: hidden;
+}
+
+#card-destiny h3 {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#card-destiny img {
+    height: 45vw;
+    object-fit: cover;
+    transition: 300ms;
+}
+
+#card-destiny img:hover {
+    transform: scale(1.1);
+}
+
+@media(min-width: 992px) {
+    #card-destiny img {
+        height: 14vw;
+    }
 }

@@ -102,7 +102,7 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
             </div>
       </div>
       <div class="modal-body">
-      <?php echo do_shortcode('[contact-form-7 id="30" title="form cortacao"]');?>
+      <?php echo do_shortcode('[contact-form-7 id="125" title="Cotação passagem"]');?>
       </div>
     </div>
   </div>
