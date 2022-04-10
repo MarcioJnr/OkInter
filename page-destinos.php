@@ -13,7 +13,7 @@
     <h2 class="text-center mb-4">Destinos mais procurados</h2>
     <p class="mb-5">Veja os principais destinos ofertados pela OK Intercâmbio. Para saber todas as opções de cidades disponíveis, você precisa só clicar em um dos países abaixo e poderá conferir as principais informações de cada destinos. Se a cidade que você busca não estiver nas opções, entre em contato conosco para saber mais. </p>
 
-    <div class="container mb-5" id="destinations">
+    <div class="mb-5" id="destinations">
         <div class="row gap-3 d-flex justify-content-center">
             <?php 
                 $args = array (
@@ -31,19 +31,16 @@
                 $pais_query = new WP_Query($args);
 
                 if($pais_query->have_posts()) : 
-                    while ($pais_query->have_posts()) : $pais_query->the_post();
-                        echo '<div class="col-5 col-lg-4 px-0">';
-                            includeFile('components/card-destiny.php', 
-                                array(
-                                    'href'=>get_permalink($post->ID),
-                                    'directoryUrl'=>get_the_post_thumbnail_url($post->ID),
-                                    'destinyName'=>get_the_title($post->ID)
-                                )
-                            ); 
-                        echo '</div>';
+                    while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
+                        <div class="col-5 col-lg-2 px-0">
+                            <a href="<?php echo get_the_permalink($post->ID); ?>" class="card border-0 shadow position-relative">
+                                <img class="rounded-3" src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                                <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
+                            </a>
+                        </div>
+                <?php  
                     endwhile;
                 endif;
-                wp_reset_postdata();
             ?>
         </div>
     </div>
@@ -57,25 +54,24 @@
                     'orderby' => 'title',
                     'order' => 'ASC',
                     'tax_query' => array(
+                        'relation' => 'AND',
                         array(
-                            'taxonomy' => 'tipo',
+                            'taxonomy' => 'programapacote',
                             'field' => 'slug',
-                            'terms' => 'universidade'
-                        )
+                            'terms' => 'Universidade no exterior'
+                        ),
                     )
                 );
                 $university_query = new WP_Query($args);
                 if($university_query->have_posts()) : 
-                    while ($university_query->have_posts()) : $university_query->the_post();
-                        echo '<div class="col-5 col-lg-4 px-0">';
-                            includeFile('components/card-destiny.php', 
-                                array(
-                                    'href'=>get_permalink($post->ID),
-                                    'directoryUrl'=>get_the_post_thumbnail_url($post->ID),
-                                    'destinyName'=>get_the_title($post->ID)
-                                )
-                            ); 
-                        echo '</div>';
+                    while ($university_query->have_posts()) : $university_query->the_post(); ?>
+                        <div class="col-5 col-lg-2 px-0">
+                            <a href="<?php echo get_the_permalink($post->ID); ?>" class="card border-0 shadow position-relative">
+                                <img class="rounded-3" src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                                <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
+                            </a>
+                        </div>
+                <?php
                     endwhile;
                 endif;
                 wp_reset_postdata();

@@ -1,12 +1,38 @@
-main .container .row .col-5 {
-  width: 43.5vw !important;
+.container #destinations .row .card {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.container #destinations .row .card img {
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.container #destinations .row .card .card-text-background {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.container #destinations .row .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (min-width: 992px) {
-  main .container .row .col-5 {
-    width: 18.5vw !important;
+  .container #destinations .row {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    gap: 1 !important;
   }
-  main .container .carousel {
+  .container #destinations .row .col-5 .card {
+    height: 33%;
+  }
+  .container #destinations .carousel {
     top: -5vw;
   }
 }
