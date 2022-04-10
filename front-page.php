@@ -226,61 +226,56 @@
     </div>
 
     <!--SEÇÃO DESTINOS -->
-    <div class="container-fluid text-center" style="background-color:#FFB030;">
+    <div class="text-center py-4" style="background-color:#FFB030;">
+        <h2 style="color: #7B39E9;">Destinos</h2>
         <div class="container">
-            <div class="row">
-                <h3 class="mt-5" style="color: #7B39E9;">Destinos</h3>
-                <div class="row d-none d-lg-flex">
-                    <?php 
-                        $args = array (
-                            'post_type' => 'destino',
-                            'orderby' => 'title',
-                            'order' => 'ASC',
-                            'post_limits' => 8,
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'tipo',
-                                    'field' => 'slug',
-                                    'terms' => 'pais'
-                                )
+            <div class="row d-none d-lg-flex gap-5 justify-content-center mt-4 mb-4">
+                <?php 
+                    $args = array (
+                        'post_type' => 'destino',
+                        'orderby' => 'title',
+                        'order' => 'ASC',
+                        'post_limits' => 8,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'tipo',
+                                'field' => 'slug',
+                                'terms' => 'pais'
                             )
-                        );
-                        $pais_query = new WP_Query($args);
-                        if($pais_query->have_posts()) : 
-                            while ($pais_query->have_posts()) : $pais_query->the_post();
-                                echo '<div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">';
-                                includeFile('components/card-destiny.php', array(
-                                    'href' => get_permalink($post->ID),
-                                    'directoryUrl'=> get_the_post_thumbnail_url($post->ID),
-                                    'destinyName'=> get_the_title($post->ID),
-                                ));
-                                echo '</div>';
-                            endwhile;
-                        endif;
-                    ?>
-                </div>
+                        )
+                    );
+                    $pais_query = new WP_Query($args);
+                    if($pais_query->have_posts()) : 
+                        while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
+                            <a id="card-destiny" class="col-2 px-0 rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                                <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                                <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
+                            </a>
+                    <?php
+                        endwhile;
+                    endif;
+                ?>
+            </div>
 
-                <div class="swiper swiper-destinos d-lg-none">
-                    <div class="swiper-wrapper">
-                        <?php
-                            if($pais_query->have_posts()) : 
-                                while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
-                                    <div class="swiper-slide">
-                                        <a href="<?php echo $href ?>" id="card-destiny" class="border-0 shadow position-relative">
-                                            <img class="rounded-3 w-100" src="<?php echo $directoryUrl ?>" alt="<?php echo $destinyName ?>"/>
-                                            <h3 class="card-text-background position-absolute bottom-0 text-center text-white"><?php echo $destinyName ?></h3>
-                                        </a>
-                                    </div>
-                            <?php 
-                                endwhile; 
-                            endif;
-                        ?>
+            <!-- swiper -->
+            <div class="swiper swiper-depoimentos mt-5 d-lg-none">
+                <div class="swiper-wrapper">
+                    <?php
+                        if($pais_query->have_posts()) : while ($pais_query->have_posts()) : $pais_query->the_post();
+                    ?>
+                    <div class="swiper-slide">
+                        <a id="card-destiny" class="post-frame col-11 d-flex justify-content-center rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                            <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                            <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
+                        </a>
                     </div>
-                    <div class="swiper-pagination mt-5"></div>
+                    <?php endwhile; else: endif; wp_reset_postdata();?>
                 </div>
+                <div class="gradiente"></div>
+                <div class="swiper-pagination mt-5"></div>
             </div>
         </div>
-        <button id="btn-destinos" type="button" class="mt-3 mb-5 fw-bold text-center">Ver mais</button>
+        <button id="btn-destinos" type="button" class="mt-3 fw-bold text-center">Ver mais</button>
     </div>
 
      <!--SEÇÃO DEPOIMENTOS -->
@@ -363,11 +358,7 @@
     <div class="container">
         <h3 class="text-center text-xl-center cor-empresa mt-4 mb-1 display-4">Canal do Youtube</h3>
         <p class="text-center text-xl-center fw-bolder mb-5">Confira o conteúdo que temos pra você intercambista</p>
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <iframe width="100%" height="620" src="https://www.youtube.com/embed/EawTftTaFAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="filter: drop-shadow(10px 10px 0px #FF6A2E);border-radius: 2px;"></iframe>
-            </div>
-        </div>
+        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/EawTftTaFAA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
    
     <div class="container">

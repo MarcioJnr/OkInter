@@ -154,14 +154,14 @@ var swiper = new Swiper('.swiper-custo-de-vida', {
   },
 });
 
-//DESTINOS
+//DEPOIMENTOS
 var swiper = new Swiper('.swiper-destinos', {
   observer: true,
   observeParents: true,
   setWrapperSize:true,
   centeredSlides: true,
   loop:true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 0,
   autoplay: {
     delay: 4000,
