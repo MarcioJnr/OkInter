@@ -13,7 +13,7 @@
         <div class="col-12 col-md-6 col-xl-6 mt-5">
           <h3 class="mb-4 mt-4 cor-empresa text-center text-md-center text-xl-start">Fale conosco</h3>
           <p class="text-center text-xl-start">
-          A agência OK Intercâmbio é uma empresa especializada em oferecer serviços voltados para programas de estudos no exterior.  Se você deseja uma cotação de passagens aéreas clique <a href="#staticDropdownteste" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">aqui</a>.
+          A agência OK Intercâmbio é uma empresa especializada em oferecer serviços voltados para programas de estudos no exterior.  Se você deseja uma cotação de passagens aéreas clique <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao">aqui</a>.
           </p>
           <p class="text-center text-xl-start">
           Agora se você deseja receber um orçamento de intercâmbio é só clicar <a href="#staticDropdown" data-bs-toggle="modal" data-bs-target="#staticDropdown">aqui</a>. Mas se você deseja falar sobre outros assuntos, é só preencher o formulário ao lado.
@@ -92,5 +92,19 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
     
 </main>
 
-//ADICIONAR MODAL DE PASSAGENS
+<div class="modal fade" id="staticDropdownCotacao" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog rounded-3 modal-dialog-centered">
+    <div class="modal-content rounded-3 rounded-top">
+      <div class="modal-header">
+            <div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="cor-empresa mt-3 mb-4" style="line-height: ;">Cotação de passagem áerea</h3>
+            </div>
+      </div>
+      <div class="modal-body">
+      <?php echo do_shortcode('[contact-form-7 id="30" title="form cortacao"]');?>
+      </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>
