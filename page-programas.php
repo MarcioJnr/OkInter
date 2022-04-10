@@ -281,7 +281,7 @@
     
     <div class="position-relative w-100" id="section-languages-course">
         <div class="d-flex justify-content-end">
-            <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/CursoDeIdiomas.png">
+            <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/IntercambioEmFamilia.png">
         </div>
         <div class="w-100 position-absolute top-50">
             <h3 class="container">Intercâmbio<br>em família</h3>
