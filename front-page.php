@@ -71,51 +71,21 @@
 
         <!--SEÇÃO BUSCA -->
     <div class="container-fluid p-5" style="background-color: #ffc86e;">
-        <h1 class="display-4 text-dark text-center" style="font-style: normal; font-weight: 400; font-size: 48px; letter-spacing: 0.02em;">Encontre sua próxima viajem</h1>
+        <h2 class="display-4 text-dark text-center" style="font-style: normal; font-weight: 400; font-size: 48px; letter-spacing: 0.02em;">Encontre sua próxima viagem</h2>
 
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-5 col-xl-5 justify-content-center">
-                    <select id="programa" class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
-                        <option selected>PROGRAMAS</option>
-                        <option value="Idiomas">Idiomas</option>
-                        <option value="Universidade no exterior">Universidades no exterior</option>
-                        <option value="Intercâmbio em família">Intercâmbio em família</option>
-                        <option value="Business English">Business English</option>
-                    </select>
-                </div>
-                <div class="col-12 col-md-5 col-xl-5">
-                    <select id="destino" class="programas-destinos form-select form-select-lg text-center mb-2" aria-label="Default select example" style="width:100%; box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3); border-radius: 8px;">
-                        <option selected class="fw-bold">DESTINOS</option>
-                        <option value="Canadá">Canadá</option>
-                        <option value="Alemanha">Alemanha</option>
-                        <option value="Irlanda">Irlanda</option>
-                        <option value="Iraque">Iraque</option>
-                    </select>
-                </div>
-                <div class="col-12 col-md-2 col-xl-2">
-                    <button id="btn-buscar" class="fw-bold text-center text-md-center text-xl-center">Buscar</button>
-                </div>
-            </div>
-
-            <script>
-                $('#btn-buscar').click((e) => { 
-                    var getUrl = window.location;
-                    var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-                    var queryPrograma = $("#programa option:selected").val();
-                    var queryDestino = $("#destino option:selected").val();
-                    var encodeParams = encodeURI(`${queryPrograma}][${queryDestino}`)
-                    window.location.href = `${baseUrl}/resultados-da-busca?results=${encodeParams}` 
-                });
-            </script>
-
+            <?php 
+                includeFile('components/search-field.php', array(
+                    'title'=>'Encontre a sua viagem ideal'
+                ));
+            ?>
         </div>
     </div>
 
     <!--SEÇÃO PACOTES -->
     <section class="container">
         <div>
-            <h3 class="text-center text-xl-center cor-empresa mt-4 mb-3">Promoções</h3>
+            <h2 class="text-center text-xl-center cor-empresa mt-4 mb-3">Promoções</h2>
             <p class="text-center text-xl-center fw-bolder ">Confira as vantages que a OK Intercâmbio tem para você</p>
         </div>
         <div class="swiper swiper-pacotes mt-5">
@@ -233,64 +203,79 @@
     <div class="container-fluid text-center" style="background-color:#7B39E9;">
         <div class="container">
             <div class="row">
-                <h3 class="servicos mt-5">Serviços</h3>
+                <h2 class="servicos mt-5">Serviços</h2>
                 <div class="col-12 col-md-12 col-xl-6 text-center img-aviao mt-4 mb-4">
                     <img src="<?php echo get_template_directory_uri(  );?>/assets/images/service-home.png">
                 </div>
-                <div class="col-12 col-md-12 col-xl-6 text-center">
-                    <h4 class="mt-5 titulo-viajem" >Tudo para sua viajem</h3>
-                    <p class="paragrafo1">Passagens aéreas, seguros, traslado e mais</p>
-                    <p class="paragrafo2 text-center mt-5 mb-4">
+                <div class="col-12 col-md-12 col-xl-6 text-center ">
+                    <h4 class="mt-5 titulo-viajem" >Tudo para sua viagem</h3>
+                    <p class="paragrafo1 text-bold">Passagens aéreas, seguros, traslado e mais</p>
+                    <p class="paragrafo2 text-center mt-5 mb-4 text-light">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget diam tincidunt tortor vulputate lectus. Aliquam leo tincidunt vitae ut at. Eget pharetra a vitae vulputate. Aenean sagittis quis urna libero et sed feugiat at quis. Euismod sagittis amet, auctor eleifend. Mauris amet vestibulum viverra tincidunt tincidunt enim vitae luctus. 
                     Nunc dolor turpis in porta elit ultricies mattis. Massa quis malesuada tempor nisl, odio. Porta est faucibus cursus bibendum sodales cursus et arcu, laoreet.
                     </p>
+
+                    <a href="<?php echo get_home_url(); ?>/servicos" class="w-100">
+                        <button id="btn-destinos" type="button" class="mt-3 mb-5 fw-bold text-center" style="background-color: #FFB030; color: white;">
+                            Ver mais
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!--SEÇÃO DESTINOS -->
-    <div class="container-fluid text-center" style="background-color:#FFB030;">
+    <div class="text-center py-4" style="background-color:#FFB030;">
+        <h2 style="color: #7B39E9;">Destinos</h2>
         <div class="container">
-            <div class="row">
-                <h3 class="mt-5" style="color: #7B39E9;">Destinos</h3>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/irlanda-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/canada-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Canadá</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/alemanha-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Alemanha</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/malta-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Malta</h4>
-                </div>
+            <div class="row d-none d-lg-flex gap-5 justify-content-center mt-4 mb-4">
+                <?php 
+                    $args = array (
+                        'post_type' => 'destino',
+                        'orderby' => 'title',
+                        'order' => 'ASC',
+                        'post_limits' => 8,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'tipo',
+                                'field' => 'slug',
+                                'terms' => 'pais'
+                            )
+                        )
+                    );
+                    $pais_query = new WP_Query($args);
+                    if($pais_query->have_posts()) : 
+                        while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
+                            <a id="card-destiny" class="col-2 px-0 rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                                <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                                <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
+                            </a>
+                    <?php
+                        endwhile;
+                    endif;
+                ?>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/irlanda-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
+
+            <!-- swiper -->
+            <div class="swiper swiper-depoimentos mt-5 d-lg-none">
+                <div class="swiper-wrapper">
+                    <?php
+                        if($pais_query->have_posts()) : while ($pais_query->have_posts()) : $pais_query->the_post();
+                    ?>
+                    <div class="swiper-slide">
+                        <a id="card-destiny" class="post-frame col-11 d-flex justify-content-center rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                            <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                            <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
+                        </a>
+                    </div>
+                    <?php endwhile; else: endif; wp_reset_postdata();?>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/canada-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/alemanha-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mt-4 mb-5">
-                    <img src="<?php echo get_template_directory_uri(  );?>/assets/images/malta-destinos.png">
-                    <h4 class="text-center" style="margin-top:-60px; backdrop-filter: blur(0px); color: white; font-size: 40px;">Irlanda</h4>
-                </div>
+                <div class="gradiente"></div>
+                <div class="swiper-pagination mt-5"></div>
             </div>
         </div>
-        <button id="btn-destinos" type="button" class="mt-3 mb-5 fw-bold text-center">Ver mais</button>
+        <button id="btn-destinos" type="button" class="mt-3 fw-bold text-center">Ver mais</button>
     </div>
 
      <!--SEÇÃO DEPOIMENTOS -->
@@ -373,11 +358,7 @@
     <div class="container">
         <h3 class="text-center text-xl-center cor-empresa mt-4 mb-1 display-4">Canal do Youtube</h3>
         <p class="text-center text-xl-center fw-bolder mb-5">Confira o conteúdo que temos pra você intercambista</p>
-        <div class="row">
-            <div class="col-12 text-center mb-5">
-                <iframe width="100%" height="620" src="https://www.youtube.com/embed/EawTftTaFAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="filter: drop-shadow(10px 10px 0px #FF6A2E);border-radius: 2px;"></iframe>
-            </div>
-        </div>
+        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/EawTftTaFAA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
    
     <div class="container">

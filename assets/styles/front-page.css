@@ -572,3 +572,41 @@ textarea:focus, input:focus {
 .call-to-action:active {
     transform: translateY(4px);
 }
+
+#card-destiny {
+    overflow: hidden;
+    position: relative;
+}
+
+#card-destiny{
+    overflow: hidden;
+}
+
+#card-destiny h3 {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#card-destiny img {
+    height: 45vw;
+    object-fit: cover;
+    transition: 300ms;
+}
+
+#card-destiny img:hover {
+    transform: scale(1.1);
+}
+
+@media(min-width: 992px) {
+    #card-destiny img {
+        height: 14vw;
+    }
+}
+
+.swiper-destinos .swiper-slide-active {
+    transform: none !important;
+}
