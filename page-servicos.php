@@ -21,15 +21,14 @@
            necessário com centrais 24 horas para atendê-lo em qualquer parte do mundo.</p>
       </div>
       <div class="col-12 col-md-6 text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXXxwTQf8CE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/ZXXxwTQf8CE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 
   <div class="container-fluid" style="background-color: #FFB030;">
     <div class="container">
-        <nav class="d-flex justify-content-between w-75 py-5" id="nav-carousel-servicos-1">
-
+        <nav class="d-none d-lg-flex justify-content-between w-75 py-5" id="nav-carousel-servicos-1">
             <a href="#carouselservicos1" data-bs-slide-to="0" class="btn shadow-none active" autofocus>
               <h3 class="text-center tab-servico-1">Passagens Áereas</h3>
             </a>
@@ -54,48 +53,57 @@
           <div id="carouselservicos1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="d-flex flex-row">
-                  <div class="carousel-thumbnail w-50 position-relative rounded-3 shadow">
+                <a class="d-flex d-lg-none shadow-none active py-5 justify-content-center">
+                  <h3 class="tab-servico-1 ">Passagens Áereas</h3>
+                </a>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
                     <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-1" alt="Servico passagem 1">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Nossos intercambistas viajam com tarifa de estudante</p>
                   </div>
-                  <div class="carousel-info w-50 px-3 d-flex flex-column justify-content-center">
-                    <p class="mb-2">Para cada destino, várias opções de cias aéreas. Conhecemos todas e estamos preparados para te ajudar a escolher as melhores opções.  A OK Intercâmbio garante aos clientes suporte quanto à reserva de passagens aéreas.</p>
+                  <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <p class="mb-2 mt-2">Para cada destino, várias opções de cias aéreas. Conhecemos todas e estamos preparados para te ajudar a escolher as melhores opções.  A OK Intercâmbio garante aos clientes suporte quanto à reserva de passagens aéreas.</p>
                     <p class="mb-5">Nosso compromisso é tranquilizar quanto às escolhas da cia aéreas e datas dos voos mais adequadas às necessidades de cada um. Também trabalhamos com alterações de datas, tanto de ida como de volta.  A viagem é sua, mas o trabalho é nosso!</p>
-                    <span class="w-75">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao" class="btn w-50 text-white shadow" id="btn-cotacao">Realizar cotação</a>
+                    <span class="w-100 d-flex justify-content-center">
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao" class="btn w-100 text-white shadow" id="btn-cotacao">Realizar cotação</a>
                     </span>
                   </div>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <div class="d-flex flex-row">
-                  <div class="carousel-thumbnail w-50 position-relative rounded-3 shadow">
+                <a class="d-flex d-lg-none shadow-none active py-5 justify-content-center">
+                  <h3 class="tab-servico-1 ">Seguro</h3>
+                </a>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
                     <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-2" alt="Servico passagem 2">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Centrais disponíveis 24h para antedimento</p>
                   </div>
-                  <div class="carousel-info w-50 px-3 d-flex flex-column justify-content-center">
+                  <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
                     <p class="mb-2">Garantir a tranquilidade da viagem com um seguro internacional é muito importante. Oferecemos suporte com diversas empresas especializadas em vários lugares do mundo.</p>
                     <p class="mb-5">Sabemos que imprevistos podem acontecer, por isso estar amparado por uma assistência médica faz toda a diferença. Afinal, não há nada mais chato que surpresas desagradáveis no meio da viagem.</p>
-                    <span class="w-75">
-                      <button class="btn w-50 text-white shadow" id="btn-cotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">Falar consultor</button>
+                    <span class="w-100 d-flex justify-content-center">
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-cotacao">Falar consultor</a>
                     </span>
                   </div>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <div class="d-flex flex-row">
-                  <div class="carousel-thumbnail w-50 position-relative rounded-3 shadow">
-                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-3.png" alt="Servico passagem 3">
+                <a class="d-flex d-lg-none shadow-none active py-5 justify-content-center">
+                  <h3 class="tab-servico-1 ">Translado</h3>
+                </a>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
+                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-3" alt="Servico passagem 3">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Serviço opcional</p>
                   </div>
-                  <div class="carousel-info w-50 px-3 d-flex flex-column justify-content-center">
+                  <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
                     <p class="mb-2">Garantimos o suporte terrestre entre aeroporto e local da hospedagem, assumindo a responsabilidade de oferecer todo o acompanhamento para garantir conforto para nossos clientes.</p>
                     <p class="mb-5">A OK Intercâmbio possui um completo serviço de transfer, em parceria com empresas especializadas em todos os destinos ofertados pela agência, para assegurar que todos os clientes cheguem à acomodação com comodidade e segurança.</p>
-                    <span class="w-75">
-                      <button class="btn w-50 text-white shadow" id="btn-cotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">Falar consultor</button>
+                    <span class="w-100 d-flex justify-content-center">
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-cotacao">Falar consultor</a>
                     </span>
                   </div>
                 </div>
@@ -119,8 +127,7 @@
 
   <div class="container-fluid" style="background-color: #7B39E9;">
     <div class="container">
-        <nav class="d-flex justify-content-between w-75 py-5" id="nav-carousel-servicos-2">
-
+        <nav class="d-none d-lg-flex justify-content-between w-75 py-5" id="nav-carousel-servicos-2">
             <a href="#carouselservicos2" data-bs-slide-to="0" class="btn shadow-none active" autofocus>
               <h3 class="text-center tab-servico-2">Hospedagens</h3>
             </a>
@@ -144,92 +151,103 @@
         <div class="pb-5">
           <div id="carouselservicos2" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="d-flex flex-row">
-                  <div class="carousel-thumbnail w-50 position-relative rounded-3 shadow">
+
+              <div class="carousel-item active" id="hospedagem">
+                <a class="d-flex d-lg-none shadow-none active py-5 justify-content-center">
+                  <h3 class="tab-servico-2">Hospedagens</h3>
+                </a>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
                     <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-hospedagem-1.png" alt="Servico hospedagem 1">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Estilo de hospedagem para cada perfil</p>
                   </div>
-                  <div class="carousel-info w-50 px-3 d-flex flex-column justify-content-center">
-                    <p class="text-white">Oferecemos diferentes opções de estadias a sua escolha, para melhor acolher as suas necessidades. Como a OK Intercâmbio têm diversos programas de intercâmbio para diferentes idades e propósitos, para cada perfil de intercambista disponibilizamos um estilo de hospedagem.</p>
+                  <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <p class="mb-2 mt-3 text-white">Oferecemos diferentes opções de estadias a sua escolha, para melhor acolher as suas necessidades. Como a OK Intercâmbio têm diversos programas de intercâmbio para diferentes idades e propósitos, para cada perfil de intercambista disponibilizamos um estilo de hospedagem.</p>
 
                     <div class="row mb-5 mt-5">
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/residencia-estudantil.svg">
                             <p class="text-center text-xl-center text-light mt-4">Residência</p>
                             <p class="text-center text-xl-center text-light mt-1">estudantil</p>        
                       </div>
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/host-family.svg">
                             <p class="text-center text-xl-center text-light mt-4">Host Family</p>    
                       </div>
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/hostel.svg">
                             <p class="text-center text-xl-center text-light mt-4">Hostel</p>    
                       </div>
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/hotel.svg">
                             <p class="text-center text-xl-center text-light mt-4">Host</p>    
                       </div>
                     </div>
 
-                    <span class="w-75">
-                      <button data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-50 text-white shadow" id="btn-hospedagem" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">Falar com consultor</button>
+                    <span class="w-100 d-flex justify-content-center">
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-hospedagem">Falar consultor</a>
                     </span>
                   </div>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <div class="d-flex flex-row">
-                  <div class="carousel-thumbnail w-50 position-relative rounded-3 shadow">
-                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-visto.png" alt="Servico hospedagem 2">
+                <a class="d-flex d-lg-none shadow-none active py-5 justify-content-center">
+                  <h3 class="tab-servico-2">Visa Travel Money</h3>
+                </a>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
+                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-visto.png" alt="Servico visto">
                     <p class="text-bold position-absolute text-white" id="thumb-text">6 moedas em apenas um cartão</p>
                   </div>
-                  <div class="carousel-info w-50 px-3 d-flex flex-column justify-content-center">
-                    <p class="text-white">Temos parceria com casas de câmbio para oferecer o cartão VTM, uma opção para quem não deseja levar dinheiro em mãos. É muito importante garantir toda segurança na viagem de nossos clientes. A OK Intercâmbio sempre aconselha a utilização do Visa Travel Money. </p>
+                  <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <p class="mb-2 mt-3 text-white">Temos parceria com casas de câmbio para oferecer o cartão VTM, uma opção para quem não deseja levar dinheiro em mãos. É muito importante garantir toda segurança na viagem de nossos clientes. A OK Intercâmbio sempre aconselha a utilização do Visa Travel Money.</p>
 
-                    <div class="row mb-4 mt-5">
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                    <div class="row mb-5 mt-5">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/padlock.svg">
                             <p class="text-center text-xl-center text-light mt-4">Proteção por</p>
                             <p class="text-center text-xl-center text-light mt-1">chip e senha</p>        
                       </div>
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/programas-mundo.svg">
                             <p class="text-center text-xl-center text-light mt-4">Assistência</p>
                             <p class="text-center text-xl-center text-light mt-1">global</p>   
                       </div>
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/card-add.svg">
                             <p class="text-center text-xl-center text-light mt-4">Substituição</p>
                             <p class="text-center text-xl-center text-light mt-1">gratuita</p>   
                       </div>
-                      <div class="col-12 col-md-6 col-xl-3 text-center text-xl-center">
+                      <div class="col-6 col-lg-3 text-center text-xl-center">
                             <img src="<?php echo get_template_directory_uri(  );?>/assets/icons/card-block.svg">
                             <p class="text-center text-xl-center text-light mt-4">Sem vínculo com</p>
                             <p class="text-center text-xl-center text-light mt-1">a sua conta</p>    
                       </div>
                     </div>
 
-                    <span class="w-75">
-                      <button data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-50 text-white shadow" id="btn-hospedagem">Falar com consultor</button>
+                    <span class="w-100 d-flex justify-content-center">
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-hospedagem">Falar consultor</a>
                     </span>
                   </div>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <div class="d-flex flex-row">
-                  <div class="carousel-thumbnail w-50 position-relative rounded-3 shadow">
-                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-3.png" alt="Servico passagem 3">
+                <a class="d-flex d-lg-none shadow-none active py-5 justify-content-center">
+                  <h3 class="tab-servico-2">Vistos</h3>
+                </a>
+                <div class="d-flex flex-column flex-lg-row">
+                  <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
+                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-3.png" alt="Servico visto">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Parcerias com empresas especializadas em visto</p>
                   </div>
-                  <div class="carousel-info w-50 px-3 d-flex flex-column justify-content-center">
-                    <p class="mb-2 text-white">Cada país tem as suas regras para receber estudantes. Temos conhecimentos de todo o processo para assegurar a entrada no país. Apesar dos países serem receptivos aos estudantes, eles têm leis específicas para regularizar a permanência do estrangeiro.</p>
+                  <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <p class="mb-2 mt-3 text-white">Cada país tem as suas regras para receber estudantes. Temos conhecimentos de todo o processo para assegurar a entrada no país. Apesar dos países serem receptivos aos estudantes, eles têm leis específicas para regularizar a permanência do estrangeiro.</p>
                     <p class="mb-5 text-white"> Sendo assim, oferecemos suporte na organização da documentação e comprovantes necessários, tudo sob a orientação de empresas autorizadas e certificadas por cada país.</p>
-                    <span class="w-75">
-                      <button class="btn w-50 text-white shadow" id="btn-hospedagem" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">Falar com consultor</button>
+
+                    <span class="w-100 d-flex justify-content-center">
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-hospedagem">Falar consultor</a>
                     </span>
                   </div>
                 </div>
@@ -325,7 +343,7 @@
   </div>
 <div class="container-fluid text-center" style="background-color:#FFB030;">
     <div class="container pt-5">
-      <h3 class="mb-5" style="color: #7B39E9;">Destinos</h3>
+      <h3 class="mb-5" style="color: #7B39E9;" id="viagem">Destinos</h3>
       <div class="container">
         <div class="row d-none d-lg-flex gap-5 justify-content-center mt-4 mb-4">
             <?php 
@@ -362,7 +380,7 @@
                     if($pais_query->have_posts()) : while ($pais_query->have_posts()) : $pais_query->the_post();
                 ?>
                 <div class="swiper-slide">
-                    <a id="card-destiny" class="post-frame col-11 d-flex justify-content-center rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                    <a id="card-destiny" class="post-frame col-11 d-flex justify-content-center rounded-3 mx-auto" href="<?php echo get_the_permalink($post->ID); ?>">
                         <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
                         <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
                     </a>
@@ -379,14 +397,14 @@
     </a>
   </div>
   <div class="container py-5">
-    <div class="d-flex">
-      <div class="w-50">
+    <div class="d-flex flex-column flex-lg-row">
+      <div class="w-100">
             <div>
                 <h3 class="cor-empresa mt-3 mb-4 pe-2" style="line-height: 35px;">Faça o orçamento da sua viajem</h3>
-                <p class="pe-4">Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
+                <p class="pe-4 mb-3">Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
             </div>
       </div>
-      <div class="w-50">
+      <div class="w-100">
         <?php echo do_shortcode('[contact-form-7 id="176" title="form orcamento"]');?>
       </div>
     </div>

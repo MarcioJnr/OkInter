@@ -302,8 +302,29 @@ textarea:focus, input:focus {
     transform: scale(1.1);
 }
 
+.swiper-slide-active {
+    width: 100%;
+}
+
 @media(min-width: 992px) {
     #card-destiny img {
         height: 14vw;
+    }
+
+    .carousel-thumbnail {
+        width: 50% !important;
+    }
+
+    .carousel-info {
+        width: 50% !important;
+    }
+
+    .carousel-info span {
+        width: 75% !important;
+        justify-content: flex-start !important;
+    }
+
+    .carousel-info span a{
+        width: 50% !important;
     }
 }
