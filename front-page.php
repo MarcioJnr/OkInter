@@ -275,7 +275,9 @@
                 <div class="swiper-pagination mt-5"></div>
             </div>
         </div>
-        <button id="btn-destinos" type="button" class="mt-3 fw-bold text-center">Ver mais</button>
+        <a href="<?php echo get_home_url(); ?>/destinos">
+            <button id="btn-destinos" type="button" class="mt-3 fw-bold text-center">Ver mais</button>
+        </a>
     </div>
 
      <!--SEÇÃO DEPOIMENTOS -->

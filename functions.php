@@ -81,6 +81,7 @@
         wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
         wp_enqueue_style('post-search-result', get_template_directory_uri() . '/assets/styles/components/post-search-result.css');
         wp_enqueue_style('search-field', get_template_directory_uri() . '/assets/styles/components/search-field.css');
+        wp_enqueue_style('form', get_template_directory_uri() . '/assets/styles/components/form.css');
     }
     add_action('wp_enqueue_scripts', 'css_files');
 
