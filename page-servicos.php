@@ -295,7 +295,7 @@
       <div class="modal-header">
             <div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <h2 class="cor-empresa mt-3 mb-4" style="line-height: ;">Cotação de passagem áeria</h3>
+                <h2 class="cor-empresa mt-3 mb-4" style="line-height: ;">Cotação de passagem áerea</h3>
             </div>
       </div>
       <div class="modal-body">
