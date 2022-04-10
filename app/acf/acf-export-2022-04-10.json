@@ -1,0 +1,161 @@
+
+
+
+[
+    {
+        "key": "group_624d16d5a1134",
+        "title": "Banners",
+        "fields": [
+            {
+                "key": "field_624d16e291465",
+                "label": "Subtitulo",
+                "name": "subtitle",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_624d16f691466",
+                "label": "Texto botão call to action",
+                "name": "textocta",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_624d172891467",
+                "label": "Link botão call to action",
+                "name": "linkcta",
+                "type": "page_link",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_624d16f691466",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page",
+                    "post",
+                    "destino"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 1,
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "banner"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_624648f39ffc7",
+        "title": "Pacotes de viagem",
+        "fields": [
+            {
+                "key": "field_624648fd27f07",
+                "label": "Período de tempo",
+                "name": "periodo_de_tempo",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6246493127f08",
+                "label": "Valor do pacote",
+                "name": "valor_do_pacote",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "pacote"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
