@@ -24,11 +24,53 @@
     bottom: 0;
 }
 
-#section-high-school {
+#section-high-school, #section-business-english {
     background-color: var(--quartenary-color);
 }
 
-#section-high-school .container {
-    top: 50%;
-    left: 0;
+#section-high-school .position-absolute, #section-business-english .position-absolute {
+    transform: translateY(-50%);
+}
+
+#section-high-school div h3, #section-business-english div h3 {
+    color: var(--tertiary-color);
+}
+
+#section-languages-course {
+    background-color: var(--tertiary-color);
+}
+
+#section-languages-course .position-absolute {
+    transform: translateY(-50%);
+}
+
+#section-languages-course div h3 {
+    color: var(--quartenary-color);
+}
+
+#card-university {
+    overflow: hidden;
+    position: relative;
+}
+
+#card-university{
+    overflow: hidden;
+}
+
+#card-university h3 {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#card-university img {
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms;
+}
+
+#card-university img:hover {
+    transform: scale(1.1);
 }

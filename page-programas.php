@@ -51,14 +51,16 @@
                 <p class="mb-2">ambiente acadêmico.</p>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center mb-5">
             <h3 class="my-5" style="color: #FF6A2E;">Países ofertados</h3>
+            <div class="row gap-3 justify-content-center p-0">
+
+            
             <?php 
                 $args = array (
                     'post_type' => 'destino',
                     'orderby' => 'title',
                     'order' => 'ASC',
-                    'post_limits' => 3,
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'tipo',
@@ -69,27 +71,25 @@
                 );
                 $university_query = new WP_Query($args);
                 if($university_query->have_posts()) : 
-                    while ($university_query->have_posts()) : $university_query->the_post();
-                        echo '<div class="col-12 col-md-4 col-xl-4 mb-5">';
-                            includeFile('components/card-destiny.php', 
-                                array(
-                                    'href'=>get_permalink($post->ID),
-                                    'directoryUrl'=>get_the_post_thumbnail_url($post->ID),
-                                    'destinyName'=>get_the_title($post->ID)
-                                )
-                            ); 
-                        echo '</div>';
+                    while ($university_query->have_posts()) : $university_query->the_post();?>
+                        <a id="card-university" class="col-5 col-lg-3 px-0 rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                            <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                            <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
+                        </a>
+                <?php 
                     endwhile;
                 endif;
                 wp_reset_postdata();
             ?>
+            </div>
         </div>
     </div>
-    <div class="position-relative" id="section-high-school">
-        <img class="img-banner w-100" src="<?php echo get_template_directory_uri();?>/assets/images/HighSchool.png">
-        
-        <div class="container position-absolute">
-            <h3 class="">High School</h3>
+    <div class="position-relative w-100" id="section-high-school">
+        <div class="d-flex justify-content-end">
+            <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/HighSchool.png">
+        </div>
+        <div class="w-100 position-absolute top-50">
+            <h3 class="container">High School</h3>
         </div>
     </div>    
     <div class="container">
@@ -103,18 +103,36 @@
                 <p class="mb-5">Para se candidatar ao programa, basta escolher o país desejado que nós da OK Intercâmbio auxiliaremos nas opções dos colégios disponíveis e documentação necessária para a realização da inscrição. Não há restrições, alunos dos 1º,2º e 3º colegiais podem participar.</p>
                 <h3 class="text-dark mb-5">Países ofertados?</h3>
                 <div class="row">
-                        <div class="col-12 col-xl-6">
-                            <ul>
-                                <li class="cor-empresa">Canadá</li>
-                                <li class="cor-empresa">Estados Unidos</li>
-                            </ul>           
-                        </div>
-                        <div class="col-12 col-xl-6">
-                            <ul>
-                                <li class="cor-empresa">Inglaterra</li>
-                                <li class="cor-empresa">Irlanda</li>
-                            </ul>   
-                        </div>
+                    <?php 
+                        $args = array (
+                            'post_type' => 'destino',
+                            'orderby' => 'title',
+                            'order' => 'ASC',
+                            'tax_query' => array(
+                                'relation'=>'AND',
+                                array(
+                                    'taxonomy' => 'tipo',
+                                    'field' => 'slug',
+                                    'terms' => 'pais'
+                                ),
+                                array(
+                                    'taxonomy' => 'programapacote',
+                                    'field' => 'slug',
+                                    'terms' => 'High School'
+                                )
+                            )
+                        );
+                        $high_school_query = new WP_Query($args);
+
+                        if($high_school_query->have_posts()) : 
+                            while ($high_school_query->have_posts()) : $high_school_query->the_post(); ?>
+                                <div class="col-12 col-xl-6">
+                                    <a href="<?php echo get_the_permalink($post->ID); ?>" class="cor-empresa"><?php echo get_the_title($post->ID); ?></a>
+                                </div>
+                        <?php
+                            endwhile;
+                        endif;
+                    ?>
                 </div>
             </div>
             <div class="col-12 col-xl-6 my-5">
@@ -134,12 +152,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid container-fora" style="background-color:#FFB030;">
-        <img class="img-banner"src="<?php echo get_template_directory_uri(  );?>/assets/images/CursoDeIdiomas.png">
-        <div class="container container-dentro">
-            <h3 class="texttest">Curso de Idiomas</h3>
+
+    <div class="position-relative w-100" id="section-languages-course">
+        <div class="d-flex justify-content-end">
+            <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/CursoDeIdiomas.png">
+        </div>
+        <div class="w-100 position-absolute top-50">
+            <h3 class="container">Curso de Idiomas</h3>
         </div>
     </div>    
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-xl-6 my-5">
@@ -149,33 +171,36 @@
                 <p class="mb-5">Cada pessoa tem os seus objetivos particulares ao decidir realizar um intercâmbio. Independente de qual seja o seu, há alguns fatores importantes para o sucesso dessa viagem, e o principal deles é a escolha certa da agência que irá te auxiliar no passo-a-passo.</p>
                 <h3 class="text-dark mb-5">Países ofertados?</h3>
                 <div class="row">
-                        <div class="col-12 col-md-4 col-xl-4">
-                            <ul>
-                                <li class="cor-empresa">Estados Unidos</li>
-                                <li class="cor-empresa">Espanha</li>
-                                <li class="cor-empresa">França</li>
-                                <li class="cor-empresa">Inglaterra</li>
-                                <li class="cor-empresa">Irlanda</li>
-                            </ul>           
-                        </div>
-                        <div class="col-12 col-md-4 col-xl-4">
-                            <ul>
-                                <li class="cor-empresa">Itália</li>
-                                <li class="cor-empresa">Nova Zelândia</li>
-                                <li class="cor-empresa">Malta</li>
-                                <li class="cor-empresa">Marrocos</li>
-                                <li class="cor-empresa">México</li>
-                            </ul>   
-                        </div>
-                        <div class="col-12 col-md-4 col-xl-4">
-                            <ul>
-                                <li class="cor-empresa">Austrália</li>
-                                <li class="cor-empresa">Argentina</li>
-                                <li class="cor-empresa">Canadá</li>
-                                <li class="cor-empresa">Chile</li>
-                                <li class="cor-empresa">China</li>
-                            </ul>   
-                        </div>
+                        <?php 
+                            $args = array (
+                                'post_type' => 'destino',
+                                'orderby' => 'title',
+                                'order' => 'ASC',
+                                'tax_query' => array(
+                                    'relation'=>'AND',
+                                    array(
+                                        'taxonomy' => 'tipo',
+                                        'field' => 'slug',
+                                        'terms' => 'pais'
+                                    ),
+                                    array(
+                                        'taxonomy' => 'programapacote',
+                                        'field' => 'slug',
+                                        'terms' => 'Idiomas'
+                                    )
+                                )
+                            );
+                            $language_query = new WP_Query($args);
+
+                            if($language_query->have_posts()) : 
+                                while ($language_query->have_posts()) : $language_query->the_post(); ?>
+                                    <div class="col-12 col-xl-6">
+                                        <a href="<?php echo get_the_permalink($post->ID); ?>" class="cor-empresa"><?php echo get_the_title($post->ID); ?></a>
+                                    </div>
+                            <?php
+                                endwhile;
+                            endif;
+                        ?>
                 </div>
             </div>
             <div class="col-12 col-xl-6 my-5">
@@ -192,12 +217,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid container-fora" style="background-color:#7B39E9;">
-        <img class="img-banner"src="<?php echo get_template_directory_uri(  );?>/assets/images/BusinessEnglish.png">
-        <div class="container container-dentro">
-            <h3 class="texttest">Business English</h3>
+
+    <div class="position-relative w-100" id="section-business-english">
+        <div class="d-flex justify-content-end">
+            <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/BusinessEnglish.png">
         </div>
-    </div>    
+        <div class="w-100 position-absolute top-50">
+            <h3 class="container">Business English</h3>
+        </div>
+    </div>  
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-xl-6 my-5">
@@ -214,21 +243,48 @@
                 Idade: a partir de 18 anos
                 Tipo Hospedagem: Casa de família, Residência Estudantil, Hostel.</p>
                 <h3 class="text-dark mb-5">Países ofertados?</h3>
-                            <ul>
-                                <li class="cor-empresa">Austrália</li>
-                                <li class="cor-empresa">Canadá</li>
-                                <li class="cor-empresa">Estados Unidos</li>
-                                <li class="cor-empresa">Inglaterra</li>
-                                <li class="cor-empresa">Irlanda</li>
-                            </ul>           
+                <div class="row">
+                    <?php 
+                        $args = array (
+                            'post_type' => 'destino',
+                            'orderby' => 'title',
+                            'order' => 'ASC',
+                            'tax_query' => array(
+                                'relation'=>'AND',
+                                array(
+                                    'taxonomy' => 'tipo',
+                                    'field' => 'slug',
+                                    'terms' => 'pais'
+                                ),
+                                array(
+                                    'taxonomy' => 'programapacote',
+                                    'field' => 'slug',
+                                    'terms' => 'Business English'
+                                )
+                            )
+                        );
+                        $business_english_query = new WP_Query($args);
+
+                        if($business_english_query->have_posts()) : 
+                            while ($business_english_query->have_posts()) : $business_english_query->the_post(); ?>
+                                <div class="col-12 col-xl-6">
+                                    <a href="<?php echo get_the_permalink($post->ID); ?>" class="cor-empresa"><?php echo get_the_title($post->ID); ?></a>
+                                </div>
+                        <?php
+                            endwhile;
+                        endif;
+                    ?>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid container-fora" style="background-color:#FFB030;">
-        <img class="img-banner"src="<?php echo get_template_directory_uri(  );?>/assets/images/IntercambioEmFamilia.png">
-        <div class="container container-dentro">
-            <h3 class="texttest">Intercâmbio</h3>
-            <h3 class="texttest">em Família</h3>
+    
+    <div class="position-relative w-100" id="section-languages-course">
+        <div class="d-flex justify-content-end">
+            <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/CursoDeIdiomas.png">
+        </div>
+        <div class="w-100 position-absolute top-50">
+            <h3 class="container">Intercâmbio<br>em família</h3>
         </div>
     </div>    
     <div class="container">
@@ -241,12 +297,38 @@
                 <p class="mb-5">Esta também é uma ótima oportunidade para os filhos fazerem um “teste” supervisionado pelos pais antes de passarem sozinhos pela experiência do intercâmbio.</p>
                 <p class="mb-5">Este programa é inovador no sentido de contemplar todos os membros da família de forma igual, além da economia financeira e de tempo uma vez que todos estão aproveitando juntos para estudar, ampliar conhecimentos e se divertir.</p>
                 <h3 class="text-dark mb-5">Países ofertados?</h3>
-                            <ul>
-                                <li class="cor-empresa">Austrália</li>
-                                <li class="cor-empresa">Canadá</li>
-                                <li class="cor-empresa">Estados Unidos</li>
-                                <li class="cor-empresa">Inglaterra</li>
-                            </ul>      
+                <div class="row">
+                    <?php 
+                        $args = array (
+                            'post_type' => 'destino',
+                            'orderby' => 'title',
+                            'order' => 'ASC',
+                            'tax_query' => array(
+                                'relation'=>'AND',
+                                array(
+                                    'taxonomy' => 'tipo',
+                                    'field' => 'slug',
+                                    'terms' => 'pais'
+                                ),
+                                array(
+                                    'taxonomy' => 'programapacote',
+                                    'field' => 'slug',
+                                    'terms' => 'Viagem em família'
+                                )
+                            )
+                        );
+                        $family_travel_query = new WP_Query($args);
+
+                        if($family_travel_query->have_posts()) : 
+                            while ($family_travel_query->have_posts()) : $family_travel_query->the_post(); ?>
+                                <div class="col-12 col-xl-6">
+                                    <a href="<?php echo get_the_permalink($post->ID); ?>" class="cor-empresa"><?php echo get_the_title($post->ID); ?></a>
+                                </div>
+                        <?php
+                            endwhile;
+                        endif;
+                    ?>
+                </div>     
             </div>
             <div class="col-12 col-xl-6 my-5">
                 <h3 class="text-dark mb-4">Detalhes</h3>
