@@ -203,7 +203,15 @@
   <div class="container">
     <div class="swiper swiper-destino-programa">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <?php 
+          $terms = get_the_terms( $post->ID, 'programapacote');
+          $termsArray = [];
+          foreach($terms as $indice) {
+            array_push($termsArray, $indice->name);
+          }
+        ?>
+
+        <div class="swiper-slide <?php if(!(in_array('Idiomas', $termsArray))) : echo 'd-none'; endif; ?>">
           <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
             <h4>Idiomas</h4>
             <ul>
@@ -221,7 +229,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide <?php if(!(in_array('High School', $termsArray))) : echo 'd-none'; endif; ?>">
           <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
             <h4>High School</h4>
             <ul>
@@ -239,7 +247,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide <?php if(!(in_array('Viagem em família', $termsArray))) : echo 'd-none'; endif; ?>">
           <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
             <h4>Viajar em família</h4>
             <ul>
@@ -257,7 +265,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide <?php if(!(in_array('Business English', $termsArray))) : echo 'd-none'; endif; ?>">
           <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
             <h4>Business English</h4>
             <ul>
