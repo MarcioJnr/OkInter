@@ -1,7 +1,7 @@
 <div class="d-flex flex-column flex-lg-row post mb-3">
     <div class="thumb-section p-3 mb-3">
         <span class="thumb">
-            <img class="w-100" src="<?php echo $srcImg ?>" alt="<?php echo $title ?>"/> 
+            <img class="w-25" src="<?php echo $srcImg ?>" alt="<?php echo $title ?>"/> 
         </span>
     </div>
 
@@ -10,7 +10,7 @@
         <p class="mb-4"><?php echo $description ?></p>
 
         <a href="<?php echo $href ?>" class="w-100" id="link-view-more">
-            <button class="btn text-white shadow w-50 w-lg-50 mb-3">
+            <button class="btn text-white shadow mb-3">
                 VER MAIS
             </button>
         </a>

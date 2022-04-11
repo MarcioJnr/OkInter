@@ -21,6 +21,8 @@
   .post .thumb-section .thumb img {
     width: 20vw !important;
     height: 20vw !important;
+    max-width: 240px;
+    max-height: 240px;
   }
   .post .info-section a button {
     background-color: var(--primary-color);
