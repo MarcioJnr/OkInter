@@ -33,8 +33,8 @@
       <p class="mb-4" id="details"><?php echo get_the_excerpt($post->ID); ?></p>
     </div>
 
-    <aside class="text-center text-lg-start">
-      <h2 class="mb-3">Galeria</h2>
+    <!-- <aside class="text-center text-lg-start"> -->
+      <!-- <h2 class="mb-3">Galeria</h2> -->
       <!-- <div class="swiper swiper-galeria">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -55,14 +55,14 @@
         </div>
         <div class="swiper-navigation"></div>
       </div> -->
-    </aside>
+    <!-- </aside> -->
   </div>
 </div>
 
 <div class="text-center py-5" id="cities">
   <h2 class="mb-4">Cidades Ofertadas</h2>
   <div class="container mb-4">
-    <div class="row">
+    <div class="row d-flex justify-content-center">
       <?php 
       $args = array (
           'post_type' => 'pacote',
@@ -100,96 +100,144 @@
   <div class="container">
     <div class="row d-none d-lg-flex">
       <div class="col-4">
-        <?php includeFile('components/life-cost.php', array(
-          'iconName'=>'map-pointer',
-          'name'=>'Capital',
-          'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-        )) ?>
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <?php 
+            includeFile('assets/icons/map-pointer.svg', array(''));
+          ?>
+            <div class="text-lg-start text-center">
+                <h6 class="text-white px-4">Capital</h6>
+                <p class="text-white px-4 fw-light"><?php echo the_field('capital') ?></p>
+            </div>
+        </div>
 
-        <?php includeFile('components/life-cost.php', array(
-          'iconName'=>'world',
-          'name'=>'Língua Oficial',
-          'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-        )) ?>
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <?php 
+            includeFile('assets/icons/world.svg', array(''));
+          ?>
+            <div class="text-lg-start text-center">
+                <h6 class="text-white px-4">Língua Oficial</h6>
+                <p class="text-white px-4 fw-light"><?php echo the_field('lingua_oficial') ?></p>
+            </div>
+        </div>
       </div>
 
       <div class="col-4">
-        <?php includeFile('components/life-cost.php', array(
-          'iconName'=>'cash',
-          'name'=>'Moeda',
-          'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-        )) ?>
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <?php 
+            includeFile('assets/icons/cash.svg', array(''));
+          ?>
+            <div class="text-lg-start text-center">
+                <h6 class="text-white px-4">Moeda</h6>
+                <p class="text-white px-4 fw-light"><?php echo the_field('moeda') ?></p>
+            </div>
+        </div>
 
-        <?php includeFile('components/life-cost.php', array(
-          'iconName'=>'territory',
-          'name'=>'Território',
-          'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-        )) ?>
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <?php 
+            includeFile('assets/icons/territory.svg', array(''));
+          ?>
+            <div class="text-lg-start text-center">
+                <h6 class="text-white px-4">Território</h6>
+                <p class="text-white px-4 fw-light"><?php echo the_field('territorio') ?></p>
+            </div>
+        </div>
       </div>
 
       <div class="col-4">
-        <?php includeFile('components/life-cost.php', array(
-          'iconName'=>'clock',
-          'name'=>'Fuso Horário',
-          'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-        )) ?>
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <?php 
+            includeFile('assets/icons/clock.svg', array(''));
+          ?>
+            <div class="text-lg-start text-center">
+                <h6 class="text-white px-4">Fuso Horário</h6>
+                <p class="text-white px-4 fw-light"><?php echo the_field('fuso_horario') ?></p>
+            </div>
+        </div>
 
-        <?php includeFile('components/life-cost.php', array(
-          'iconName'=>'plug',
-          'name'=>'Voltagem',
-          'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-        )) ?>
+        <div class="container d-flex flex-column flex-lg-row align-items-center">
+          <?php 
+            includeFile('assets/icons/plug.svg', array(''));
+          ?>
+            <div class="text-lg-start text-center">
+                <h6 class="text-white px-4">Voltagem</h6>
+                <p class="text-white px-4 fw-light"><?php echo the_field('voltagem') ?></p>
+            </div>
+        </div>
       </div>
     </div>
 
     <div class="swiper swiper-custo-de-vida d-sm-none">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <?php includeFile('components/life-cost.php', array(
-            'iconName'=>'map-pointer',
-            'name'=>'Capital',
-            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-          )) ?>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <?php 
+              includeFile('assets/icons/map-pointer.svg', array(''));
+            ?>
+              <div class="text-lg-start text-center">
+                  <h6 class="text-white px-4">Capital</h6>
+                  <p class="text-white px-4 fw-light"><?php echo the_field('capital') ?></p>
+              </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
-          <?php includeFile('components/life-cost.php', array(
-            'iconName'=>'world',
-            'name'=>'Língua Oficial',
-            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-          )) ?>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <?php 
+              includeFile('assets/icons/world.svg', array(''));
+            ?>
+              <div class="text-lg-start text-center">
+                  <h6 class="text-white px-4">Língua Oficial</h6>
+                  <p class="text-white px-4 fw-light"><?php echo the_field('lingua_oficial') ?></p>
+              </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
-          <?php includeFile('components/life-cost.php', array(
-            'iconName'=>'cash',
-            'name'=>'Moeda',
-            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-          )) ?>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <?php 
+              includeFile('assets/icons/cash.svg', array(''));
+            ?>
+              <div class="text-lg-start text-center">
+                  <h6 class="text-white px-4">Moeda</h6>
+                  <p class="text-white px-4 fw-light"><?php echo the_field('moeda') ?></p>
+              </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
-          <?php includeFile('components/life-cost.php', array(
-            'iconName'=>'territory',
-            'name'=>'Território',
-            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-          )) ?>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <?php 
+              includeFile('assets/icons/territory.svg', array(''));
+            ?>
+              <div class="text-lg-start text-center">
+                  <h6 class="text-white px-4">Território</h6>
+                  <p class="text-white px-4 fw-light"><?php echo the_field('territorio') ?></p>
+              </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
-          <?php includeFile('components/life-cost.php', array(
-            'iconName'=>'clock',
-            'name'=>'Fuso Horário',
-            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-          )) ?>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <?php 
+              includeFile('assets/icons/clock.svg', array(''));
+            ?>
+              <div class="text-lg-start text-center">
+                  <h6 class="text-white px-4">Fuso Horário</h6>
+                  <p class="text-white px-4 fw-light"><?php echo the_field('fuso_horario') ?></p>
+              </div>
+          </div>
         </div>
 
         <div class="swiper-slide">
-          <?php includeFile('components/life-cost.php', array(
-            'iconName'=>'plug',
-            'name'=>'Voltagem',
-            'description'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget sagittis ultrices vulputate id a.'
-          )) ?>
+          <div class="container d-flex flex-column flex-lg-row align-items-center">
+            <?php 
+              includeFile('assets/icons/plug.svg', array(''));
+            ?>
+              <div class="text-lg-start text-center">
+                  <h6 class="text-white px-4">Voltagem</h6>
+                  <p class="text-white px-4 fw-light"><?php echo the_field('voltagem') ?></p>
+              </div>
+          </div>
         </div>
       </div>
 
