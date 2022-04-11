@@ -187,7 +187,7 @@ var swiper = new Swiper('.swiper-destino-programa', {
   centeredSlides: true,
   autoplay: {
     delay: 2000,
-    disableOnInteraction:true,
+    disableOnInteraction:false,
   },
   breakpoints: {
     992: {

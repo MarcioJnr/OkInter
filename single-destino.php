@@ -207,11 +207,64 @@
           <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
             <h4>Idiomas</h4>
             <ul>
-              <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-              <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-              <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-              <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-              <li class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+              <li class="mb-2"><b>Tempo mínimo de programa:</b> 2 semanas</li>
+              <li class="mb-2"><b>Tempo máximo de programa:</b> Indeterminado</li>
+              <li class="mb-2"><b>Idade:</b> A partir de 18 anos</li>
+              <li class="mb-2"><b>Tipo Hospedagem:</b> Casa de família, Residência Estudantil, Hostel.</li>
+            </ul>
+            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
+            <span class="d-flex justify-content-center">
+              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
+                <h6 class="mb-0">Comprar</h6>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
+            <h4>High School</h4>
+            <ul>
+              <li class="mb-2"><b>Tempo mínimo de programa:</b> Um semestre acadêmico</li>
+              <li class="mb-2"><b>Tempo máximo de programa:</b> Período do ano acadêmico completo</li>
+              <li class="mb-2"><b>Idade:</b> Estudantes de 14 a 18 anos.</li>
+              <li class="mb-2"><b>Hospedagem:</b> Casa de família ou Residência Estudantil.</li>
+            </ul>
+            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
+            <span class="d-flex justify-content-center">
+              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
+                <h6 class="mb-0">Comprar</h6>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
+            <h4>Viajar em família</h4>
+            <ul>
+              <li class="mb-2"><b>Tempo mínimo de programa:</b> 2 semanas</li>
+              <li class="mb-2"><b>Tempo máximo de programa:</b> 8 semanas</li>
+              <li class="mb-2"><b>Idade:</b> A partir de 7 anos</li>
+              <li class="mb-2"><b>Hospedagem:</b> Casa, apartamento alugado ou hostel.</li>
+            </ul>
+            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
+            <span class="d-flex justify-content-center">
+              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
+                <h6 class="mb-0">Comprar</h6>
+              </button>
+            </span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
+            <h4>Business English</h4>
+            <ul>
+              <li class="mb-2"><b>Tempo mínimo de programa:</b> 2 semanas</li>
+              <li class="mb-2"><b>Tempo máximo de programa:</b> Indeterminado</li>
+              <li class="mb-2"><b>Idade:</b> A partir de 18 anos</li>
+              <li class="mb-2"><b>Hospedagem:</b> Casa de família, Hotel ou Campus Universitário.</li>
             </ul>
             <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
             <span class="d-flex justify-content-center">
