@@ -1,13 +1,33 @@
-.container .d-flex aside .swiper-destinos-galeria .swiper-wrapper .swiper-pagination {
-  bottom: 0 !important;
-}
-
 #cities {
   background-color: var(--tertiary-color);
 }
 
 #cities h2 {
   color: var(--quartenary-color);
+}
+
+#cities .container .row .card {
+  overflow: hidden;
+}
+
+#cities .container .row .card img {
+  height: 35vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+#cities .container .row .card .card-text-background {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#cities .container .row .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #cities button {
@@ -31,5 +51,110 @@
 #life-cost #swiper-pagination-custo-de-vida {
   position: relative;
   top: 5vw !important;
+}
+
+#programas {
+  background-color: var(--tertiary-color);
+}
+
+#programas h2 {
+  color: var(--quartenary-color);
+}
+
+#programas .container .swiper .swiper-wrapper .swiper-slide .programa {
+  margin: 0 auto;
+  width: 70vw !important;
+  min-height: 600px;
+}
+
+#programas .container .swiper .swiper-wrapper .swiper-slide .programa ul {
+  list-style: inside !important;
+}
+
+#programas .container .swiper .swiper-wrapper .swiper-slide .programa span button {
+  background-color: var(--primary-color);
+}
+
+#programas .container .swiper .swiper-wrapper .swiper-slide .programa span button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
+  width: 20vw;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 3px solid var(--primary-color);
+}
+
+#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-content {
+  height: 40vw;
+  max-height: 250px;
+}
+
+#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide-active {
+  -webkit-transform: translateY(-2rem) !important;
+          transform: translateY(-2rem) !important;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (min-width: 992px) {
+  #sobre .container-fluid #info, #sobre .container-fluid aside {
+    width: 50%;
+  }
+  #sobre .container-fluid #info {
+    margin-right: 4%;
+  }
+  #cities .container .row .card img {
+    max-height: 240px !important;
+  }
+  #programas {
+    background-color: var(--tertiary-color);
+  }
+  #programas h2 {
+    color: var(--quartenary-color);
+  }
+  #programas .container .swiper .swiper-wrapper .swiper-slide .programa {
+    width: 25vw !important;
+    max-width: 360px;
+    min-height: 600px;
+    -webkit-box-shadow: 8px 8px 0px 2px var(--primary-color) !important;
+            box-shadow: 8px 8px 0px 2px var(--primary-color) !important;
+    margin-bottom: 10px;
+  }
+  #programas .container .swiper .swiper-wrapper .swiper-slide .programa ul {
+    list-style: inside !important;
+  }
+  #programas .container .swiper .swiper-wrapper .swiper-slide .programa span button {
+    background-color: var(--primary-color);
+  }
+  #programas .container .swiper .swiper-wrapper .swiper-slide .programa span button:hover {
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  #pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
+    width: 7vw;
+    height: 7vw;
+    max-height: 120px;
+    max-width: 120px;
+  }
+  #pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-content {
+    height: 15vw;
+    max-height: 250px;
+  }
 }
 /*# sourceMappingURL=destino.css.map */

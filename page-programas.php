@@ -51,11 +51,9 @@
                 <p class="mb-2">ambiente acadêmico.</p>
             </div>
         </div>
-        <div class="row text-center mb-5">
-            <h3 class="my-5" style="color: #FF6A2E;">Países ofertados</h3>
-            <div class="row gap-3 justify-content-center p-0">
 
-            
+        <h3 class="my-5" style="color: #FF6A2E;">Países ofertados</h3>
+        <div class="row mb-5 justify-content-center" id="universities">
             <?php 
                 $args = array (
                     'post_type' => 'destino',
@@ -73,17 +71,17 @@
                 );
                 $university_query = new WP_Query($args);
                 if($university_query->have_posts()) : 
-                    while ($university_query->have_posts()) : $university_query->the_post();?>
-                        <a id="card-university" class="col-5 col-lg-3 px-0 rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
-                            <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
-                            <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
-                        </a>
-                <?php 
+                    while ($university_query->have_posts()) : $university_query->the_post(); ?>
+                        <div class="col-6 col-lg-3 mb-4">
+                            <a href="<?php echo get_the_permalink($post->ID); ?>" class="card border-0 shadow position-relative">
+                                <img class="rounded-3" src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
+                                <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
+                            </a>
+                        </div>
+                <?php  
                     endwhile;
                 endif;
-                wp_reset_postdata();
             ?>
-            </div>
         </div>
     </div>
     <div class="position-relative w-100" id="section-high-school">
