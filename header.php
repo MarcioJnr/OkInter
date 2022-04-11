@@ -152,7 +152,7 @@
                                     <a href="<?php echo get_home_url(); ?>/programas"><h5 class="d-none d-lg-flex">Nossos <br> Programas</h5></a>
                                     <ul>
                                         <li class="dropdown-item dropend bg-transparent" id="dropend-link-1">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus" href="<?php echo get_home_url(); ?>/programas/#escola"data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Estudo e trabalho</p>
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
@@ -197,7 +197,7 @@
                                         </li>
 
                                         <li class="dropdown-item dropend bg-transparent" id="dropend-link-2">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#idiomas" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Idiomas</p>
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
@@ -241,7 +241,7 @@
                                         </li>
 
                                         <li class="dropdown-item dropend bg-transparent" id="dropend-link-3">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#universidade" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Universidade no Exterior</p>
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
@@ -285,7 +285,7 @@
                                         </li>
 
                                         <li class="dropdown-item dropend bg-transparent" id="dropend-link-4">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#familia" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Intercâmbio em Família</p>
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
@@ -312,7 +312,7 @@
                                                                     array(
                                                                         'taxonomy' => 'programapacote',
                                                                         'field' => 'slug',
-                                                                        'terms' => 'Intercâmbio em família'
+                                                                        'terms' => 'Viagem em família'
                                                                     ),
                                                                 )
                                                             );
@@ -329,7 +329,7 @@
                                         </li>
 
                                         <li class="dropdown-item dropend bg-transparent" id="dropend-link-5">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="#" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#business" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <p class="me-3">Business English</p>
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
@@ -431,8 +431,6 @@
                 </div>
             </div>
         </nav>
-
-        
     </header>
 
 

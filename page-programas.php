@@ -10,7 +10,7 @@
     ?>
 <main>
     <div class="container ">
-        <h2 class="mt-5 mb-3 text-center">Universidade no Exterior</h2>
+        <h2 class="mt-5 mb-3 text-center" id="universidade">Universidade no Exterior</h2>
         <p class="text-center"><b>Brasileiro investe cada vez mais em uma formação no exterior</b></p>
         <p class="mt-5">São muitas as vantagens que a formação em uma universidade no exterior traz, 
         desde a excelência acadêmica até a formação pessoal, é o que tem chamado a atenção de medias 
@@ -61,12 +61,14 @@
                     'post_type' => 'destino',
                     'orderby' => 'title',
                     'order' => 'ASC',
+                    'post_limits' => 4,
                     'tax_query' => array(
+                        'relation' => 'AND',
                         array(
-                            'taxonomy' => 'tipo',
+                            'taxonomy' => 'programapacote',
                             'field' => 'slug',
-                            'terms' => 'universidade'
-                        )
+                            'terms' => 'Universidade no exterior'
+                        ),
                     )
                 );
                 $university_query = new WP_Query($args);
@@ -89,7 +91,7 @@
             <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/HighSchool.png">
         </div>
         <div class="w-100 position-absolute top-50">
-            <h3 class="container">High School</h3>
+            <h3 class="container" id="escola">High School</h3>
         </div>
     </div>    
     <div class="container">
@@ -158,7 +160,7 @@
             <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/CursoDeIdiomas.png">
         </div>
         <div class="w-100 position-absolute top-50">
-            <h3 class="container">Curso de Idiomas</h3>
+            <h3 class="container" id="idiomas">Curso de Idiomas</h3>
         </div>
     </div>    
 
@@ -223,7 +225,7 @@
             <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/BusinessEnglish.png">
         </div>
         <div class="w-100 position-absolute top-50">
-            <h3 class="container">Business English</h3>
+            <h3 class="container" id="business">Business English</h3>
         </div>
     </div>  
 
@@ -284,7 +286,7 @@
             <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/IntercambioEmFamilia.png">
         </div>
         <div class="w-100 position-absolute top-50">
-            <h3 class="container">Intercâmbio<br>em família</h3>
+            <h3 class="container" id="familia">Intercâmbio<br>em família</h3>
         </div>
     </div>    
     <div class="container">
