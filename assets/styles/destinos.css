@@ -55,9 +55,6 @@
   .container #destinations .col-6 .card img, .container #universities .col-6 .card img {
     max-height: 240px !important;
   }
-  .container #destinations .carousel, .container #universities .carousel {
-    top: -5vw;
-  }
   .container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
     width: 7vw;
     height: 7vw;
