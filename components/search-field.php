@@ -1,5 +1,5 @@
 <h2 class="mb-4"><?php $title ?></h2>
-<div class="d-lg-flex gap-3 mb-4" id="search-field">
+<div class="d-lg-flex gap-3 mb-4 w-75" id="search-field">
     <select id="programa" class="form-select shadow text-center mb-3" aria-label="Select de destinos">
         <option selected>PROGRAMA</option>
         <option value="Estudo e trabalho">Estudo e trabalho</option>
