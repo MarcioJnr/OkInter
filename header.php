@@ -109,7 +109,7 @@
                                                 'post_type' => 'destino',
                                                 'orderby' => 'title',
                                                 'order' => 'ASC',
-                                                'post_limits' => 5,
+                                                'posts_per_page' => 5,
                                                 'tax_query' => array(
                                                     array(
                                                         'taxonomy' => 'tipo',

@@ -155,7 +155,7 @@ var swiper = new Swiper('.swiper-custo-de-vida', {
 });
 
 //DEPOIMENTOS
-var swiper = new Swiper('.swiper-destinos', {
+var swiper = new Swiper('.swiper-depoimentos-destinos', {
   observer: true,
   observeParents: true,
   setWrapperSize:true,
@@ -166,6 +166,11 @@ var swiper = new Swiper('.swiper-destinos', {
   autoplay: {
     delay: 4000,
     disableOnInteraction:false,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    }
   },
   pagination: {
     el: ".swiper-pagination",
