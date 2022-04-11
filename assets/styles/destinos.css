@@ -1,9 +1,9 @@
-.container #destinations .row .card {
+.container #destinations .card, .container #universities .card {
   cursor: pointer;
   overflow: hidden;
 }
 
-.container #destinations .row .card img {
+.container #destinations .card img, .container #universities .card img {
   height: 35vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -13,27 +13,60 @@
   transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
-.container #destinations .row .card .card-text-background {
+.container #destinations .card .card-text-background, .container #universities .card .card-text-background {
   background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-.container #destinations .row .card:hover img {
+.container #destinations .card:hover img, .container #universities .card:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+.container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
+  width: 20vw;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 3px solid var(--primary-color);
+}
+
+.container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-content {
+  height: 40vw;
+  max-height: 250px;
+}
+
+.container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide-active {
+  -webkit-transform: translateY(-2rem) !important;
+          transform: translateY(-2rem) !important;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 @media (min-width: 992px) {
-  .container #destinations .row {
-    -ms-flex-pack: distribute !important;
-        justify-content: space-around !important;
-    gap: 1 !important;
+  .container #destinations .col-6 .card img, .container #universities .col-6 .card img {
+    max-height: 240px !important;
   }
-  .container #destinations .row .col-5 .card {
-    height: 33%;
-  }
-  .container #destinations .carousel {
+  .container #destinations .carousel, .container #universities .carousel {
     top: -5vw;
+  }
+  .container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
+    width: 7vw;
+    height: 7vw;
+    max-height: 120px;
+    max-width: 120px;
+  }
+  .container .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-content {
+    height: 15vw;
+    max-height: 250px;
   }
 }
 /*# sourceMappingURL=destinos.css.map */

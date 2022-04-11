@@ -606,7 +606,3 @@ textarea:focus, input:focus {
         height: 14vw;
     }
 }
-
-.swiper-destinos .swiper-slide-active {
-    transform: none !important;
-}
