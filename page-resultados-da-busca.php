@@ -19,15 +19,17 @@
     <div id="result-field">
         <?php 
             $query = $_GET['results'];
-            $querySplit = explode('][', $query);
-            $queryPrograma = $querySplit[0];
-            $queryDestino = $querySplit[1];
+            $paramsSplit = explode('/', $query);
+            $searchQuerySplit = explode('][', $paramsSplit[0]);
+            $queryPrograma = $searchQuerySplit[0];
+            $queryDestino = $searchQuerySplit[1];
+            $pagedQuery = ($paramsSplit[1]) ? $paramsSplit[1] : 1;
             $args = array (
                 'post_type' => 'pacote',
                 'orderby' => 'title',
                 'order' => 'ASC',
                 'posts_per_page' => 4,
-                'paged'=>1,
+                'paged'=> $pagedQuery,
                 'tax_query' => array(
                     'relation' => 'AND',
                     array(
@@ -61,7 +63,7 @@
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center gap-3">
                 <li class="page-item"><a class="page-link rounded-circle" href="#"><</a></li>
-                <li class="page-item active"><a class="page-link rounded-circle" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link rounded-circle" href="<?php echo get_rest_url($post->ID) ?>">1</a></li>
                 <li class="page-item"><a class="page-link rounded-circle" href="#">2</a></li>
                 <li class="page-item"><a class="page-link rounded-circle" href="#">3</a></li>
                 <li class="page-item"><a class="page-link rounded-circle" href="#">></a></li>

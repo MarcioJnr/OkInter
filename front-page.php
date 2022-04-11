@@ -71,15 +71,17 @@
 
         <!--SEÇÃO BUSCA -->
     <div class="container-fluid p-5" style="background-color: #ffc86e;">
-        <div class="container">
+        <div class="container d-flex flex-column align-items-center">
             <h2 class="display-4 text-dark" style="font-style: normal; font-weight: 400; font-size: 48px; letter-spacing: 0.02em;">Encontre sua próxima viagem</h2>
 
         
-            <?php 
-                includeFile('components/search-field.php', array(
-                    'title'=>'Encontre a sua viagem ideal'
-                ));
-            ?>
+            <div class="w-100 d-flex justify-content-center">
+                <?php 
+                    includeFile('components/search-field.php', array(
+                        'title'=>'Encontre a sua viagem ideal'
+                    ));
+                ?>
+            </div>
         </div>
     </div>
 
