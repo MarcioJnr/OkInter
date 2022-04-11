@@ -44,7 +44,7 @@
     </div>
     
     <h2 class="text-center mb-4">Universidades no exterior</h2>
-    <div class="row mb-5" id="universities">
+    <div class="row mb-5 justify-content-center" id="universities">
         <?php 
             $args = array (
                 'post_type' => 'destino',

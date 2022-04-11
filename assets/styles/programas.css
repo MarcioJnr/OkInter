@@ -48,29 +48,21 @@
     color: var(--quartenary-color);
 }
 
-#card-university {
-    overflow: hidden;
-    position: relative;
+.container #destinations .card, .container #universities .card {
+  cursor: pointer;
+  overflow: hidden;
 }
 
-#card-university{
-    overflow: hidden;
+.container #destinations .card img, .container #universities .card img {
+  height: 35vw;
+  object-fit: cover;
+  transition: transform .5s ease;
 }
 
-#card-university h3 {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.container #destinations .card .card-text-background, .container #universities .card .card-text-background {
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-#card-university img {
-    height: 100%;
-    object-fit: cover;
-    transition: 300ms;
-}
-
-#card-university img:hover {
+.container #destinations .card:hover img, .container #universities .card:hover img {
     transform: scale(1.1);
 }
