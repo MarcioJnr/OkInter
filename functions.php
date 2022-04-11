@@ -77,7 +77,6 @@
         //estilos dos componentes
         wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
         wp_enqueue_style('card-testimonial', get_template_directory_uri() . '/assets/styles/components/card-testimonial.css');
-        wp_enqueue_style('galery-destiny', get_template_directory_uri() . '/assets/styles/components/galery-destiny.css');
         wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
         wp_enqueue_style('post-search-result', get_template_directory_uri() . '/assets/styles/components/post-search-result.css');
         wp_enqueue_style('search-field', get_template_directory_uri() . '/assets/styles/components/search-field.css');
@@ -135,7 +134,6 @@
     ///////////////CUSTOM POSTS TYPES
     require_once(get_template_directory().'/app/cpt/membros-cpt.php');
     require_once(get_template_directory().'/app/cpt/destinos-cpt.php');
-    require_once(get_template_directory().'/app/cpt/destinos-galery-cpt.php');
     require_once(get_template_directory().'/app/cpt/parceiros-cpt.php');
     require_once(get_template_directory().'/app/cpt/depoimentos-cpt.php');
     require_once(get_template_directory().'/app/cpt/pacotes-cpt.php');

@@ -32,30 +32,6 @@
       <h2 class="mb-3 mt-4">Detalhes</h2>
       <p class="mb-4" id="details"><?php echo get_the_excerpt($post->ID); ?></p>
     </div>
-
-    <!-- <aside class="text-center text-lg-start"> -->
-      <!-- <h2 class="mb-3">Galeria</h2> -->
-      <!-- <div class="swiper swiper-galeria">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="galeria">
-              <div class="col-5 left">
-                <div class="row">
-                  <img src="" alt="">
-                </div>
-                <div class="row">
-
-                </div>
-              </div>
-              <div class="col-5 right">
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-navigation"></div>
-      </div> -->
-    <!-- </aside> -->
   </div>
 </div>
 
