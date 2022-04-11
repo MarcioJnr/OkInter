@@ -154,7 +154,7 @@ var swiper = new Swiper('.swiper-custo-de-vida', {
   },
 });
 
-//DEPOIMENTOS
+//DEPOIMENTOS - pais
 var swiper = new Swiper('.swiper-depoimentos-destinos', {
   observer: true,
   observeParents: true,
@@ -165,6 +165,28 @@ var swiper = new Swiper('.swiper-depoimentos-destinos', {
   spaceBetween: 0,
   autoplay: {
     delay: 4000,
+    disableOnInteraction:false,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true,
+  },
+});
+
+//PROGRAMAS - pais
+var swiper = new Swiper('.swiper-destino-programa', {
+  observer: true,
+  observeParents: true,
+  setWrapperSize:true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2000,
     disableOnInteraction:false,
   },
   breakpoints: {

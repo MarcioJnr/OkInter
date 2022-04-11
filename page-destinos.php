@@ -37,14 +37,11 @@
                             <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
                         </a>
                     </div>
-            <?php  
-                endwhile;
-            endif;
-        ?>
+            <?php endwhile; endif; wp_reset_postdata();?>
     </div>
     
     <h2 class="text-center mb-4">Universidades no exterior</h2>
-    <div class="row mb-5" id="universities">
+    <div class="row mb-5 justify-content-center" id="universities">
         <?php 
             $args = array (
                 'post_type' => 'destino',
@@ -68,10 +65,7 @@
                             <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
                         </a>
                     </div>
-            <?php  
-                endwhile;
-            endif;
-        ?>
+            <?php endwhile; endif; wp_reset_postdata();?>
     </div>
 
     <h2 class="text-center mb-2">Depoimentos</h2>
