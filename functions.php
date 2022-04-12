@@ -75,6 +75,7 @@
         wp_enqueue_style('swiperstyle', get_template_directory_uri() . '/assets/styles/swiper-bundle.min.css');
 
         //estilos dos componentes
+        wp_enqueue_style('depoimentos', get_template_directory_uri() . '/assets/styles/components/depoimentos.css');
         wp_enqueue_style('banner', get_template_directory_uri() . '/assets/styles/components/banner.css');
         wp_enqueue_style('card-testimonial', get_template_directory_uri() . '/assets/styles/components/card-testimonial.css');
         wp_enqueue_style('life-cost', get_template_directory_uri() . '/assets/styles/components/life-cost.css');
