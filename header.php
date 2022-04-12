@@ -403,7 +403,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link px-4" href="<?php echo get_home_url(); ?>/blog">BLOG</a>
+                            <a class="nav-link px-4" href="<?php echo get_home_url(); ?>/category/intercambio">BLOG</a>
                         </li>
 
                         <li class="nav-item d-flex d-lg-none w-100 justify-content-center px-4 mt-3">
