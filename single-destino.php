@@ -56,7 +56,7 @@
       if($cidade_query->have_posts()) : 
         while ($cidade_query->have_posts()) : $cidade_query->the_post(); ?>
           <div class="col-6 col-lg-3 mb-4">
-              <a href="<?php echo get_the_permalink($post->ID); ?>" class="card border-0 shadow position-relative">
+              <a class="card border-0 shadow position-relative">
                   <img class="rounded-3" src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
                   <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
               </a>
