@@ -25,11 +25,13 @@
 
 <div class="container py-5" id="sobre">
   <div class="container-fluid d-lg-flex">
-    <div class="text-center text-lg-start" id="info">
+    <div class="text-center text-lg-start mb-4" id="info">
       <h2 class="mb-3">Sobre</h2>
       <?php echo get_the_content($post->ID); ?>
+    </div>
 
-      <h2 class="mb-3 mt-4">Detalhes</h2>
+    <div class="text-center text-lg-start" id="info">
+      <h2 class="mb-3">Detalhes</h2>
       <p class="mb-4" id="details"><?php echo get_the_excerpt($post->ID); ?></p>
     </div>
   </div>
@@ -74,7 +76,7 @@
   <h2 class="text-center">Custo de Vida</h2>
   <h6 class="mb-3 text-white text-center">Despesas básicas e essenciais</h6>
   <div class="container">
-    <div class="row d-none d-lg-flex">
+    <div class="row d-none d-sm-flex">
       <div class="col-4">
         <div class="container d-flex flex-column flex-lg-row align-items-center">
           <?php 

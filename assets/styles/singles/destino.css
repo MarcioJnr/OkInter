@@ -134,6 +134,8 @@
     margin: 2vw 0;
     height: 7vw;
     width: 7vw;
+    max-width: 100px;
+    max-height: 100px;
   }
   #programas {
     background-color: var(--tertiary-color);
