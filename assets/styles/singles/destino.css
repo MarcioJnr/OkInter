@@ -145,8 +145,8 @@
   }
   #programas .container .swiper .swiper-wrapper .swiper-slide .programa {
     width: 25vw !important;
-    max-width: 360px;
-    min-height: 600px;
+    max-width: 340px;
+    min-height: 500px;
     -webkit-box-shadow: 8px 8px 0px 2px var(--primary-color) !important;
             box-shadow: 8px 8px 0px 2px var(--primary-color) !important;
     margin-bottom: 10px;

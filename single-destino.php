@@ -246,7 +246,6 @@
               <li class="mb-2"><b>Idade:</b> A partir de 18 anos</li>
               <li class="mb-2"><b>Tipo Hospedagem:</b> Casa de família, Residência Estudantil, Hostel.</li>
             </ul>
-            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
             <span class="d-flex justify-content-center">
               <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
                 <h6 class="mb-0">Comprar</h6>
@@ -264,7 +263,6 @@
               <li class="mb-2"><b>Idade:</b> Estudantes de 14 a 18 anos.</li>
               <li class="mb-2"><b>Hospedagem:</b> Casa de família ou Residência Estudantil.</li>
             </ul>
-            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
             <span class="d-flex justify-content-center">
               <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
                 <h6 class="mb-0">Comprar</h6>
@@ -282,7 +280,6 @@
               <li class="mb-2"><b>Idade:</b> A partir de 7 anos</li>
               <li class="mb-2"><b>Hospedagem:</b> Casa, apartamento alugado ou hostel.</li>
             </ul>
-            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
             <span class="d-flex justify-content-center">
               <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
                 <h6 class="mb-0">Comprar</h6>
@@ -300,7 +297,6 @@
               <li class="mb-2"><b>Idade:</b> A partir de 18 anos</li>
               <li class="mb-2"><b>Hospedagem:</b> Casa de família, Hotel ou Campus Universitário.</li>
             </ul>
-            <h4 class="text-center">R$ 10.000,00<br>em até 12x<h4>
             <span class="d-flex justify-content-center">
               <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
                 <h6 class="mb-0">Comprar</h6>
