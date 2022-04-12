@@ -1,0 +1,76 @@
+.depoimento-thumb{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 3px;
+    transform: translateY(3.5rem);
+    background-color: white;
+    border: 3px solid orange;
+}
+
+.depo-info{
+    margin: auto;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 4.5rem 2rem 1rem 2rem;
+    min-height: 240px;
+}
+
+@media screen and (max-width:1199px) {
+    .depo-info{
+        min-height: 270px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .depo-info{
+        min-height: 240px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .swiper-depoimentos{
+        margin-top: 1rem!important;
+    }
+    .depo-info{
+        min-height: 215px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .depo-info{
+        min-height: 265px;
+    }
+}
+
+.depo-excerpt{
+    text-align: justify;
+}
+
+.swiper-depoimentos .swiper-slide-active{
+    transform: translateY(-2rem) scale(1.1)!important;
+    transition: all 1s;
+}
+
+.swiper-pagination{
+    position: relative!important;
+}
+
+@media screen and (max-width:767px) {
+    .swiper-depoimentos .swiper-slide-active{
+        transform: translateY(-2rem)!important;
+        transition: all 1s;
+    }
+    .swiper-pagination{
+        margin-top: 1rem!important;
+    }
+}
+
+.swiper-slide-prev{
+    transform: translateY(0rem)!important;
+    transition: all 1s;
+}
+
