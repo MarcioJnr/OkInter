@@ -76,7 +76,7 @@
             </div>
             </div>
             <div class="mt-4">
-                <h2 class="text-center">Certificações</h2><br><br><br>
+                <h2 class="text-center">Certificações</h2><br>
                 <div class="row">
                     <div class="col-12 col-md-6 col-xl-6 text-center text-xl-end">
                         <img src="<?php echo get_template_directory_uri(  );?>/assets/images/embratur.png" class="mb-3" >

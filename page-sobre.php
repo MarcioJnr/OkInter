@@ -119,14 +119,16 @@
     <div class="container-fluid" style="background-color: #7B39E9;">
         <div class="container"><br>
             <div class="row">
-                <div class="col-12 col-xl-6">
-                    <h3 class="text-center text-xl-start mt-5 cor-viajando-com-ok">Viajando com a <br><br>OK Intercâmbio</h3>
-                    <p class="mt-5 text-center text-xl-start text-light">
+                <div class="col-12 col-lg-6">
+                    <h3 class="text-center text-xl-start mt-4 cor-viajando-com-ok">Viajando com a <br><br>OK Intercâmbio</h3>
+                    <p class="mt-5 text-center text-lg-start text-light">
                     Desde 2015 atuando no segmento de Intercâmbio, a OK Intercâmbio vem se destacando na indústria de Educação Internacional pelo alto nível na qualidade dos serviços oferecidos aos seus clientes, além de um suporte em excelência já comprovada pelos nossos estudantes nos quatro cantos do mundo.
                     </p>
                 </div>
-                <div class="col-12 col-xl-6">
-                    <iframe class="mt-4 ms-1 w-100" width="560" height="315" src="https://www.youtube.com/embed/H6sLqrbA-ew?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-12 col-lg-6">
+                    <div class="container-youtube">
+                    <iframe class="mt-4 ms-1 w-100 youtube" width="560" height="315" src="https://www.youtube.com/embed/H6sLqrbA-ew?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                         
             </div>
