@@ -13,16 +13,17 @@
   <div class="container" >
     <div class="row my-5">
       <div class="col-12 col-md-6 mb-4">
-        <h2 class="orange linha1">Aproveite sua viagem</h2>
-        <h2 class="mb-5 linha2">com tranquilidade</h2>
+        <h2 class="orange linha1">Aproveite sua viagem com tranquilidade</h2>
         <h2 class="mb-5 linha3">Aproveite a viagem</h2>
         <p>A OK Intercâmbio trabalha com serviços e planos de cobertura moldados às
            suas necessidades e exigências, os quais oferecem ao viajante todo apoio 
            necessário com centrais 24 horas para atendê-lo em qualquer parte do mundo.</p>
       </div>
       <div class="col-12 col-md-6 text-center">
-        <iframe class="w-100" width="560" height="315" src="https://www.youtube.com/embed/ZXXxwTQf8CE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="container-youtube">
+        <iframe class="w-100 youtube" width="560" height="315" src="https://www.youtube.com/embed/ZXXxwTQf8CE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+        </div>
     </div>
   </div>
 
@@ -58,7 +59,7 @@
                 </a>
                 <div class="d-flex flex-column flex-lg-row">
                   <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
-                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-1" alt="Servico passagem 1">
+                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-1.png" alt="Servico passagem 1">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Nossos intercambistas viajam com tarifa de estudante</p>
                   </div>
                   <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
@@ -77,7 +78,7 @@
                 </a>
                 <div class="d-flex flex-column flex-lg-row">
                   <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
-                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-2" alt="Servico passagem 2">
+                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-2.png" alt="Servico passagem 2">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Centrais disponíveis 24h para antedimento</p>
                   </div>
                   <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
@@ -96,7 +97,7 @@
                 </a>
                 <div class="d-flex flex-column flex-lg-row">
                   <div class="carousel-thumbnail w-100 position-relative rounded-3 shadow">
-                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-3" alt="Servico passagem 3">
+                    <img class="w-100 rounded-3" src="<?php echo get_template_directory_uri(); ?>/assets/images/servicos-passagens-3.png" alt="Servico passagem 3">
                     <p class="text-bold position-absolute text-white" id="thumb-text">Serviço opcional</p>
                   </div>
                   <div class="carousel-info w-100 px-3 d-flex flex-column justify-content-center text-center text-lg-start">
@@ -363,7 +364,7 @@
                 $pais_query = new WP_Query($args);
                 if($pais_query->have_posts()) : 
                     while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
-                        <a id="card-destiny" class="col-2 px-0 rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
+                        <a id="card-destiny" class="col-3 px-0 rounded-3" href="<?php echo get_the_permalink($post->ID); ?>">
                             <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
                             <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
                         </a>
@@ -379,7 +380,7 @@
                 <?php
                     if($pais_query->have_posts()) : while ($pais_query->have_posts()) : $pais_query->the_post();
                 ?>
-                <div class="swiper-slide">
+                <div class="swiper-slide pt-5">
                     <a id="card-destiny" class="post-frame col-11 d-flex justify-content-center rounded-3 mx-auto" href="<?php echo get_the_permalink($post->ID); ?>">
                         <img class="w-100"  src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>"/>
                         <h3 class="mb-0 py-2"><?php echo get_the_title($post->ID); ?></h3>
@@ -400,7 +401,7 @@
     <div class="d-flex flex-column flex-lg-row">
       <div class="w-100">
             <div>
-                <h3 class="cor-empresa mt-3 mb-4 pe-2" style="line-height: 35px;">Faça o orçamento da sua viajem</h3>
+                <h3 class="cor-empresa mt-3 mb-4 pe-2 text-center text-md-start " style="line-height: 24px;">Faça o orçamento da sua viajem</h3>
                 <p class="pe-4 mb-3">Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
             </div>
       </div>
