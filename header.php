@@ -168,7 +168,7 @@
                                             <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-1">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
-                                                    <ul>
+                                                    <ul class="mx-auto">
                                                         <?php 
                                                             $args = array (
                                                                 'post_type' => 'destino',
@@ -187,7 +187,7 @@
                                                             $pais_query = new WP_Query($args);
                                                             if($pais_query->have_posts()) : 
                                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
+                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
                                                                 endwhile;
                                                             endif;
                                                         ?>
@@ -212,7 +212,7 @@
                                             <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-2">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
-                                                    <ul>
+                                                    <ul class="mx-auto">
                                                         <?php 
                                                             $args = array (
                                                                 'post_type' => 'destino',
@@ -231,7 +231,7 @@
                                                             $pais_query = new WP_Query($args);
                                                             if($pais_query->have_posts()) : 
                                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
+                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
                                                                 endwhile;
                                                             endif;
                                                         ?>
@@ -256,7 +256,7 @@
                                             <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-3">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
-                                                    <ul>
+                                                    <ul class="mx-auto">
                                                         <?php 
                                                             $args = array (
                                                                 'post_type' => 'destino',
@@ -275,7 +275,7 @@
                                                             $pais_query = new WP_Query($args);
                                                             if($pais_query->have_posts()) : 
                                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="'.get_permalink($post->ID) . '">'. get_the_title($post->ID) . '</a></li>';
+                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="'.get_permalink($post->ID) . '">'. get_the_title($post->ID) . '</a></li>';
                                                                 endwhile;
                                                             endif;
                                                         ?>
@@ -300,7 +300,7 @@
                                             <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-4">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
-                                                    <ul>
+                                                    <ul class="mx-auto">
                                                         <?php 
                                                             $args = array (
                                                                 'post_type' => 'destino',
@@ -319,7 +319,7 @@
                                                             $pais_query = new WP_Query($args);
                                                             if($pais_query->have_posts()) : 
                                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="'. get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
+                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="'. get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
                                                                 endwhile;
                                                             endif;
                                                         ?>
@@ -344,7 +344,7 @@
                                             <div class="dropdown-menu shadow px-4 border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-">
                                                 <div class="d-flex dropdown-content">
                                                     <h5>Paises ofertados</h5>
-                                                    <ul>
+                                                    <ul class="mx-auto">
                                                         <?php 
                                                             $args = array (
                                                                 'post_type' => 'destino',
@@ -363,7 +363,7 @@
                                                             $pais_query = new WP_Query($args);
                                                             if($pais_query->have_posts()) : 
                                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
+                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
                                                                 endwhile;
                                                             endif;
                                                         ?>
