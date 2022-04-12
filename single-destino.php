@@ -320,6 +320,13 @@
           <?php
               $args = array (
                   'post_type' => 'depoimento',
+                  'tax_query' => array(
+                      array(
+                          'taxonomy' => 'pais',
+                          'field' => 'slug',
+                          'terms' => get_the_title($post->ID)
+                      )
+                  )
               );
               $testimonial_query = new WP_Query($args);
               $counter = 0;
