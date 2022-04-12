@@ -22,7 +22,8 @@ header div div #social .social-icon a:hover svg path {
 }
 
 header nav div #logo #logo-img {
-  width: 100% !important;
+  width: 75% !important;
+  max-width: 150px;
 }
 
 header nav div .navbar-toggler {

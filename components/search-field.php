@@ -8,15 +8,29 @@
         <option value="Intercâmbio em família">Intercâmbio em família</option>
         <option value="Business English">Business English</option>
     </select>
-
-    <select id="destino" class="form-select shadow text-center mb-3" aria-label="Select de programas ">
-        <option selected>DESTINO</option>
-        <option value="Canadá">Canadá</option>
-        <option value="Alemanha">Alemanha</option>
-        <option value="Inglaterra">Inglaterra</option>
-        <option value="Espanha">Espanha</option>
-        <option value="Irlanda">Irlanda</option>
-    </select>
+    <?php
+    $args = array (
+        'post_type' => 'destino',
+        'orderby' => 'title',
+        'order' => 'ASC',
+        'posts_per_page' => 8,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'tipo',
+                'field' => 'slug',
+                'terms' => 'pais'
+            )
+        )
+    );
+    $pais_query = new WP_Query($args); ?>
+            <select id="destino" class="form-select shadow text-center mb-3" aria-label="Select de programas ">
+                <option selected>DESTINO</option>
+                 <?php if($pais_query->have_posts()) : 
+                    while ($pais_query->have_posts()) : $pais_query->the_post(); ?>
+                <option value="<?php echo get_the_title($post->ID); ?>"><?php echo get_the_title($post->ID); ?></option>
+                <?php endwhile; endif; wp_reset_postdata();?>
+            </select>
+                
 
     <div class="w-100">
         <button id="btn-buscar" class="btn text-center text-white shadow w-100 mb-3">
