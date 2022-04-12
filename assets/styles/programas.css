@@ -66,3 +66,9 @@
 .container #destinations .card:hover img, .container #universities .card:hover img {
     transform: scale(1.1);
 }
+
+@media(min-width: 992px) {
+    .container #destinations .col-6 .card img, .container #universities .col-6 .card img {
+    max-height: 240px !important;
+  }
+}
