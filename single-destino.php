@@ -310,57 +310,80 @@
   </div>
 </div>
 
-<div class="py-5" id="pais-depoimentos">
-  <h2 class="text-center mb-2">Depoimentos</h2>
-  <p class="text-center text-xl-center fw-bolder mb-4">Nossos clientes falam</p>
-  <div class="swiper swiper-depoimentos-destinos">
-      <div class="swiper-wrapper">
-          <?php
-              $args = array (
-                  'post_type' => 'depoimento',
-                  'tax_query' => array(
-                      array(
-                          'taxonomy' => 'pais',
-                          'field' => 'slug',
-                          'terms' => get_the_title($post->ID)
-                      )
-                  )
-              );
-              $testimonial_query = new WP_Query($args);
-              $counter = 0;
-
-              if($testimonial_query->have_posts()) : 
-                  while ($testimonial_query->have_posts()) : $testimonial_query->the_post();
-                      if($counter == 0) :
-                          echo '<div class="swiper-slide swiper-slide-active">';
-                      else :
-                          echo '<div class="swiper-slide">';
-                      endif;
-          ?>
-                      <div class="depoimento p-2">
-                          <div class="depoimento-thumb d-flex justify-content-center">
-                              <img class="rounded-circle shadow-sm m-2" src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" alt="<?php echo get_the_title($post->ID); ?>">
-                          </div>
-                          <div class="depoimento-content border rounded-3 py-5 px-3 d-flex flex-column justify-content-center shadow-sm m-2">
-                              <h6 class="text-center mb-1 mt-1"><?php echo get_the_title($post->ID); ?></h6>
-                              <div class="stars d-flex justify-content-center mb-1">
-                                  <img src="<?php echo get_template_directory_uri() ?>/assets/icons/star.svg" alt="estrela">
-                                  <img src="<?php echo get_template_directory_uri() ?>/assets/icons/star.svg" alt="estrela">
-                                  <img src="<?php echo get_template_directory_uri() ?>/assets/icons/star.svg" alt="estrela">
-                                  <img src="<?php echo get_template_directory_uri() ?>/assets/icons/star.svg" alt="estrela">
-                                  <img src="<?php echo get_template_directory_uri() ?>/assets/icons/star.svg" alt="estrela">
-                              </div>
-                              <p><?php echo get_the_excerpt($post->ID); ?></p>
-                          </div>
-                      </div>
-                  </div>
-                  <?php $counter=$counter+1; ?>
-          <?php endwhile; endif; wp_reset_postdata();?>
-      </div>
-      <br>
-      <div class="swiper-pagination"></div>
-  </div>
-</div>
+<section class="container mt-5">
+    <div>
+        <h2 class="text-center text-xl-center cor-empresa mt-4 mb-3">Depoimentos</h2>
+        <p class="text-center text-xl-center fw-bolder ">Nossos clientes falam</p>
+    </div>
+    <div class="swiper swiper-depoimentos mt-3">
+        <div class="swiper-wrapper">
+            <?php
+                #mostrar os depoimentos criados pelo admin
+                /* buscando por taxonomia
+                $args = array(
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'paisdepoimento',
+                            'field' => 'slug',
+                            'terms' => 'alemanha',
+                        )
+                    )
+                );
+                */
+                $args = array (
+                'post_type' => 'depoimento',
+                'posts_per_page' => -1,
+                );
+                $depoimentos_query = new WP_Query($args);
+                if($depoimentos_query->have_posts()) : while ($depoimentos_query->have_posts()) : $depoimentos_query->the_post();
+            ?>
+            <div class="swiper-slide">
+                <div class="post-frame col-12 d-flex justify-content-center">
+                    <img class="depoimento-thumb" <?php if(!has_post_thumbnail( $post->ID )){
+                        echo "no-thumbnail";
+                        }?> 
+                        src="<?php if(has_post_thumbnail( $post->ID )){
+                            echo get_the_post_thumbnail_url($post->ID);
+                            }
+                            else{
+                                //alterar a imagem para um placeholder feito
+                                echo get_template_directory_uri()."/assets/images/ret larg 2.jpg";
+                            }?>
+                        " 
+                        alt="<?php the_title();?>"
+                    >
+                </div>
+                <div class="depo-info col-11"> 
+                    <div class="depo-category">
+                        <p style="margin-bottom:0"><?php the_category(', ');?></p>
+                        
+                    </div>
+                    <div class="depo-title col-12 text-center">
+                        <h6 style="line-height: inherit;" class="fw-bold">
+                            <?php 
+                                if (strlen($post->post_title) > 25) {
+                                    echo substr(the_title($before = '', $after = '', FALSE), 0, 25) . '...'; } 
+                                    else {
+                                    the_title();
+                                } 
+                            ?>
+                        </h6>
+                    </div>
+                    <div class="depo-excerpt">
+                        <p style="">
+                            <?php 
+                                the_excerpt();
+                            ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; else: endif; wp_reset_postdata();?>
+        </div>
+        <div class="gradiente"></div>
+        <div class="swiper-pagination mt-4"></div>
+    </div>
+</section>
 
 <script>
   $(document).ready(function () {

@@ -92,34 +92,6 @@
   transition: 300ms;
 }
 
-#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb {
-  overflow: hidden;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-}
-
-#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
-  width: 20vw;
-  height: 20vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border: 3px solid var(--primary-color);
-}
-
-#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-content {
-  height: 40vw;
-  max-height: 250px;
-}
-
-#pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide-active {
-  -webkit-transform: translateY(-2rem) !important;
-          transform: translateY(-2rem) !important;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
 @media (min-width: 992px) {
   #sobre .container-fluid #info, #sobre .container-fluid aside {
     width: 50%;
@@ -162,16 +134,6 @@
             filter: brightness(1.1);
     -webkit-transition: 300ms;
     transition: 300ms;
-  }
-  #pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-thumb img {
-    width: 7vw;
-    height: 7vw;
-    max-height: 120px;
-    max-width: 120px;
-  }
-  #pais-depoimentos .swiper-depoimentos-destinos .swiper-wrapper .swiper-slide .depoimento .depoimento-content {
-    height: 15vw;
-    max-height: 250px;
   }
 }
 /*# sourceMappingURL=destino.css.map */

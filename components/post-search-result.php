@@ -1,11 +1,11 @@
 <div class="d-flex flex-column flex-lg-row post mb-3">
     <div class="thumb-section p-3 mb-3">
         <span class="thumb">
-            <img class="w-25" src="<?php echo $srcImg ?>" alt="<?php echo $title ?>"/> 
+            <img class="w-100" src="<?php echo $srcImg ?>" alt="<?php echo $title ?>"/> 
         </span>
     </div>
 
-    <div class="info-section text-center d-lg-flex flex-column justify-content-center text-lg-start px-3">
+    <div class="info-section text-center d-lg-flex flex-column justify-content-center text-lg-start px-3 w-100">
         <h3 class="mb-2"><?php echo $title ?></h3>
         <p class="mb-4"><?php echo $description ?></p>
 
