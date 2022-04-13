@@ -35,7 +35,7 @@ function create_pacote_cpt() {
 		'label' => __( 'pacote', 'textdomain' ),
 		'description' => __( 'pacotes de viagem da OK', 'textdomain' ),
 		'labels' => $labels,
-		'menu_icon' => 'dashicons-admin-site',
+		'menu_icon' => 'dashicons-location',
 		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'author', 'page-attributes', 'custom-fields'),
 		'taxonomies' => array(),
 		'public' => true,

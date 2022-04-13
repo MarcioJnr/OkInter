@@ -1,5 +1,6 @@
 <?php get_header(); 
-global $post;?>
+global $post;
+wp_reset_postdata();?>
 
 <main>
     <?php 

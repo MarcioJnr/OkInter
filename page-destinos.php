@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header(); 
+wp_reset_postdata();?>
 
 <?php 
     includeFile('components/banner.php', 

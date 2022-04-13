@@ -19,7 +19,7 @@
         wp_enqueue_style('manrope', 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap', array(), '1.0.0', 'all');
         wp_enqueue_style('style', get_template_directory_uri().'/assets/styles/style.css', array(),'1.0.0', 'all');
 
-        if ( is_category() == true || is_single()) {
+        if ( is_category() == true || is_single()  && 'post' == get_post_type()) {
             // só vai carregar se estiver em uma das categorias do blog
             wp_enqueue_style('blog', get_template_directory_uri() . '/assets/styles/blog.css');
         }
