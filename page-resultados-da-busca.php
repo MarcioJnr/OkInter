@@ -10,11 +10,13 @@
 ?>
 
 <div class="container py-4" id="search-result">
-    <?php 
-        includeFile('components/search-field.php', array(
-            'title'=>'Encontre a sua viagem ideal'
-        ));
-    ?>
+    <div class="d-flex justify-content-center">
+        <?php 
+            includeFile('components/search-field.php', array(
+                'title'=>'Encontre a sua viagem ideal'
+            ));
+        ?>
+    </div>
 
     <div id="result-field">
         <?php 
