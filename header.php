@@ -123,7 +123,7 @@
                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
                                                     echo '<li><a class="dropdown-item px-5" href="' . get_permalink($post->ID) . '">'. get_the_title($post->ID) .'</a></li>';
                                                 endwhile;
-                                            endif;
+                                            endif; wp_reset_postdata();
                                         ?>
                                         <li><a class="dropdown-item px-5 d-flex align-items-center" href="<?php echo get_home_url(); ?>/destinos" style="color: #FF6A2E;">
                                                 Ver mais
@@ -189,7 +189,7 @@
                                                                 while ($pais_query->have_posts()) : $pais_query->the_post();
                                                                     echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
                                                                 endwhile;
-                                                            endif;
+                                                            endif; wp_reset_postdata();
                                                         ?>
                                                     </ul>
                                                 </div>
