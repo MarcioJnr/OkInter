@@ -214,8 +214,9 @@
                     <h4 class="mt-4 titulo-viajem" >Tudo para sua viagem</h4>
                     <p class="paragrafo1 text-bold">Passagens aéreas, seguros, traslado e mais</p>
                     <p class="paragrafo2 text-center mb-4 text-light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget diam tincidunt tortor vulputate lectus. Aliquam leo tincidunt vitae ut at. Eget pharetra a vitae vulputate. Aenean sagittis quis urna libero et sed feugiat at quis. Euismod sagittis amet, auctor eleifend. Mauris amet vestibulum viverra tincidunt tincidunt enim vitae luctus. 
-                    Nunc dolor turpis in porta elit ultricies mattis. Massa quis malesuada tempor nisl, odio. Porta est faucibus cursus bibendum sodales cursus et arcu, laoreet.
+                    A OK Intercâmbio oferece:  Cursos de Idiomas, High School, Profissionalizantes, Programas de Férias, Preparatórios para Certificações, College, Graduações, Pós-Graduações, MBA, Voluntariado, Intercâmbio para família, entre outros.</p>
+
+                    <p class="paragrafo2 text-center mb-4 text-light">Disponibilizamos também: Passagens aéreas com tarifa especial para estudantes, Seguro Viagem/Saúde, Transfer receptivo no aeroporto de destino, Acomodações e Auxílio a Vistos.
                     </p>
 
                     <a href="<?php echo get_home_url(); ?>/servicos" class="w-100">
