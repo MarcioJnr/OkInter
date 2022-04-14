@@ -279,7 +279,7 @@
         </div>
     </div>
     
-    <div class="position-relative w-100" id="section-languages-course">
+    <div class="position-relative w-100" id="section-family">
         <div class="d-flex justify-content-end">
             <img class="img-banner w-75" src="<?php echo get_template_directory_uri();?>/assets/images/IntercambioEmFamilia.png">
         </div>

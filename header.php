@@ -196,180 +196,28 @@
                                             </div>
                                         </li>
 
-                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-2">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#idiomas" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <li class="dropdown-item dropend bg-transparent">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#universidade">
+                                                <p class="me-3">Universidade no exterior</p>
+                                            </a>
+                                        </li>
+
+                                        <li class="dropdown-item dropend bg-transparent">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#section-languages-course">
                                                 <p class="me-3">Idiomas</p>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
-                                                <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
-                                                </svg>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
-                                                </svg>
                                             </a>
-
-                                            <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-2">
-                                                <div class="d-flex dropdown-content">
-                                                    <h5>Paises ofertados</h5>
-                                                    <ul class="mx-auto">
-                                                        <?php 
-                                                            $args = array (
-                                                                'post_type' => 'destino',
-                                                                'orderby' => 'title',
-                                                                'order' => 'ASC',
-                                                                'post_limits' => 4,
-                                                                'tax_query' => array(
-                                                                    'relation' => 'AND',
-                                                                    array(
-                                                                        'taxonomy' => 'programapacote',
-                                                                        'field' => 'slug',
-                                                                        'terms' => 'Idiomas'
-                                                                    ),
-                                                                )
-                                                            );
-                                                            $pais_query = new WP_Query($args);
-                                                            if($pais_query->have_posts()) : 
-                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
-                                                                endwhile;
-                                                            endif;
-                                                        ?>
-                                                    </ul>
-                                                </div>
-                                            </div>
                                         </li>
-
-                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-3">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#universidade" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <p class="me-3">Universidade no Exterior</p>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
-                                                <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
-                                                </svg>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
-                                                </svg>
-                                            </a>
-
-                                            <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-3">
-                                                <div class="d-flex dropdown-content">
-                                                    <h5>Paises ofertados</h5>
-                                                    <ul class="mx-auto">
-                                                        <?php 
-                                                            $args = array (
-                                                                'post_type' => 'destino',
-                                                                'orderby' => 'title',
-                                                                'order' => 'ASC',
-                                                                'post_limits' => 4,
-                                                                'tax_query' => array(
-                                                                    'relation' => 'AND',
-                                                                    array(
-                                                                        'taxonomy' => 'programapacote',
-                                                                        'field' => 'slug',
-                                                                        'terms' => 'Universidade no exterior'
-                                                                    ),
-                                                                )
-                                                            );
-                                                            $pais_query = new WP_Query($args);
-                                                            if($pais_query->have_posts()) : 
-                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="'.get_permalink($post->ID) . '">'. get_the_title($post->ID) . '</a></li>';
-                                                                endwhile;
-                                                            endif;
-                                                        ?>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-4">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#familia" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <p class="me-3">Intercâmbio em Família</p>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
-                                                <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
-                                                </svg>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
-                                                </svg>
-                                            </a>
-
-                                            <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-4">
-                                                <div class="d-flex dropdown-content">
-                                                    <h5>Paises ofertados</h5>
-                                                    <ul class="mx-auto">
-                                                        <?php 
-                                                            $args = array (
-                                                                'post_type' => 'destino',
-                                                                'orderby' => 'title',
-                                                                'order' => 'ASC',
-                                                                'post_limits' => 4,
-                                                                'tax_query' => array(
-                                                                    'relation' => 'AND',
-                                                                    array(
-                                                                        'taxonomy' => 'programapacote',
-                                                                        'field' => 'slug',
-                                                                        'terms' => 'Viagem em família'
-                                                                    ),
-                                                                )
-                                                            );
-                                                            $pais_query = new WP_Query($args);
-                                                            if($pais_query->have_posts()) : 
-                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="'. get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
-                                                                endwhile;
-                                                            endif;
-                                                        ?>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-5">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#business" id="navbarDropdownPlus" data-bs-toggle="dropdown" aria-expanded="false">
+                                        
+                                        <li class="dropdown-item dropend bg-transparent">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#section-business-english">
                                                 <p class="me-3">Business English</p>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
-                                                <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
-                                                </svg>
-
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
-                                                </svg>
                                             </a>
+                                        </li>
 
-                                            <div class="dropdown-menu shadow px-4 border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-">
-                                                <div class="d-flex dropdown-content">
-                                                    <h5>Paises ofertados</h5>
-                                                    <ul class="mx-auto">
-                                                        <?php 
-                                                            $args = array (
-                                                                'post_type' => 'destino',
-                                                                'orderby' => 'title',
-                                                                'order' => 'ASC',
-                                                                'post_limits' => 4,
-                                                                'tax_query' => array(
-                                                                    'relation' => 'AND',
-                                                                    array(
-                                                                        'taxonomy' => 'programapacote',
-                                                                        'field' => 'slug',
-                                                                        'terms' => 'Business English'
-                                                                    ),
-                                                                )
-                                                            );
-                                                            $pais_query = new WP_Query($args);
-                                                            if($pais_query->have_posts()) : 
-                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) .'">'. get_the_title($post->ID) .'</a></li>';
-                                                                endwhile;
-                                                            endif;
-                                                        ?>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                        <li class="dropdown-item dropend bg-transparent">
+                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#section-family">
+                                                <p class="me-3">Intercâmbio em Família</p>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
