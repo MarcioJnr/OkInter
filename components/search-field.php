@@ -32,7 +32,7 @@
                 <?php endwhile; endif; wp_reset_postdata();?>
             </select>
 
-    <div class="w-100">
+    <div class="">
         <button id="btn-buscar" class="btn text-center text-white w-100 mb-3">
             BUSCAR
         </button>
