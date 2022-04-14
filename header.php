@@ -237,7 +237,7 @@
                                 <div class="d-flex dropdown-content">
                                     <a href="<?php echo get_home_url(); ?>/servicos"><h5 class="d-none d-lg-flex">Serviços</h5></a>
                                     <ul>
-                                        <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#viagem">Viagem</a></li>
+                                        <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#travel">Viagem</a></li>
                                         <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#hospedagem">Hospedagem</a></li>
                                         <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#hospedagem">Visto</a></li>
                                         <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#hospedagem">Moeda</a></li>
