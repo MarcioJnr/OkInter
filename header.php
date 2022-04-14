@@ -54,7 +54,7 @@
 
         <nav class="container d-flex justify-content-between navbar navbar-expand-lg navbar-dark p-0">
             <div class="container-fluid p-0">
-                <a id="logo" class="d-flex justify-content-center align-items-center navbar-brand m-0 w-25" href="/okintercambio">
+                <a id="logo" class="d-flex justify-content-center align-items-center navbar-brand m-0 w-25" href="/">
                     <img id="logo-img" class="w-50 ps-4" src="<?php echo get_template_directory_uri(); ?>/assets/icons/logo.svg"
                         alt="Ok Intercambio Logo"/>
 
