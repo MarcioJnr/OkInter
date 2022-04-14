@@ -1,12 +1,15 @@
+#search-field .btn {
+  background-color: var(--quartenary-color);
+}
+
 #search-field .btn:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
 
-#programa, #destino{
-  border-radius: 8px;
-  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
-  font-weight: 600;
+@media (min-width: 992px) {
+  #search-field .btn {
+    width: 50% !important;
+  }
 }
-
 /*# sourceMappingURL=search-field.css.map */
