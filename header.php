@@ -83,7 +83,7 @@
                                 <div class="d-flex dropdown-content">
                                     <h5 class="d-none d-lg-flex">Sobre nós</h5>
                                     <ul>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/sobre-2/">A empresa</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/sobre/">A empresa</a></li>
                                         <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/equipe/">Equipe</a></li>
                                         <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/contato/">Contato</a></li>
                                     </ul>
