@@ -83,9 +83,9 @@
                                 <div class="d-flex dropdown-content">
                                     <h5 class="d-none d-lg-flex">Sobre nós</h5>
                                     <ul>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/sobre">A empresa</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/equipe">Equipe</a></li>
-                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/contato">Contato</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/sobre-2/">A empresa</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/equipe/">Equipe</a></li>
+                                        <li><a class="dropdown-item px-5" href="<?php echo get_home_url(); ?>/contato/">Contato</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                                 endwhile;
                                             endif; wp_reset_postdata();
                                         ?>
-                                        <li><a class="dropdown-item px-5 d-flex align-items-center" href="<?php echo get_home_url(); ?>/destinos" style="color: #FF6A2E;">
+                                        <li><a class="dropdown-item px-5 d-flex align-items-center" href="<?php echo get_home_url(); ?>/destinos/" style="color: #FF6A2E;">
                                                 Ver mais
 
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +149,7 @@
 
                             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                                 <div class="d-flex dropdown-content px-4">
-                                    <a href="<?php echo get_home_url(); ?>/programas"><h5 class="d-none d-lg-flex">Nossos <br> Programas</h5></a>
+                                    <a href="<?php echo get_home_url(); ?>/programas/"><h5 class="d-none d-lg-flex">Nossos <br> Programas</h5></a>
                                     <ul>
                                         <li class="dropdown-item dropend bg-transparent" id="dropend-link-1">
                                             <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus" href="<?php echo get_home_url(); ?>/programas/#escola"data-bs-toggle="dropdown" aria-expanded="false">
@@ -235,7 +235,7 @@
 
                             <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                                 <div class="d-flex dropdown-content">
-                                    <a href="<?php echo get_home_url(); ?>/servicos"><h5 class="d-none d-lg-flex">Serviços</h5></a>
+                                    <a href="<?php echo get_home_url(); ?>/servicos/"><h5 class="d-none d-lg-flex">Serviços</h5></a>
                                     <ul>
                                         <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#travel">Viagem</a></li>
                                         <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/servicos/#hospedagem">Hospedagem</a></li>
@@ -247,7 +247,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link px-4" href="<?php echo get_home_url(); ?>/promocoes">PROMOÇÕES</a>
+                            <a class="nav-link px-4" href="<?php echo get_home_url(); ?>/promocoes/">PROMOÇÕES</a>
                         </li>
 
                         <li class="nav-item">
