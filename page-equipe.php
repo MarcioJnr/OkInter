@@ -71,7 +71,7 @@
             <div class="container">
             <div class="row mt-4">
                 <div class="col-12 form">
-                    <?php echo do_shortcode('[contact-form-7 id="13" title="Formulário equipe"]');?>
+                    <?php echo do_shortcode('[contact-form-7 id="224" title="Formulario trabalhe conosco"]');?>
                 </div>
             </div>
             </div>

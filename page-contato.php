@@ -20,7 +20,7 @@
           </p><br>
         </div>
         <div class="col-12 col-md-6 col-xl-6 form mt-5">
-          <?php echo do_shortcode( '[contact-form-7 id="5" title="Formulário de contato"]');?>
+          <?php echo do_shortcode( '[contact-form-7 id="221" title="Formulário de contato"]');?>
         </div>
       </div>
       <hr class="mt-5">

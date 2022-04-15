@@ -46,6 +46,6 @@
         var queryPrograma = $("#programa option:selected").val();
         var queryDestino = $("#destino option:selected").val();
         var encodeParams = encodeURI(`${queryPrograma}][${queryDestino}`)
-        window.location.href = `${baseUrl}/resultados-da-busca?results=${encodeParams}`
+        window.location.href = `${baseUrl}resultados-da-busca?results=${encodeParams}`
     });
 </script>

@@ -372,12 +372,12 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-6 col-xl-6">
-                <h2 class="text-center text-md-start cor-empresa" style="line-height: 90%;letter-spacing: 0.02em;">Faça o orçamento da sua viajem</h2>
+                <h2 class="text-center text-md-start cor-empresa" style="line-height: 90%;letter-spacing: 0.02em;">Faça o orçamento da sua viagem</h2>
                 <p class="text-center mt-3 t-justify" >A OK Intercâmbio é uma agência de viagens especializada em estudos no exterior. O atendimento é ágil e 100% online para todo o Brasil, e também presencial através dos nossos escritórios físicos, localizados nas Cidades de São Paulo (SP), Fortaleza (CE)  e Dublin (Irlanda).</p>
                 <p class="text-center mb-5 t-justify" >Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
             </div>
             <div class="col-12 col-md-6 col-xl-6 mt-4 mb-5">
-                <?php echo do_shortcode('[contact-form-7 id="14" title="Formulario orçamento"]');?>
+                <?php echo do_shortcode('[contact-form-7 id="222" title="Formulário de orçamento"]');?>
             </div>
         </div>
     </div>
