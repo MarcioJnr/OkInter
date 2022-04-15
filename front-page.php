@@ -219,7 +219,7 @@
                     <p class="paragrafo2 text-center mb-4 text-light">Disponibilizamos também: Passagens aéreas com tarifa especial para estudantes, Seguro Viagem/Saúde, Transfer receptivo no aeroporto de destino, Acomodações e Auxílio a Vistos.
                     </p>
 
-                    <a href="<?php echo get_home_url(); ?>/servicos" class="w-100">
+                    <a href="<?php echo get_home_url(); ?>/servicos/" class="w-100">
                         <button id="btn-destinos" type="button" class="mt-3 mb-5 fw-bold text-center" style="background-color: #FFB030; color: white;">
                             Ver mais
                         </button>
@@ -279,7 +279,7 @@
                 <div class="swiper-pagination mt-5"></div>
             </div>
         </div>
-        <a href="<?php echo get_home_url(); ?>/destinos">
+        <a href="<?php echo get_home_url(); ?>/destinos/">
             <button id="btn-destinos" type="button" class="mt-3 fw-bold text-center">Ver mais</button>
         </a>
     </div>

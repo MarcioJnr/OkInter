@@ -47,15 +47,15 @@
                     <h5 class="text-warning mb-5">Ok Intercâmbio</h5>
 
                     <div class="d-flex flex-column justify-content-between">
-                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/sobre">Sobre</a></p>
+                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/sobre/">Sobre</a></p>
 
-                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/destinos">Destinos</a></p>
+                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/destinos/">Destinos</a></p>
 
-                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/programas">Programas</a></p>
+                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/programas/">Programas</a></p>
 
-                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/promocoes">Promoções</a></p>
+                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/promocoes/">Promoções</a></p>
 
-                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/blog">Blog</a></p>
+                        <p><a class="text-white" href="<?php echo get_home_url(); ?>/category/intercambio">Blog</a></p>
                     </div>
                 </div>
 
