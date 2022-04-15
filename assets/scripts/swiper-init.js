@@ -71,12 +71,12 @@ var swiper = new Swiper('.swiper-pacotes', {
   observer: true,
   observeParents: true,
   setWrapperSize:true,
-  centeredSlides: true,
+
   loop:true,
   slidesPerView: 5,
   spaceBetween: 0,
   autoplay: {
-    delay: 4000,
+    delay: 7000,
     disableOnInteraction:false,
   },
   breakpoints: {

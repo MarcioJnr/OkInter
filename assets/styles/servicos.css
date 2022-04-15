@@ -49,12 +49,17 @@
     border: 2px solid white;
 }
 
+.carousel-thumbnail img{
+    height: 100%;
+    object-fit: cover;
+}
+
 #btn-cotacao {
     background-color: var(--quartenary-color);
 }
 
 #btn-cotacao:hover {
-    filter: brightness(1.1);
+    filter: brightness(0.9);
 }
 
 #btn-hospedagem {
@@ -62,7 +67,20 @@
 }
 
 #btn-hospedagem:hover {
-    filter: brightness(1.1);
+    filter: brightness(0.9);
+}
+
+#btn-hospedagem, #btn-cotacao{
+    transition: all .2s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+  
+#btn-hospedagem:hover, #btn-cotacao:hover {
+    transform: translateY(2px);
+}
+  
+#btn-hospedagem:active, #btn-cotacao:active {
+    transform: translateY(4px);
 }
 
 .tab-servico-1 {

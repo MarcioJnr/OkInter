@@ -66,7 +66,7 @@
                     <p class="mb-2 mt-2">Para cada destino, várias opções de cias aéreas. Conhecemos todas e estamos preparados para te ajudar a escolher as melhores opções.  A OK Intercâmbio garante aos clientes suporte quanto à reserva de passagens aéreas.</p>
                     <p class="mb-5">Nosso compromisso é tranquilizar quanto às escolhas da cia aéreas e datas dos voos mais adequadas às necessidades de cada um. Também trabalhamos com alterações de datas, tanto de ida como de volta.  A viagem é sua, mas o trabalho é nosso!</p>
                     <span class="w-100 d-flex justify-content-center">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao" class="btn w-100 text-white shadow" id="btn-cotacao">Realizar cotação</a>
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao" class="btn w-100 text-white mb-3" id="btn-cotacao">Realizar cotação</a>
                     </span>
                   </div>
                 </div>
@@ -85,7 +85,7 @@
                     <p class="mb-2">Garantir a tranquilidade da viagem com um seguro internacional é muito importante. Oferecemos suporte com diversas empresas especializadas em vários lugares do mundo.</p>
                     <p class="mb-5">Sabemos que imprevistos podem acontecer, por isso estar amparado por uma assistência médica faz toda a diferença. Afinal, não há nada mais chato que surpresas desagradáveis no meio da viagem.</p>
                     <span class="w-100 d-flex justify-content-center">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-cotacao">Falar consultor</a>
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white mb-3" id="btn-cotacao">Falar consultor</a>
                     </span>
                   </div>
                 </div>
@@ -104,7 +104,7 @@
                     <p class="mb-2">Garantimos o suporte terrestre entre aeroporto e local da hospedagem, assumindo a responsabilidade de oferecer todo o acompanhamento para garantir conforto para nossos clientes.</p>
                     <p class="mb-5">A OK Intercâmbio possui um completo serviço de transfer, em parceria com empresas especializadas em todos os destinos ofertados pela agência, para assegurar que todos os clientes cheguem à acomodação com comodidade e segurança.</p>
                     <span class="w-100 d-flex justify-content-center">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-cotacao">Falar consultor</a>
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white mb-3" id="btn-cotacao">Falar consultor</a>
                     </span>
                   </div>
                 </div>
@@ -186,7 +186,7 @@
                     </div>
 
                     <span class="w-100 d-flex justify-content-center">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-hospedagem">Falar consultor</a>
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white mb-3" id="btn-hospedagem">Falar consultor</a>
                     </span>
                   </div>
                 </div>
@@ -228,7 +228,7 @@
                     </div>
 
                     <span class="w-100 d-flex justify-content-center">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-hospedagem">Falar consultor</a>
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white mb-3" id="btn-hospedagem">Falar consultor</a>
                     </span>
                   </div>
                 </div>
@@ -248,7 +248,7 @@
                     <p class="mb-5 text-white"> Sendo assim, oferecemos suporte na organização da documentação e comprovantes necessários, tudo sob a orientação de empresas autorizadas e certificadas por cada país.</p>
 
                     <span class="w-100 d-flex justify-content-center">
-                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white shadow" id="btn-hospedagem">Falar consultor</a>
+                      <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownteste" class="btn w-100 text-white mb-3" id="btn-hospedagem">Falar consultor</a>
                     </span>
                   </div>
                 </div>

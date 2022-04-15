@@ -67,7 +67,7 @@
     </div>
   </div>
   <span class="w-100">
-      <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#staticDropdown">Orçamento</button>
+      <button type="button" class="btn button px-4 py-3" data-bs-toggle="modal" data-bs-target="#staticDropdown"><h6 class="mb-0">Orçamento</h6></button>
   </span>
 </div>
 
@@ -225,89 +225,94 @@
 </div>
 
 <div class="py-5" id="programas">
-  <h2 class="text-center mb-4">Programas disponíveis</h2>
-  <div class="container">
-    <div class="swiper swiper-destino-programa">
-      <div class="swiper-wrapper">
-        <?php 
-          $terms = get_the_terms( $post->ID, 'programapacote');
-          $termsArray = [];
-          foreach($terms as $indice) {
-            array_push($termsArray, $indice->name);
-          }
+  <h2 class="text-center mb-5">Pacotes disponíveis</h2>
+  <div class="swiper swiper-pacotes mt-4 container">
+    <div class="swiper-wrapper">
+        <?php
+            $args = array(
+                'post_type' => 'pacote',
+                'posts_per_page' => -1,
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'paispacote',
+                        'field' => 'slug',
+                        'terms' => get_the_title($post->ID),
+                    )
+                )
+            );
+            $pacote_query = new WP_Query($args);
+            if($pacote_query->have_posts()) : while ($pacote_query->have_posts()) : $pacote_query->the_post();
         ?>
+        <div class="swiper-slide" style="height:auto;">
 
-        <div class="swiper-slide <?php if(!(in_array('Idiomas', $termsArray))) : echo 'd-none'; endif; ?>">
-          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
-            <h4>Idiomas</h4>
-            <ul>
-              <li class="mb-2"><b>Tempo mínimo de programa:</b> 2 semanas</li>
-              <li class="mb-2"><b>Tempo máximo de programa:</b> Indeterminado</li>
-              <li class="mb-2"><b>Idade:</b> A partir de 18 anos</li>
-              <li class="mb-2"><b>Tipo Hospedagem:</b> Casa de família, Residência Estudantil, Hostel.</li>
-            </ul>
-            <span class="d-flex justify-content-center">
-              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
+            <div class="programa px-3 py-5 rounded-3 shadow bg-white mx-auto col-11 h-100"> 
+                
+                <!-- Título do pacote/ Nome da cidade -->
+                <div class="pacote-title col-12 text-center cidade-pacote">
+                    <h5 style="line-height: inherit; color: var(--primary-color);" class="fw-bold">
+                        <?php 
+                            if (strlen($post->post_title) > 25) {
+                                echo substr(the_title($before = '', $after = '', FALSE), 0, 25) . '...'; } 
+                                else {
+                                the_title();
+                            } 
+                        ?>
+                    </h5>
+                </div>
+
+                <!-- Programa ao qual pertence o pacote -->
+                <div class="programa-pacote text-center" style="color: var(--quartenary-color);">
+                    <?php
+                    // get all of the terms for this post, with the taxonomy of paispacote
+                        $termsProgramaPacote = get_the_terms( $post->ID, 'programapacote' );
+                        if($termsProgramaPacote){
+                            foreach ( $termsProgramaPacote as $term ) {
+                                echo "<p class='fw-bold'>". $term->name . "</p>";
+                            }
+                        }
+                    ?>
+                </div>
+                
+                <!-- Duração do pacote -->
+                <div class="text-center mt-2">
+                    <?php 
+                        $duracaopacote = get_field('periodo_de_tempo');
+                        if($duracaopacote){
+                            echo "<p class= 'duracao-pacote fw-bold'>". $duracaopacote . "</p>";
+                        }
+                    ?>
+                </div>
+
+                <!-- Conteúdo de informações do pacote -->
+                <div class="text-center mt-3 mb-3">
+                    <p>
+                        <?php 
+                            the_excerpt();
+                        ?>
+                    </p>
+                </div>
+
+                <!-- Valor do pacote -->
+                <div class="text-center valor-pacote mt-4" style="color: var(--primary-color);">
+                    <?php 
+                        $valorpacote = get_field('valor_do_pacote');
+                        if($valorpacote){
+                            echo "<h5> R$ ". $valorpacote . "</h5>";
+                        }
+                    ?>
+                </div>
+
+                <span class="d-flex justify-content-center">
+              <button class="btn button px-4 py-3 mt-4 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
                 <h6 class="mb-0">Comprar</h6>
               </button>
             </span>
-          </div>
+            </div>
         </div>
-
-        <div class="swiper-slide <?php if(!(in_array('High School', $termsArray))) : echo 'd-none'; endif; ?>">
-          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
-            <h4>High School</h4>
-            <ul>
-              <li class="mb-2"><b>Tempo mínimo de programa:</b> Um semestre acadêmico</li>
-              <li class="mb-2"><b>Tempo máximo de programa:</b> Período do ano acadêmico completo</li>
-              <li class="mb-2"><b>Idade:</b> Estudantes de 14 a 18 anos.</li>
-              <li class="mb-2"><b>Hospedagem:</b> Casa de família ou Residência Estudantil.</li>
-            </ul>
-            <span class="d-flex justify-content-center">
-              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
-                <h6 class="mb-0">Comprar</h6>
-              </button>
-            </span>
-          </div>
-        </div>
-
-        <div class="swiper-slide <?php if(!(in_array('Viagem em família', $termsArray))) : echo 'd-none'; endif; ?>">
-          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
-            <h4>Viajar em família</h4>
-            <ul>
-              <li class="mb-2"><b>Tempo mínimo de programa:</b> 2 semanas</li>
-              <li class="mb-2"><b>Tempo máximo de programa:</b> 8 semanas</li>
-              <li class="mb-2"><b>Idade:</b> A partir de 7 anos</li>
-              <li class="mb-2"><b>Hospedagem:</b> Casa, apartamento alugado ou hostel.</li>
-            </ul>
-            <span class="d-flex justify-content-center">
-              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
-                <h6 class="mb-0">Comprar</h6>
-              </button>
-            </span>
-          </div>
-        </div>
-
-        <div class="swiper-slide <?php if(!(in_array('Business English', $termsArray))) : echo 'd-none'; endif; ?>">
-          <div class="programa px-3 py-5 rounded-3 shadow bg-white d-flex flex-column justify-content-between align-items-center">
-            <h4>Business English</h4>
-            <ul>
-              <li class="mb-2"><b>Tempo mínimo de programa:</b> 2 semanas</li>
-              <li class="mb-2"><b>Tempo máximo de programa:</b> Indeterminado</li>
-              <li class="mb-2"><b>Idade:</b> A partir de 18 anos</li>
-              <li class="mb-2"><b>Hospedagem:</b> Casa de família, Hotel ou Campus Universitário.</li>
-            </ul>
-            <span class="d-flex justify-content-center">
-              <button class="btn px-4 py-3 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
-                <h6 class="mb-0">Comprar</h6>
-              </button>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-navigation"></div>
+        <?php endwhile; else: endif; wp_reset_postdata();?>
     </div>
-  </div>
+    <div class="swiper-pagination mt-3"></div> 
+</div>
 </div>
 
 <section class="container mt-5">
