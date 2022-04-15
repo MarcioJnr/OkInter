@@ -36,7 +36,7 @@ function create_banner_cpt() {
 		'description' => __( '', 'textdomain' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-format-gallery',
-		'supports' => array('title', 'thumbnail'),
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'author', 'page-attributes', 'custom-fields'),
 		'taxonomies' => array(),
 		'public' => true,
 		'show_ui' => true,
