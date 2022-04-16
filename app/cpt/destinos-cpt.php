@@ -57,3 +57,40 @@ function create_destinos_cpt() {
 }
 add_action( 'init', 'create_destinos_cpt');
 ?>
+
+<?php 
+	function create_menu_insert_tax() {
+
+	$labels = array(
+		'name'              => _x( 'Inserir no menu ', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Inserir no menu', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search MenuInsert', 'textdomain' ),
+		'all_items'         => __( 'All MenuInsert', 'textdomain' ),
+		'parent_item'       => __( 'Parent MenuInsert', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent MenuInsert:', 'textdomain' ),
+		'edit_item'         => __( 'Edit MenuInsert', 'textdomain' ),
+		'update_item'       => __( 'Update MenuInsert', 'textdomain' ),
+		'add_new_item'      => __( 'Add New MenuInsert', 'textdomain' ),
+		'new_item_name'     => __( 'New MenuInsert Name', 'textdomain' ),
+		'menu_name'         => __( 'Destacar no menu', 'textdomain' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'description' => __( 'Saber se dá destaque no header ou não', 'textdomain' ),
+		'hierarchical' => true,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'show_in_nav_menus' => true,
+		'show_tagcloud' => true,
+		'show_in_quick_edit' => true,
+		'show_admin_column' => false,
+		'show_in_rest' => true,
+		'query_var' => 'menu',
+	);
+	register_taxonomy( 'menu', 'destino', $args);
+
+}
+add_action( 'init', 'create_menu_insert_tax' );
+?>

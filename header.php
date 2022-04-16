@@ -109,7 +109,13 @@
                                                 'post_type' => 'destino',
                                                 'orderby' => 'title',
                                                 'order' => 'ASC',
-                                                'posts_per_page' => 5,
+                                                'tax_query' => array(
+                                                    array(
+                                                        'taxonomy' => 'menu',
+                                                        'field' => 'slug',
+                                                        'terms' => 'Sim',
+                                                    )
+                                                )
                                             );
                                             $pais_query = new WP_Query($args);
                                             if($pais_query->have_posts()) : 
