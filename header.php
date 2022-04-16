@@ -253,7 +253,7 @@
                                 id="orcamento-button-inner" 
                                 type="button" 
                                 data-bs-toggle="modal" 
-                                data-bs-target="#staticDropdown"
+                                data-bs-target="#modal-orcamento"
                             >
                                 ORÇAMENTO
                             </button>
@@ -268,7 +268,7 @@
                 </div>
 
                 <div class="d-none d-lg-flex justify-content-center w-25">
-                    <button type="button" id="orcamento-button" class="w-100 btn shadow" data-bs-toggle="modal" data-bs-target="#staticDropdown">ORÇAMENTO</button>
+                    <button type="button" id="orcamento-button" class="w-100 btn shadow" data-bs-toggle="modal" data-bs-target="#modal-orcamento">ORÇAMENTO</button>
                 </div>
             </div>
         </nav>
@@ -279,4 +279,6 @@
 
 <?php 
   includeFile('components/modal-orcamento.php', array());
+  includeFile('components/modal-cotacao.php', array());
+  includeFile('components/modal-contato.php', array());
 ?>

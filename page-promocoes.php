@@ -99,7 +99,7 @@
                                 ?>
                             </div>
                             <div class="text-center col-12 mt-3">
-                                <button class="saber-mais" data-bs-toggle="modal" data-bs-target="#staticDropdownteste">
+                                <button class="saber-mais" data-bs-toggle="modal" data-bs-target="#modal-contact">
                                     <p>
                                     SABER MAIS
                                     </p>
@@ -121,7 +121,5 @@
         </div>
     </section>
 </main>
-
-<?php includeFile('components/modal-contato.php', array());?>
 
 <?php get_footer(); ?>

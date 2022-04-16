@@ -1,9 +1,9 @@
-<div class="modal fade" id="staticDropdownteste" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="modal-contact" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog rounded-3 modal-dialog-centered">
     <div class="modal-content rounded-3 rounded-top">
       <div class="modal-header">
             <div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 <h2 class="cor-empresa mt-3 mb-4" style="line-height: ;">Falar com o consultor</h3>
             </div>
       </div>

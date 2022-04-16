@@ -16,28 +16,6 @@ a {
     font-size: 12px;
 }
 
-.btn-enviar {
-    background-color: #FF6A2E;
-    color: white;
-    width: 190px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-}
-
-@media (max-width:767px) {
-    .btn-enviar {
-        width: 100%;
-    }
-}
-
-input, textarea {
-    border-radius: 8px;
-}
-
 @media (max-width:767px) {
     .sp{
         margin-top: 3rem;

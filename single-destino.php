@@ -60,7 +60,7 @@
     </div>
   </div>
   <span class="w-100">
-      <button type="button" class="btn button px-4 py-3" data-bs-toggle="modal" data-bs-target="#staticDropdown"><h6 class="mb-0">Orçamento</h6></button>
+      <button type="button" class="btn button px-4 py-3" data-bs-toggle="modal" data-bs-target="#modal-orcamento"><h6 class="mb-0">Orçamento</h6></button>
   </span>
 </div>
 
@@ -296,7 +296,7 @@
                 </div>
 
                 <span class="d-flex justify-content-center">
-              <button class="btn button px-4 py-3 mt-4 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#staticDropdown">
+              <button class="btn button px-4 py-3 mt-4 text-white shadow-none" id="btn-orcamento" data-bs-toggle="modal" data-bs-target="#modal-orcamento">
                 <h6 class="mb-0">Comprar</h6>
               </button>
             </span>

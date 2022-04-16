@@ -13,13 +13,13 @@
         <div class="col-12 col-md-6 col-xl-6 mt-5">
           <h3 class="mb-4 mt-4 cor-empresa text-center text-md-start">Fale conosco</h3>
           <p class="text-center text-md-start">
-          A agência OK Intercâmbio é uma empresa especializada em oferecer serviços voltados para programas de estudos no exterior.  Se você deseja uma cotação de passagens aéreas clique <a href="#staticDropdownCotacao" data-bs-toggle="modal" data-bs-target="#staticDropdownCotacao">aqui</a>.
+          A agência OK Intercâmbio é uma empresa especializada em oferecer serviços voltados para programas de estudos no exterior.  Se você deseja uma cotação de passagens aéreas clique <a href="#modal-cotacao" data-bs-toggle="modal" data-bs-target="#modal-cotacao">aqui</a>.
           </p>
           <p class="text-center text-md-start">
-          Agora se você deseja receber um orçamento de intercâmbio é só clicar <a href="#staticDropdown" data-bs-toggle="modal" data-bs-target="#staticDropdown">aqui</a>. Mas se você deseja falar sobre outros assuntos, é só preencher o formulário ao lado.
+          Agora se você deseja receber um orçamento de intercâmbio é só clicar <a href="#modal-orcamento" data-bs-toggle="modal" data-bs-target="#modal-orcamento">aqui</a>. Mas se você deseja falar sobre outros assuntos, é só preencher o formulário ao lado.
           </p><br>
         </div>
-        <div class="col-12 col-md-6 col-xl-6 form mt-5">
+        <div class="col-12 col-md-6 col-xl-6 mt-5">
           <?php echo do_shortcode( '[contact-form-7 id="221" title="Formulário de contato"]');?>
         </div>
       </div>
@@ -89,10 +89,6 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
       </div>
     </div>
     <span class="mb-5">
-      
-    <?php 
-      includeFile('components/modal-cotacao.php', array());
-    ?>
 </main>
 
 
