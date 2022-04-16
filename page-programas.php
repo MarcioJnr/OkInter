@@ -59,9 +59,7 @@
                     'post_type' => 'destino',
                     'orderby' => 'title',
                     'order' => 'ASC',
-                    'post_limits' => 4,
                     'tax_query' => array(
-                        'relation' => 'AND',
                         array(
                             'taxonomy' => 'programapacote',
                             'field' => 'slug',
@@ -109,12 +107,6 @@
                             'orderby' => 'title',
                             'order' => 'ASC',
                             'tax_query' => array(
-                                'relation'=>'AND',
-                                array(
-                                    'taxonomy' => 'tipo',
-                                    'field' => 'slug',
-                                    'terms' => 'pais'
-                                ),
                                 array(
                                     'taxonomy' => 'programapacote',
                                     'field' => 'slug',
@@ -177,12 +169,6 @@
                                 'orderby' => 'title',
                                 'order' => 'ASC',
                                 'tax_query' => array(
-                                    'relation'=>'AND',
-                                    array(
-                                        'taxonomy' => 'tipo',
-                                        'field' => 'slug',
-                                        'terms' => 'pais'
-                                    ),
                                     array(
                                         'taxonomy' => 'programapacote',
                                         'field' => 'slug',
@@ -250,12 +236,6 @@
                             'orderby' => 'title',
                             'order' => 'ASC',
                             'tax_query' => array(
-                                'relation'=>'AND',
-                                array(
-                                    'taxonomy' => 'tipo',
-                                    'field' => 'slug',
-                                    'terms' => 'pais'
-                                ),
                                 array(
                                     'taxonomy' => 'programapacote',
                                     'field' => 'slug',
@@ -304,12 +284,6 @@
                             'orderby' => 'title',
                             'order' => 'ASC',
                             'tax_query' => array(
-                                'relation'=>'AND',
-                                array(
-                                    'taxonomy' => 'tipo',
-                                    'field' => 'slug',
-                                    'terms' => 'pais'
-                                ),
                                 array(
                                     'taxonomy' => 'programapacote',
                                     'field' => 'slug',

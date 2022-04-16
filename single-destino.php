@@ -6,13 +6,6 @@
         'post_type' => 'destino',
         'orderby' => 'title',
         'order' => 'ASC',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'tipo',
-                'field' => 'slug',
-                'terms' => 'pais'
-            )
-        )
     );
     $pais_query = new WP_Query($args);
     includeFile('components/banner-paises.php', 

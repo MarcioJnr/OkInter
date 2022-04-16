@@ -353,13 +353,6 @@
                     'orderby' => 'title',
                     'order' => 'ASC',
                     'post_limits' => 8,
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'tipo',
-                            'field' => 'slug',
-                            'terms' => 'pais'
-                        )
-                    )
                 );
                 $pais_query = new WP_Query($args);
                 if($pais_query->have_posts()) : 

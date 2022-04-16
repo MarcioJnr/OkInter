@@ -20,13 +20,6 @@ wp_reset_postdata();?>
                 'post_type' => 'destino',
                 'orderby' => 'title',
                 'order' => 'ASC',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'tipo',
-                        'field' => 'slug',
-                        'terms' => 'pais'
-                    )
-                )
             );
             $pais_query = new WP_Query($args);
 
@@ -49,7 +42,6 @@ wp_reset_postdata();?>
                 'orderby' => 'title',
                 'order' => 'ASC',
                 'tax_query' => array(
-                    'relation' => 'AND',
                     array(
                         'taxonomy' => 'programapacote',
                         'field' => 'slug',

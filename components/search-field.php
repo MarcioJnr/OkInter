@@ -14,14 +14,6 @@
         'post_type' => 'destino',
         'orderby' => 'title',
         'order' => 'ASC',
-        'posts_per_page' => 8,
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'tipo',
-                'field' => 'slug',
-                'terms' => 'pais'
-            )
-        )
     );
     $pais_query = new WP_Query($args); ?>
             <select id="destino" class="form-select shadow text-center mb-3" aria-label="Select de programas ">
