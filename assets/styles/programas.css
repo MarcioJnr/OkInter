@@ -36,15 +36,15 @@
     color: var(--tertiary-color);
 }
 
-#section-languages-course {
+#section-languages-course, #section-family {
     background-color: var(--tertiary-color);
 }
 
-#section-languages-course .position-absolute {
+#section-languages-course .position-absolute, #section-family .position-absolute {
     transform: translateY(-50%);
 }
 
-#section-languages-course div h3 {
+#section-languages-course div h3, #section-family div h3 {
     color: var(--quartenary-color);
 }
 

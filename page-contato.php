@@ -89,12 +89,11 @@ filter: drop-shadow(6px 6px 16px rgba(0, 0, 0, 0.3)); border-radius: 8px;" allow
       </div>
     </div>
     <span class="mb-5">
-    
+      
+    <?php 
+      includeFile('components/modal-cotacao.php', array());
+    ?>
 </main>
 
 
 <?php get_footer(); ?>
-
-<?php 
-  includeFile('components/modal-cotacao.php', array());
-?>
