@@ -108,7 +108,11 @@
                         </div>
                     </div>
                 </div>
-            <?php endwhile; else: endif; wp_reset_postdata();?> 
+            <?php endwhile; else: 
+                echo '
+                    <div class="w-100 d-flex justify-content-center"><h4 class="mt-4 mb-4">Desculpe não temos promoções no momento :(</h4></div>
+                '; 
+            endif; wp_reset_postdata();?> 
             </div>
 
             <div class="text-center nav-pages d-flex justify-content-center mb-5">

@@ -56,7 +56,13 @@
                   <h3 class="card-text-background position-absolute bottom-0 w-100 rounded-3 py-2 px-2 mb-0 text-center text-white"><?php echo get_the_title($post->ID); ?></h3>
               </a>
           </div>
-    <?php endwhile; endif; wp_reset_postdata();?>
+    <?php endwhile; else:
+    echo '
+      <div class="w-100 d-flex justify-content-center"><h4 class="mt-4 mb-4" style="color:var(--quartenary-color);">
+        Desculpe, não temos cidades para esse destino :(
+      </h4></div>
+    '; 
+    endif; wp_reset_postdata();?>
     </div>
   </div>
   <span class="w-100">
@@ -302,7 +308,11 @@
             </span>
             </div>
         </div>
-        <?php endwhile; else: endif; wp_reset_postdata();?>
+        <?php endwhile; else:   
+          echo '
+            <div class="w-100 d-flex justify-content-center"><h4 class="mt-4 mb-4" style="color:var(--quartenary-color);">Desculpe, não temos pacotes para esse destino :(</h4></div>
+          '; 
+        endif; wp_reset_postdata();?>
     </div>
     <div class="swiper-pagination mt-3"></div> 
 </div>

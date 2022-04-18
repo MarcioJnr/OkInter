@@ -196,9 +196,18 @@
                         </div>
                     </div>
                 </div>
-                <?php endwhile; else: endif; wp_reset_postdata();?>
+                <?php endwhile; else:  
+                    echo '
+                        <div class="w-100 d-flex justify-content-center"><h4 class="mt-4 mb-4">Desculpe não temos promoções no momento :(</h4></div>
+                    '; 
+                endif; wp_reset_postdata();?>
             </div>
             <div class="swiper-pagination mt-3"></div> 
+            <a href="<?php echo get_home_url(); ?>/promocoes/" class="w-100 d-flex justify-content-center">
+                <button id="btn-destinos" type="button" class="mt-3 mb-5 fw-bold text-center" style="background-color: var(--primary-color); color: white;">
+                    Ver mais
+                </button>
+            </a>
         </div>
     </section>
 

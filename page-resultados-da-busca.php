@@ -61,6 +61,10 @@
                         )
                     ); 
                 endwhile;
+            else:    
+                 echo '
+                    <div class="w-100 d-flex justify-content-center"><h4 class="mt-5 mb-4">Desculpe, não encontramos resultado para sua busca :(</h4></div>
+                '; 
             endif;
         ?>
 
