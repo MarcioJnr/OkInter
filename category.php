@@ -33,7 +33,7 @@
                     //div para os demais posts 
                     else echo '<div class="a-posts">';
                 ?>
-                    <a href="<?php echo $post->guid;?>">
+                    <a href="<?php echo get_permalink();?>">
                         <div class="post-frame">
                             <img class="thumb" <?php if(!has_post_thumbnail( $post->ID )){
                                 echo "no-thumbnail";
@@ -54,7 +54,7 @@
                                     <p style="margin-bottom:0"><?php the_category(', ');?></p>
                                     
                                 </div>
-                                <a href="<?php echo $post->guid;?>" class="col-12">
+                                <a href="<?php echo get_permalink();?>" class="col-12">
                                     <div class="blog-title col-12">
                                         <h6 style="font-weight: 500; line-height: inherit;">
                                             <?php 
@@ -152,7 +152,7 @@
 
                         <div class="related-posts-confira">
                         
-                            <a href="<?php echo $post->guid;?>">
+                            <a href="<?php echo get_permalink();?>">
                                 
                                 <div class="col-12 mt-3 posts-confira-title">
                                     <p style="font-weight: 500; line-height: inherit;">
@@ -184,7 +184,7 @@
 
                         <div class="related-posts-confira">
                         
-                            <a href="<?php echo $post->guid;?>">
+                            <a href="<?php echo get_permalink();?>">
                                 
                                 <div class="col-12 mt-3 posts-confira-title">
                                     <p style="font-weight: 500; line-height: inherit;">

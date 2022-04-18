@@ -1,5 +1,4 @@
-<?php get_header(); 
-wp_reset_postdata();?>
+<?php get_header();?>
 
 <?php 
     includeFile('components/banner.php', 
@@ -112,8 +111,8 @@ wp_reset_postdata();?>
                         <div class="depo-title col-12 text-center">
                             <h6 style="line-height: inherit;" class="fw-bold">
                                 <?php 
-                                    if (strlen($post->post_title) > 25) {
-                                        echo substr(the_title($before = '', $after = '', FALSE), 0, 25) . '...'; } 
+                                    if (strlen($post->post_title) > 35) {
+                                        echo substr(the_title($before = '', $after = '', FALSE), 0, 35) . '...'; } 
                                         else {
                                         the_title();
                                     } 
