@@ -33,11 +33,11 @@
 
 <script>
     $('#btn-buscar').click((e) => { 
-        var getUrl = window.location;
-        var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+        // var getUrl = window.location;
+        // var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
         var queryPrograma = $("#programa option:selected").val();
         var queryDestino = $("#destino option:selected").val();
         var encodeParams = encodeURI(`${queryPrograma}][${queryDestino}`)
-        window.location.href = `${baseUrl}resultados-da-busca/?results=${encodeParams}`
+        window.location.href = `<?php echo get_home_url(); ?>/resultados-da-busca/?results=${encodeParams}`
     });
 </script>
