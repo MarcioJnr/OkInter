@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="d-flex flex-column fixed-top py-1">
+    <header class="d-flex flex-column fixed-top pt-1">
         <div class="container d-none d-lg-flex justify-content-end">
             <div class="d-flex w-25 justify-content-end">
                 <ul class="d-flex w-75 mb-0 justify-content-evenly p-0" id="social">

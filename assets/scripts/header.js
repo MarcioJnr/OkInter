@@ -53,6 +53,7 @@ $(document).ready(() => {
 $('.navbar-toggler').click(() => {
     if($('.navbar-toggler').attr('aria-expanded') == 'true') {
         $('header').css('background', 'white');
+        $('header').css('padding-bottom', '2rem');
         $('#logo-img').css('display', 'none');
         $('#chevron-img').css('display', 'block');
         $('#menu path').css('fill', 'black');
@@ -62,6 +63,7 @@ $('.navbar-toggler').click(() => {
 
 $('.navbar-toggler').click(() => {
     if($('.navbar-toggler').attr('aria-expanded') == 'false') {
+        $('header').css('padding-bottom', '0.25rem');
         $('header').css('background', 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)');
         $('#logo-img').css('display', 'block');
         $('#chevron-img').css('display', 'none');

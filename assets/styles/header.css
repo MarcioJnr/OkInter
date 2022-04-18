@@ -5,7 +5,7 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-  padding-bottom: 2%;
+  padding-bottom: 0.25rem;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
@@ -155,10 +155,15 @@ header nav div #navbarSupportedContent ul .dropdown-menu .dropdown-content ul li
   width: 14px;
   height: 14px;
 }
-
+#chevron-img{
+  visibility: hidden;
+}
 @media (max-width: 992px) {
   header nav {
     margin-top: 5%;
+  }
+  #chevron-img{
+    visibility: visible;
   }
   header nav div #logo {
     display: -webkit-box !important;

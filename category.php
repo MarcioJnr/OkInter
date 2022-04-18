@@ -126,7 +126,7 @@
                                 <button class="cat-button">
                                     <p style="margin-bottom : 0px;">
                                         <a href="' . get_category_link($category->term_id) . '">' . $category->name . '
-                                        ('. $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '$category->term_id' ").')
+                                        ('. $category->count .')
                                         </a>
                                     </p>
                                 </button>

@@ -90,7 +90,7 @@ global $post;
 
     <hr class="container">
 
-    <section class="container mt-5 mb-5">
+    <section class="container mt-5 mb-5 post-content">
         <?php the_content();?>
     </section>
 
@@ -172,7 +172,7 @@ global $post;
                         <button class="cat-button">
                             <p style="margin-bottom : 0px;">
                                 <a href="' . get_category_link($categoryP->term_id) . '">' . $categoryP->name . '
-                                ('. $wpdb->get_var("SELECT count FROM wp_term_taxonomy WHERE term_taxonomy_id = '$categoryP->term_id' ").')
+                                ('. $categoryP->count .')
                                 </a>
                             </p>
                         </button>
@@ -195,6 +195,7 @@ global $post;
                     'post_type' => 'post',
                     'posts_per_page' => 4,
                     'cat' => $categoriesP[0]->term_id,
+                    'post__not_in' => array( $post->ID ),
                 );
                 $relate_query = new WP_Query($args);
                 if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
@@ -202,7 +203,7 @@ global $post;
 
             <div class="a-posts">
             
-                <a href="<?php echo $post->guid;?>">
+                <a href="<?php echo get_permalink();?>">
                     <div class="post-frame">
                         <img class="thumb" <?php if(!has_post_thumbnail( $post->ID )){
                             echo "no-thumbnail";
@@ -223,7 +224,7 @@ global $post;
                                 <p style="margin-bottom:0"><?php the_category(', ');?></p>
                                 
                             </div>
-                            <a href="<?php echo $post->guid;?>" class="col-12">
+                            <a href="<?php echo get_permalink();?>" class="col-12">
                                 <div class="blog-title col-12">
                                     <h6 style="font-weight: 500; line-height: inherit;">
                                         <?php 
@@ -256,6 +257,7 @@ global $post;
                 $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => 5,
+                    'post__not_in' => array( $post->ID ),
                 );
                 $relate_query = new WP_Query($args);
                 if($relate_query->have_posts()) : while ($relate_query->have_posts()) : $relate_query->the_post();
@@ -263,7 +265,7 @@ global $post;
 
             <div class="related-posts-confira">
             
-                <a href="<?php echo $post->guid;?>">
+                <a href="<?php echo get_permalink();?>">
                     
                     <div class="col-12 mb-3 posts-confira-title">
                         <h6 style="font-weight: 500; line-height: inherit;">
