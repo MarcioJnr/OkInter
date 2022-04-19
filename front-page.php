@@ -362,21 +362,23 @@
         </div>
     </section>
 
-
-    <div class="container">
-        <h2 class="text-center text-xl-center cor-empresa mt-5 mb-1">Canal do Youtube</h2>
-        <p class="text-center text-xl-center fw-bolder mb-4">Confira o conteúdo que temos pra você intercambista</p>
-        <div class="container-youtube">
-        <iframe class="w-100 youtube" width="560" height="315" src="https://www.youtube.com/embed/EawTftTaFAA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>  
+    <!-- Video Youtube -->
+    <div class="text-center py-5" style="background-color:#7B39E9;">
+        <div class="container">
+            <h2 class="text-center text-xl-center cor-empresa mb-1">Canal do Youtube</h2>
+            <p class="text-center text-xl-center fw-bolder mb-4 text-white">Confira o conteúdo que temos pra você intercambista</p>
+            <div class="container-youtube">
+            <iframe class="w-100 youtube" width="560" height="315" src="https://www.youtube.com/embed/EawTftTaFAA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
         </div>
+    </div>
    
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-6 col-xl-6">
-                <h2 class="text-center text-md-start cor-empresa" style="line-height: 90%;letter-spacing: 0.02em;">Faça o orçamento da sua viagem</h2>
+                <h2 class="text-center text-md-start cor-empresa" style="line-height: 90%;letter-spacing: 0.02em;">Faça o orçamento do seu intercâmbio</h2>
                 <p class="text-center mt-3 t-justify" >A OK Intercâmbio é uma agência de viagens especializada em estudos no exterior. O atendimento é ágil e 100% online para todo o Brasil, e também presencial através dos nossos escritórios físicos, localizados nas Cidades de São Paulo (SP), Fortaleza (CE)  e Dublin (Irlanda).</p>
-                <p class="text-center mb-5 t-justify" >Preencha os campos ao lado e clique no botão “ENVIAR ”, depois é só aguardar o contato da nossa equipe.</p>
+                <p class="text-center mb-5 t-justify" >Preencha os campos ao lado e clique no botão “ENVIAR”, depois é só aguardar o contato da nossa equipe.</p>
             </div>
             <div class="col-12 col-md-6 col-xl-6 mt-4 mb-5">
                 <?php echo do_shortcode('[contact-form-7 id="222" title="Formulário de orçamento"]');?>
