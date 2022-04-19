@@ -14,6 +14,12 @@
                     if($banner_query->have_posts()) : while ($banner_query->have_posts()) : $banner_query->the_post();
                 ?>
                 <div class="swiper-slide">
+                    <?php                             
+                        $linkcta = get_field('linkcta');
+                        if($linkcta){
+                            echo '<a href="'.$linkcta.'">';
+                        }
+                    ?>
                     <div class="banner-frame col-12 d-flex justify-content-center">
                         <img class="banner-thumb w-100" <?php if(!has_post_thumbnail( $post->ID )){
                             echo "no-thumbnail";
@@ -29,36 +35,12 @@
                             alt="<?php the_title();?>"
                         >
                     </div>
-                    <div class="container">
-                        <div class="banner-info">
-                            <div class="teste">
-                                <div>
-                                    <h1 class="b-title">
-                                        <?php the_title();?>
-                                    </h1>
-
-                                    
-                                    <?php 
-                                        $subtitle = get_field('subtitle');
-                                        if($subtitle){
-                                            echo '<h5 class=" b-subtitle">'.$subtitle.'</h5>';
-                                        }
-                                    ?>
-
-                                    <div class="b-text-cta">
-                                        <?php 
-                                            $textocta = get_field('textocta');
-                                            $linkcta = get_field('linkcta');
-                                            if($textocta){
-                                                echo '<a href="'.$linkcta.'"><button class="call-to-action ">'.$textocta.'</button></a>';
-                                            }
-                                        ?>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+                    <?php                             
+                        $linkcta = get_field('linkcta');
+                        if($linkcta){
+                            echo '</a>';
+                        }
+                    ?>
                 </div>
                 <?php endwhile; else: endif; wp_reset_postdata();?>
             </div>
