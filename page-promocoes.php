@@ -83,7 +83,7 @@
                         <div class="pacote-excerpt mt-4 mb-4 col-12">
                             <p>
                                 <?php 
-                                    the_excerpt();
+                                    the_content();
                                 ?>
                             </p>
                         </div>

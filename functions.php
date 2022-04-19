@@ -4,13 +4,6 @@
         add_theme_support('post-thumbnails');
 
         add_theme_support('title-tag');
-
-        register_nav_menus(
-            array(
-                'my_main_menu' => 'Main Menu',
-                'my_footer_menu' => 'Footer Menu'
-            )
-        );
     }
     add_action('after_setup_theme','theme_setup');
 
@@ -151,4 +144,3 @@
         include($fileName);
     }
 ?>
-

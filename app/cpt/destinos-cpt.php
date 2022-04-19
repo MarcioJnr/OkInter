@@ -56,9 +56,7 @@ function create_destinos_cpt() {
 
 }
 add_action( 'init', 'create_destinos_cpt');
-?>
 
-<?php 
 	function create_menu_insert_tax() {
 
 	$labels = array(

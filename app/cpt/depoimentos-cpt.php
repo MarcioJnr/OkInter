@@ -56,9 +56,7 @@ function create_depoimento_cpt() {
 
 }
 add_action( 'init', 'create_depoimento_cpt', 0 );
-?>
 
-<?php
 // Register Taxonomy pais depoimento
 function create_paisdepoimento_tax() {
 	$labels = array(
