@@ -365,7 +365,7 @@
     <!-- Video Youtube -->
     <div class="text-center py-5" style="background-color:#7B39E9;">
         <div class="container">
-            <h2 class="text-center text-xl-center cor-empresa mb-1">Canal do Youtube</h2>
+            <h2 class="text-center text-xl-center servicos mb-1">Canal do Youtube</h2>
             <p class="text-center text-xl-center fw-bolder mb-4 text-white">Confira o conteúdo que temos pra você intercambista</p>
             <div class="container-youtube">
             <iframe class="w-100 youtube" width="560" height="315" src="https://www.youtube.com/embed/EawTftTaFAA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
