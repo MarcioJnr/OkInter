@@ -4,7 +4,7 @@
 
 <p align="center"><b>⚖ Wordpress theme developed for Ok Intercambio, an exchange agency based at Brazil and Ireland</b>
 <ul align="center">
-    <img src="https://img.shields.io/static/v1?label=Status&message=20%&labelColor=%2306121f&style=flat-square&color=%23fc0303">
+    <img src="https://img.shields.io/static/v1?label=Status&message=98%&labelColor=%2306121f&style=flat-square&color=%2388ff00">
     <img src="https://img.shields.io/static/v1?label=License&message=GPL-3.0&labelColor=%2306121f&style=flat-square&color=%23e60000">
 </ul>
 
