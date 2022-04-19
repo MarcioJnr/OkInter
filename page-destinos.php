@@ -10,7 +10,7 @@
 ?>
 
 <main class="container py-5">
-    <h2 class="text-center mb-4">Destinos mais procurados</h2>
+    <h2 class="text-center mb-4">Destinos</h2>
     <p class="mb-5">Veja os principais destinos ofertados pela OK Intercâmbio. Para saber todas as opções de cidades disponíveis, você precisa só clicar em um dos países abaixo e poderá conferir as principais informações de cada destinos. Se a cidade que você busca não estiver nas opções, entre em contato conosco para saber mais. </p>
 
     <div class="row mb-5" id="destinations">

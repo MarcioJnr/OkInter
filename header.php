@@ -150,74 +150,13 @@
                                 <div class="d-flex dropdown-content px-4">
                                     <a href="<?php echo get_home_url(); ?>/programas/"><h5 class="d-none d-lg-flex">Nossos <br> Programas</h5></a>
                                     <ul>
-                                        <li class="dropdown-item dropend bg-transparent" id="dropend-link-1">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" id="navbarDropdownPlus" href="<?php echo get_home_url(); ?>/programas/#escola"data-bs-toggle="dropdown" aria-expanded="false">
-                                                <p class="me-3">Estudo e trabalho</p>
+                                        <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/programas/#universidade">Universidade no exterior</a></li>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-lg-block">
-                                                <path d="M7.38048 21.01C7.87048 21.5 8.66048 21.5 9.15048 21.01L17.4605 12.7C17.8505 12.31 17.8505 11.68 17.4605 11.29L9.15048 2.97999C8.66048 2.48999 7.87048 2.48999 7.38048 2.97999C6.89048 3.46999 6.89048 4.25999 7.38048 4.74999L14.6205 12L7.37048 19.25C6.89048 19.73 6.89048 20.53 7.38048 21.01Z" fill="black"/>
-                                                </svg>
+                                        <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/programas/#section-languages-course">Idiomas</a></li>
 
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block d-lg-none">
-                                                <path d="M15.8805 9.29L12.0005 13.17L8.12047 9.29C7.73047 8.9 7.10047 8.9 6.71047 9.29C6.32047 9.68 6.32047 10.31 6.71047 10.7L11.3005 15.29C11.6905 15.68 12.3205 15.68 12.7105 15.29L17.3005 10.7C17.6905 10.31 17.6905 9.68 17.3005 9.29C16.9105 8.91 16.2705 8.9 15.8805 9.29Z" fill="black"/>
-                                                </svg>
+                                        <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/programas/#section-business-english">Business English</a></li>
 
-                                            </a>
-
-                                            <div class="dropdown-menu shadow border-0 border-bottom rounded-0 bg-transparent" data-popper-placement="right-start" id="dropend-menu-1">
-                                                <div class="d-flex dropdown-content">
-                                                    <h5>Paises ofertados</h5>
-                                                    <ul class="mx-auto">
-                                                        <?php 
-                                                            $args = array (
-                                                                'post_type' => 'destino',
-                                                                'orderby' => 'title',
-                                                                'order' => 'ASC',
-                                                                'post_limits' => 4,
-                                                                'tax_query' => array(
-                                                                    'relation' => 'AND',
-                                                                    array(
-                                                                        'taxonomy' => 'programapacote',
-                                                                        'field' => 'slug',
-                                                                        'terms' => 'Estudo e trabalho'
-                                                                    ),
-                                                                )
-                                                            );
-                                                            $pais_query = new WP_Query($args);
-                                                            if($pais_query->have_posts()) : 
-                                                                while ($pais_query->have_posts()) : $pais_query->the_post();
-                                                                    echo '<li class="w-100"><a class="dropdown-item d-flex justify-content-end px-0" href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) .'</a></li>';
-                                                                endwhile;
-                                                            endif; wp_reset_postdata();
-                                                        ?>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="dropdown-item dropend bg-transparent">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#universidade">
-                                                <p class="me-3">Universidade no exterior</p>
-                                            </a>
-                                        </li>
-
-                                        <li class="dropdown-item dropend bg-transparent">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#section-languages-course">
-                                                <p class="me-3">Idiomas</p>
-                                            </a>
-                                        </li>
-                                        
-                                        <li class="dropdown-item dropend bg-transparent">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#section-business-english">
-                                                <p class="me-3">Business English</p>
-                                            </a>
-                                        </li>
-
-                                        <li class="dropdown-item dropend bg-transparent">
-                                            <a class="dropdown d-flex justify-content-between align-items-center" href="<?php echo get_home_url(); ?>/programas/#section-family">
-                                                <p class="me-3">Intercâmbio em Família</p>
-                                            </a>
-                                        </li>
+                                        <li><a class="dropdown-item px-4" href="<?php echo get_home_url(); ?>/programas/#section-family">Intercâmbio em Família</a></li>
                                     </ul>
                                 </div>
                             </div>
