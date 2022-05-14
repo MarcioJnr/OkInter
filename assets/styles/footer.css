@@ -21,7 +21,7 @@ footer .container #content #about div svg path {
 }
 
 footer .container #content #about #offers img {
-  width: 40%;
+  width: 30%;
 }
 
 footer .container #content #contact {
@@ -81,7 +81,7 @@ footer .container #content #social-footer div .row .col:hover svg path {
   footer .container #content #about, footer .container #content #contact, footer .container #content #nav, footer .container #content #social-footer {
     width: 100% !important;
     margin: 0 !important;
-    margin-bottom: 20% !important;
+    margin-bottom: 10% !important;
   }
   footer .container #content #about #offers {
     width: 100%;

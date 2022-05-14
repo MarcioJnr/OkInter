@@ -10,6 +10,7 @@
     </select>
 
     <?php
+    global $post;
     $args = array (
         'post_type' => 'destino',
         'orderby' => 'title',
